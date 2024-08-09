@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sikander PlayX</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/new_style.css" />
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      .under_maintenace_bg {
+        /* \pop-up */
+        background-image: url(../img/pop-up/pop-up-bg.png);
+        width: 100% !important;
+        height: 100vh !important;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      @media (min-width: 700px) {
+        .under_maintenace_bg {
+          background-image: url(../img/UM\ 1.png);
+          background-position: inherit;
+        
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container container-xs app home-bg "> -->
+    <div class="container container-xs home-bg">
+      <div class="h-0"></div>
+
+      <!-- header Starts -->
+      <!-- laptop nav -->
+
+      <nav class="navbar navbar-expand-lg bg-purple br-yellow fixed-top">
+        <div class="container">
+          <img src="../img/play-X-logonew.png" alt="logo" class="w-11" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 text-white fs-15 fw-600 gap-2"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="main_new_page.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="inplay.html">In-play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="teenpatti.html">Teenpatti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="livecasino.html">Casino</a>
+              </li>
+            </ul>
+            <div class="d-flex g-15 align-items-center" role="search">
+              <button
+                class="btn btn-yellow rounded-pill header-btnyellow fs-14"
+                type="submit"
+              >
+                <i class="fa-solid fa-phone"></i> <a href="customerSupport.html"
+                class="text-decoration_none text-black">Call</a>
+              </button>
+
+              <div class="header-searchicon">
+                <div class="search">
+                  <button class="search__button position-absolute">
+                    <svg
+                      class="search__icon"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                    >
+                      <g>
+                        <path
+                          d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                  <input
+                    type="text"
+                    class="search__input position-relative"
+                    placeholder="Search"
+                  />
+                </div>
+              </div>
+
+              <div class="avatar-header rounded-circle overflow-hidden">
+                <img
+                  src="../img/lapimg-home/header-img.png"
+                  alt=""
+                  srcset=""
+                  width="52"
+                  class="rounded-circle"
+                />
+              </div>
+
+              <div class="d-flex align-items-center">
+                <i
+                  class="fa-solid fa-bars text-white fs-20"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- laptop nav end -->
+      <div
+        class="d-flex justify-content-center fixed-top w-100 topheader_lap"
+        style="
+          /* background-image: url(../img/header/bg-background\ head.png); */
+          width: 100% !important;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        "
+      >
+        <div class="w-100 d-flex justify-content-center">
+          <div class="d-flex justify-content-center">
+            <div
+              class="home-header d-flex justify-content-center align-items-center pt-4 z-3 page-header lapbackground-none"
+              style="z-index: 12345 !important"
+            >
+              <a href="./home.html" class="lap-height80">
+                <img
+                  src="../img/home-x-logo.png"
+                  class="logo_xnew position-relative"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <img
+      src="../img/under_maintaince_bg.png"
+      style="
+        width: 100% !important;
+        height: 100vh !important;
+        background-size: cover;
+        background-repeat: no-repeat;
+      "
+    /> -->
+
+    <div class="under_maintenace_bg"></div>
+    <!-- modal canva start -->
+    <div
+      class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="offcanvas-body p-0">
+        <div class="container container-xs vh-100 py-1">
+          <div
+            class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3"
+            bis_skin_checked="1"
+          >
+            <div class="row" bis_skin_checked="1">
+              <div class="top-headbread px-2" bis_skin_checked="1">
+                <div
+                  class="card position-relative br-yellow py-2 px-2 mb-15"
+                  style="
+                    background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+                    background-size: cover;
+                    border-radius: 13px;
+                    border: 1px solid #f0b30db8;
+                  "
+                  bis_skin_checked="1"
+                >
+                  <div class="row align-items-center" bis_skin_checked="1">
+                    <div class="col-7" bis_skin_checked="1">
+                      <div
+                        class="d-flex align-items-center justify-content-start"
+                        bis_skin_checked="1"
+                      >
+                        <div class="mr-10">
+                          <div
+                            class="avatar-header rounded-circle overflow-hidden"
+                          >
+                            <img
+                              src="../img/lapimg-home/header-img.png"
+                              alt=""
+                              srcset=""
+                              width="52"
+                              class="rounded-circle"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="avatar-content" bis_skin_checked="1">
+                          <span class="text-yellow fs-9">Welcome</span>
+
+                          <h4 class="text-white fs-18">King@x</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- test starts -->
+                    <div class="col-5 d-flex justify-content-end">
+                      <div
+                        class="btn-group dropdown-wrapper lang_drop_down_container"
+                      >
+                        <button
+                          class="btn dropdown-toggle text-white fs-10 br-yellow mbet"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Choose Language
+                        </button>
+                        <ul
+                          class="dropdown-menu bg-gr p-0 bg-transparent text-center"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <li class="lang_drop_down fs-12 fw-600">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >English</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Marathi</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Hindi</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Gujarati</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Tamil</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Bangali</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Telugu</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Kannada</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Malayalam</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Bhojpuri</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="menu-header-bg-area"></div> -->
+          <div
+            class="list-group list-group-flush list-group-cus px-3 mt-3 menu-custom-hight"
+          >
+            <div
+              class="list-group-item list-group-item-action flex-column ShowSubList"
+            >
+              <div class="d-flex align-items-center w-100">
+                <div class="list-icon">
+                  <img src="../img/icon/icon-profile.png" />
+                </div>
+                <span class="list-text">Account details</span>
+                <span class="ms-auto">
+                  <img src="../img/icon/icon-plus-circle.png" alt="plus" />
+                </span>
+              </div>
+              <div class="list-group-sub" style="display: none">
+                <a
+                  href="./myaccount.html"
+                  class="text-decoration_none text-white"
+                >
+                  <div class="list-group-sub-item">
+                    <span>My Account</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </a>
+
+                <div
+                  class="text-decoration_none text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <div class="list-group-sub-item">
+                    <span>My Commission</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="text-decoration_none text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <div class="list-group-sub-item">
+                    <span>My Id's</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="bonuses.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-bonus-offer.png" />
+              </div>
+              <span class="list-text">Bonus &amp; Offers</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <div
+              class="list-group-item list-group-item-action flex-column ShowSubList"
+            >
+              <div class="d-flex align-items-center w-100">
+                <div class="list-icon">
+                  <img src="../img/icon/icon-view-list.png" />
+                </div>
+                <span class="list-text">View Transcations</span>
+                <span class="ms-auto">
+                  <img src="../img/icon/icon-plus-circle.png" alt="plus" />
+                </span>
+              </div>
+              <div class="list-group-sub" style="display: none">
+                <a href="./Mybet.html" class="text-decoration_none text-white">
+                  <div class="list-group-sub-item">
+                    <span>My Bets</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="./mybetprofitloss.html"
+                  class="text-decoration_none text-white"
+                >
+                  <div class="list-group-sub-item">
+                    <span>Profit &amp; Loss</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <a
+              href="./refer&amp;earn.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-refer.png" />
+              </div>
+              <span class="list-text">Refer and Earn</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="./myrefferal.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-forward.png" />
+              </div>
+              <span class="list-text">My Referal</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <div
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-prediction.png" />
+              </div>
+              <span class="list-text">Prediction (Get Tips)</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </div>
+
+            <a
+              href="./customerSupport.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-customer-support.png" />
+              </div>
+              <span class="list-text">Customer Support</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="settings.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-x-shadow.png" />
+              </div>
+              <span class="list-text">Setting</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <div
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-how-play.png" />
+              </div>
+              <span class="list-text">How to Play</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </div>
+
+            <div
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-edit.png" />
+              </div>
+              <span class="list-text">Rules &amp; Regulations</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </div>
+
+            <a
+              href="./main.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-edit.png" />
+              </div>
+              <span class="list-text" an="">Logout</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- modal -->
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent">
+              <div class="modal-body px-4 py-0">
+                <div class="position-relative">
+                  <img src="../img/pop-up/pop-up-bg.png" alt="" class="w-100" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal canva end -->
+  </body>
+</html>

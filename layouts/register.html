@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sikander PlayX</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <style>
+      .register-bg.bg_image_both_L_M {
+        background-image: url(../img/register-bg.png);
+      }
+      .register-bg.bg_image_both_L_M .center_image-width {
+        width: 35%;
+      }
+      @media (min-width: 700px) {
+        .register-bg.bg_image_both_L_M {
+          background-image: url(../img/Laptop/login/Register\ Page.png);
+    
+        background-size: cover;
+        background-position: center;
+        }
+        .register-bg.bg_image_both_L_M .center_image-width {
+          width: 40%;
+        }
+        .register-bg.bg_image_both_L_M .login-form-control {
+          height: 55px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container container-xs vh-100 register-bg bg_image_both_L_M">
+      <div class="row justify-content-center">
+        <div class="col-sm-9 col-md-5 col-lg-5 col-xl-4 px-0">
+          <div class="d-flex flex-column justify-content-between vh-100">
+            <div class="d-flex justify-content-center w-100 mt-2">
+              <img
+                src="../img/multiple-exchange.png"
+                class="center_image-width"
+                style="margin-top: 10px"
+              />
+            </div>
+            <div class="px-3">
+              <div class="login-title text-center mb-3 mb-md-5">Register</div>
+              <div class="mb-4 mb-md-5">
+                <input
+                  type="text"
+                  class="form-control login-form-control"
+                  placeholder="Enter Your Mobile Number"
+                />
+                <div class="fs-12 fw-500 text-white ps-2 mt-1">
+                  You will receive an otp for verification
+                </div>
+              </div>
+              <div class="mt-md-4">
+                <input
+                  type="text"
+                  class="form-control login-form-control"
+                  placeholder="Inter Invite Code"
+                />
+                <div class="ps-2 mt-2">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    <label
+                      class="form-check-label fs-12 fw-500 text-white"
+                      for="flexCheckDefault"
+                      >I certify that i am above 18 Years.</label
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column align-items-center W-100">
+              <a href="otp.html" class="btn btn-login mb-3">Next</a>
+              <div class="fs-12 mb-4">
+                <span class="text-white"
+                  ><a
+                    href="./login.html"
+                    class="text-decoration-none text-white"
+                    >Already a player ?</a
+                  ></span
+                >
+                <a href="#" class="text-yellow text-decoration-none">Log in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

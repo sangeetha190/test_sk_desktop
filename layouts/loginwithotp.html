@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sikander PlayX</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <style>
+      .create-user-bg.bg_image_both_L_M {
+        background-image: url("../img/race\ \(1\).png");
+      }
+      .create-user-bg.bg_image_both_L_M .center_image-width {
+        width: 55%;
+      }
+      @media (min-width: 700px) {
+        .create-user-bg.bg_image_both_L_M {
+          background-image: url(../img/Laptop/login/Group\ 638.png);
+          background-size: cover;
+          background-position: center;
+        }
+        .create-user-bg.bg_image_both_L_M .center_image-width {
+          width: 50%;
+        }
+        .create-user-bg.bg_image_both_L_M .login-form-control {
+          height: 55px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container container-xs vh-100 create-user-bg bg_image_both_L_M">
+      <div class="row justify-content-center">
+        <div class="col-sm-9 col-md-5 col-lg-5 col-xl-4 px-0">
+          <div class="d-flex flex-column justify-content-between vh-100">
+            <div class="d-flex justify-content-center w-100">
+              <img src="../img/race (2).png" class="center_image-width mt-2" />
+            </div>
+            <div class="px-3">
+              <div class="login-title text-center mb-4">Login</div>
+              <div class="mb-35 mt-5">
+                <input
+                  type="text"
+                  class="form-control login-form-control"
+                  placeholder="Enter Phone No"
+                />
+                <!-- <div class="fs-12 fw-500 text-danger ps-2 mt-1">Please select a valid state.</div> -->
+              </div>
+
+              <div class="text-white text-center">
+                <div class="d-flex justify-content-center">
+                  <a href="./loginwithenterotp.html" class="btn btn-login mb-3"
+                    >Get OTP</a
+                  >
+                </div>
+                <div class="mb-3 form-check">
+                  <a href="./login.html" class="text-decoration_none">
+                    <label
+                      class="form-check-label"
+                      for="exampleCheck1"
+                      style="color: #00cefb"
+                      >Login In Password</label
+                    >
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-column align-items-center justify-content-center W-100 px-3 mb-3"
+              style="gap: 8px !important"
+            >
+              <div class="fs-12 text-white mt-10">
+                <span class="mb-1">New to X ?</span>
+              </div>
+              <div>
+                <a
+                  href="home.html"
+                  class="btn btn-re mb-3 rounded-pill"
+                  style="
+                    background-color: transparent !important;
+                    color: white;
+                    border: 1px solid #fff;
+                    width: 193px;
+                    height: 54px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 22px;
+                    font-weight: 900;
+                    font-style: italic;
+                  "
+                  >Register Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

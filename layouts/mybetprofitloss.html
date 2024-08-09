@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sikander PlayX</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/new_style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="../js/bootstrap.bundle.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <style>
+    .table>:not(caption)>*>* {
+      background-color: #e0e0e0;
+    }
+
+    ul .dropdown-item {
+      display: block;
+      width: 100%;
+      padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+      clear: both;
+      font-weight: 500;
+      color: #000;
+      text-align: inherit;
+      text-decoration: none;
+      white-space: nowrap;
+      background-color: #b3b3b3;
+      border: 0;
+      /* border-radius: var(--bs-dropdown-item-border-radius, 0); */
+      border-radius: 3px;
+      border-bottom: 2px solid #9c9c9c;
+      font-size: 10px;
+    }
+
+    .bs-l {
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .bs-ls {
+      box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .bs-ob {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-fixed {
+      background-color: #260233;
+      z-index: 2;
+      width: 100%;
+      position: fixed !important;
+      padding: 0 !important;
+      top: -1px !important;
+      padding-bottom: 0;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="container container-xs app home-bg ">
+    <nav class="navbar navbar-expand-lg bg-purple br-yellow fixed-top" style="height: 85px;">
+      <div class="container">
+        <img src="../img/play-X-logonew.png" alt="logo" class="
+            w-11">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white fs-15 fw-600 gap-2">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">In-play</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Teenpatti</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Casino</a>
+            </li>
+
+
+          </ul>
+          <div class="d-flex g-15 align-items-center" role="search">
+
+            <button class="btn btn-yellow rounded-pill header-btnyellow fs-14" type="submit"><i
+                class="fa-solid fa-phone"></i> Call</button>
+
+
+            <div class="header-searchicon">
+              <div class="search">
+                <button class="search__button position-absolute">
+                  <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                    <g>
+                      <path
+                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                      </path>
+                    </g>
+                  </svg>
+                </button>
+                <input type="text" class="search__input position-relative" placeholder="Search">
+
+              </div>
+            </div>
+
+            <div class="avatar-header rounded-circle overflow-hidden">
+              <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+            </div>
+
+            <div class="d-flex align-items-center ">
+              <i class="fa-solid fa-bars text-white fs-20" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"></i>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- laptop nav end -->
+
+    <!---lap view--->
+    <div class="d-flex justify-content-center fixed-top w-100 topheader_lap mobile-tab-none" style="
+  background-image: url(../img/header/bg-background\ head.png);
+  width: 100% !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+">
+      <div class="w-100 d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
+          <div
+            class="home-header d-flex justify-content-center align-items-center pt-4 z-3 page-header lapbackground-none"
+            style="z-index: 12345 !important">
+            <a href="./home.html" class="lap-height80">
+              <img src="../img/home-x-logo.png" class="logo_xnew position-relative" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---lap view end-->
+
+    <!-- <div class="d-flex justify-content-center mobile-90 laptop-190" >
+           
+          </div> -->
+
+
+
+    <div class="home-header-bg-area"></div>
+
+
+
+    <div class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-5 pt-5 lap-none" bis_skin_checked="1">
+      <a href="home.html">
+        <div class="logo position-absolute d-flex justify-content-center w-100"
+          style="bottom: 90px; z-index: 9999; left: 0" bis_skin_checked="1">
+          <img src="../img/home-x-logo.png" alt="" srcset="" class="w-25" />
+        </div>
+      </a>
+      <div class="row" bis_skin_checked="1">
+        <div class="top-headbread px-2" bis_skin_checked="1">
+          <div class="card position-relative br-yellow py-4 px-3 mb-15" style="
+              background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+              background-size: cover;
+              border-radius: 13px;
+            " bis_skin_checked="1">
+            <div class="row align-items-center" bis_skin_checked="1">
+              <div class="col-7" bis_skin_checked="1">
+                <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
+                  <img src="../img/avatar/top-bread/Mask group (7).png" alt="" srcset="" class="w-40 mr-10" />
+
+                  <div class="avatar-content" bis_skin_checked="1">
+                    <span class="text-yellow fs-9">Welcome</span>
+
+                    <h4 class="text-white fs-18">King@x</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- test starts -->
+              <div class="col-5 d-flex justify-content-end">
+                <div class="btn-group dropdown-wrapper lang_drop_down_container">
+                  <button class="btn dropdown-toggle text-white fs-10 br-yellow mbet" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Choose Language
+                  </button>
+                  <ul class="dropdown-menu bg-gr p-0 bg-transparent text-center" aria-labelledby="dropdownMenuLink">
+                    <li class="lang_drop_down fs-12 fw-600">
+                      <a class="dropdown-item py-0 text-purple" href="#">English</a>
+                    </li>
+                    <li class="lang_drop_down fs-12">
+                      <a class="dropdown-item py-0 text-purple" href="#">Marathi</a>
+                    </li>
+                    <li class="lang_drop_down fs-12">
+                      <a class="dropdown-item py-0 text-purple" href="#">Hindi</a>
+                    </li>
+                    <li class="lang_drop_down fs-12">
+                      <a class="dropdown-item py-0 text-purple" href="#">Gujarati</a>
+                    </li>
+                    <li class="lang_drop_down fs-12">
+                      <a class="dropdown-item py-0 text-purple" href="#">Tamil</a>
+                    </li>
+                    <li class="lang_drop_down fs-12">
+                      <a class="dropdown-item py-0 text-purple" href="#">Bangali</a>
+                    </li>
+                    <li class="lang_drop_down fs-12">
+                      <a class="dropdown-item py-0 text-purple" href="#">Telugu</a>
+                    </li>
+                    <li class="lang_drop_down fs-12">
+                      <a class="dropdown-item py-0 text-purple" href="#">Kannada</a>
+                    </li>
+                    <li class="lang_drop_down fs-12">
+                      <a class="dropdown-item py-0 text-purple" href="#">Malayalam</a>
+                    </li>
+                    <li class="lang_drop_down fs-12">
+                      <a class="dropdown-item py-0 text-purple" href="#">Bhojpuri</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="app-header-bg-area"></div> -->
+    <!-- <div class="app-header-bg-area"></div> -->
+
+
+
+    <div
+      class="container container-xs position-relative overflow-x_hidden p-0 mt-0 col-lg-10 col-xxl-7 mt-md-5 pt-md-5">
+      <!-- lap -->
+      <div class="container">
+        <div class="avatar-bread my-5 position-relative mb-25 px-0 mb-0 mt-5 pt-5  mobile-tab-none"
+          bis_skin_checked="1">
+
+          <div class="row" bis_skin_checked="1">
+            <div class="top-headbread px-2" bis_skin_checked="1">
+              <div class="card position-relative br-yellow py-2 px-3 mb-4" style="
+                background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+                background-size: cover;
+                border-radius: 13px;
+      background-repeat: no-repeat;
+      background-position: center;
+              " bis_skin_checked="1">
+                <div class="row align-items-center" bis_skin_checked="1">
+                  <div class="col-7" bis_skin_checked="1">
+                    <div class="d-flex">
+                      <div class="d-flex align-items-center">
+                        <div class="w-25" bis_skin_checked="1">
+                          <img src="../img/Laptop/avatar/Mask group (8).png" alt="" srcset="" class="w-100" />
+                        </div>
+
+                        <div class="avatar-content" bis_skin_checked="1">
+                          <span class="text-yellow fs-9">Welcome</span>
+
+                          <h4 class="text-white fs-18">King@x</h4>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- test starts -->
+                  <div class="col-5 d-flex justify-content-end">
+
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- lap-end -->
+      <div class="container container-xs card px-2 py-2 bg-lightgray br-1 border-0 overflow-x_hidden">
+
+        <!-- slider -->
+        <div class="card pt-3 mb-2 border-0  bs-ob">
+          <div class="row justify-content-center px-3">
+            <div class="col-3 d-flex justify-content-center">
+              <button
+                class="btn  nav-link fs-10 br-gray text-purple px-3 fw-700 bg-gray w-93 h-20 btn-yellow">Month</button>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <button
+                class="btn  fs-10 br-gray bg-gray text-purple px-3 fw-700 w-93 h-20 d-flex align-items-center text-purple">7&nbsp;Days</button>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <button
+                class="btn  fs-10 br-gray bg-gray text-purple px-3 fw-700 w-93 h-20 d-flex align-items-center text-purple">30&nbsp;Days</button>
+            </div>
+            <div class="col-3 d-flex justify-content-center">
+              <button
+                class="btn  fs-10 br-gray bg-gray text-purple px-3 fw-700 w-93 h-20 d-flex align-items-center text-purple">LifeTime</button>
+            </div>
+          </div>
+          <div class="row my-2 px-2 justify-content-center">
+            <div class="col-6 col-lg-4">
+              <div class="dropdown-lang ">
+                <div class="dropdown">
+                  <a class="btn dropdown-toggle br-gray text-black fw-500 fs-12  w-100 h-20 d-flex justify-content-between align-items-center bg-lightgray"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    10-Jan-2024
+                  </a>
+
+                  <ul class="dropdown-menu fs-8 w-100 p-0" aria-labelledby="dropdownMenuLink bg-gr mbet">
+                    <li><a class="dropdown-item" href="#">All</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Matched</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Void</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Wrong</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-4">
+              <div class="dropdown-lang">
+                <div class="dropdown">
+                  <a class="btn dropdown-toggle br-gray fw-500 text-black fs-12  w-100 d-flex h-20 w-100 h-20 justify-content-between align-items-center bg-lightgray"
+                    href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                    10-Jan-2024
+                  </a>
+
+                  <ul class="dropdown-menu fs-8 w-100 bg-gr p-0" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">All</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Matched</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Void</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Wrong</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center my-2">
+            <button class="bg-purple text-yellow br-none px-4 br-10 fw-600">GET P&L</button>
+          </div>
+        </div>
+        <div class="card pt-0 mb-1 mt-0">
+          <div class="col-12 bg-purple px-3 d-flex align-items-center br-5">
+            <div class="d-flex align-items-center justify-content-between w-100">
+              <div>
+                <h4 class="text-yellow fs-12 m-0">Profit & Loss</h4>
+              </div>
+              <div>
+                <span class="text-yellow fs-10">-</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex w-100 justify-content-between px-2 py-2">
+            <span class="fs-8 fw-700">[Total P:L<span class="text-purple fs-12">0.00</span>]</span>
+            <span class="fs-8 fw-700 d-flex align-items-center">Show<button
+                class="btn fs-9 fw-700 br-gray h-20 d-flex align-items-center bg-yellow mlr-5">10
+              </button>Entries</span>
+          </div>
+        </div>
+        <div class="table-responsive bs-l">
+          <table class="table table-bordered table-sm table-bordered-cus mb-0" style="border-color: #9a9a9a;">
+            <thead>
+              <tr>
+                <th>SrNo</th>
+
+                <th>Date & time</th>
+                <th>Amount</th>
+                <th>Game</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td class="text-center">2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td class="text-center">3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td class="text-center">4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td class="text-center">5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td class="text-center">6</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td class="text-center">7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td class="text-center">8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td class="text-center">9</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+              </tr>
+              <tr>
+                <td class="text-center">10</td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+
+
+
+
+
+        <div class="d-flex justify-content-between algin-items-center my-2 px-2">
+          <p class="text-dark fw-600 fs-9">Showing 1 to 10 of 112 entries</p>
+          <p class="text-blue fw-600 fs-9">Next Page >>></p>
+        </div>
+        <!-- test starts -->
+        <div class="bs-ls">
+          <div class="d-flex justify-content-center algin-items-center mt-1">
+            <div class="text-center w-50">
+              <img src="../img/secure.png" width="120" class="pb-2 pt-3">
+              <p class="text-grey-50 fw-600 fs-8 mb-0">By Continuing, i confirm that i am 18+ years old &amp; play from
+                a permitted state.</p>
+              <p class="text-blue fw-600 fs-8">View Bonus T&amp;C</p>
+            </div>
+          </div>
+        </div>
+        <!-- test Ends -->
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bg-area lap-none"></div>
+
+    <div class="footer lap-none">
+      <div class="footer-tab flex-grow-1 after-line">
+        <a href="home.html" class="tab-action">
+          <img src="../img/icon/icon-x.svg" class="tab-icon" />
+          <div class="tab-label">Home</div>
+        </a>
+      </div>
+      <div class="footer-tab flex-grow-1 after-line">
+        <a href="./inplay.html" class="tab-action">
+          <img src="../img/icon/icon-play.svg" class="tab-icon" />
+          <div class="tab-label">In-Play</div>
+        </a>
+      </div>
+      <div class="footer-tab flex-grow-1">
+        <a href="referEarn.html" class="tab-action">
+          <img src="../img/icon/icon-refer.svg" class="tab-icon" />
+          <div class="tab-label">Refer &amp; Earn</div>
+        </a>
+      </div>
+      <div class="footer-tab flex-grow-1 before-line">
+        <a href="./livecasino.html" class="tab-action">
+          <img src="../img/icon//icon-casino.svg" class="tab-icon" />
+          <div class="tab-label">Casino</div>
+        </a>
+      </div>
+      <div class="footer-tab flex-grow-1 before-line">
+        <a href="menu.html" class="tab-action">
+          <img src="../img/icon/icon-menu-bar.svg" class="tab-icon" />
+          <div class="tab-label" style="margin-bottom: -8px">Menu</div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="payment" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm justify-content-center">
+      <div class="modal-content" style="width: 200px">
+        <div class="modal-body d-flex flex-column align-items-center">
+          <img src="../img/success.png" class="mb-2 ml-n25" />
+          <div class="fw-600 fs-11 text-center text-black mb-3">
+            Your Request Is In Our Queue!
+          </div>
+          <span class="bg-green2 text-white fs-12 fw-600 rounded-3 py-2 px-3 mb-2">Thank You</span>
+          <span class="text-dard-grey fs-9 fw-600">For Choosing Sikanderplayx</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- modal canva start -->
+    <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasetting" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
+      <div class="offcanvas-body p-0">
+          <div class="container container-xs vh-100 py-1">
+              <div class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3" bis_skin_checked="1">
+                  <!-- <a href="home.html">
+                      <div class="logo position-absolute d-flex justify-content-center w-100"
+                          style="bottom: 90px; z-index: 9999; left: 0" bis_skin_checked="1">
+                          <img src="../img/home-x-logo.png" alt="" srcset="" class="w-25" />
+                      </div>
+                  </a> -->
+                  <div class="row" bis_skin_checked="1">
+                      <div class="top-headbread px-2" bis_skin_checked="1">
+                          <div class="card position-relative br-yellow py-2 px-2 mb-15" style="
+              background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+              background-size: cover;
+              border-radius: 13px;border: 1px solid #f0b30db8;
+            " bis_skin_checked="1">
+                              <div class="row align-items-center" bis_skin_checked="1">
+                                  <div class="col-7" bis_skin_checked="1">
+                                      <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
+                                          <div class="mr-10">
+                                            <div class="avatar-header rounded-circle overflow-hidden">
+                                              <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                                            </div>
+                                          </div>
+
+                                          <div class="avatar-content" bis_skin_checked="1">
+                                              <span class="text-yellow fs-9">Welcome</span>
+
+                                              <h4 class="text-white fs-18">King@x</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <!-- test starts -->
+                                  <div class="col-5 d-flex justify-content-end">
+                                      <div class="btn-group dropdown-wrapper lang_drop_down_container">
+                                          <button class="btn dropdown-toggle text-white fs-10 br-yellow mbet" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Choose Language
+                                          </button>
+                                          <ul class="dropdown-menu bg-gr p-0 bg-transparent text-center" aria-labelledby="dropdownMenuLink">
+                                              <li class="lang_drop_down fs-12 fw-600">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">English</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Marathi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Hindi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Gujarati</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Tamil</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bangali</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Telugu</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Kannada</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Malayalam</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bhojpuri</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- <div class="menu-header-bg-area"></div> -->
+              <div class="app-main px-3">
+                <div>
+                  <div class="setting-list">
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Account</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#account">
+                        Private <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+        
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Language</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#language">
+                        English <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Graphics</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#graphics">
+                        High <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Resolution</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#resolution">
+                        Ultra <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">Music</div>
+                        <div class="swith-display off">off</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">Bet Sharing</div>
+                        <div class="swith-display on">on</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">
+                          P&amp;L Sharing <span class="fs-10">(Referral)</span>
+                        </div>
+                        <div class="swith-display on">on</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">Notification</div>
+                        <div class="swith-display off">off</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">Popup</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Media Quality</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#mediaQuality">
+                        <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">Sound</div>
+                        <div class="swith-display on">on</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal" data-bs-toggle="modal" data-bs-target="#bet_stake">
+                      <div class="setting-list-itme__title">Bet Stakes</div>
+                      <div class="setting-list-itme__action">
+                        <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <!-- <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Block Account</div>
+                      <div class="setting-list-itme__action">
+                        <span class="text-grey ps-1">></span>
+                      </div>
+                    </div> -->
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Customer Support</div>
+                      <div class="setting-list-itme__action">
+                        <a href="customerSupport.html" class="text-decoration-none">
+                          <span class="text-grey ps-1">&gt;</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Private Policy</div>
+                      <div class="setting-list-itme__action">
+                        <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Term Of Service</div>
+                      <div class="setting-list-itme__action">
+                        <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Delete Account</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#deleteAccount">
+                        <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="footer-bg-area"></div>
+              </div>
+              
+          </div>
+
+          <!-- modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content bg-transparent">
+                      <div class="modal-body px-4 py-0">
+                          <div class="position-relative">
+                              <img src="../img/pop-up/pop-up-bg.png" alt="" class="w-100">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- modal canva end -->
+
+  <!-- setting end -->
+
+    <!-- modal canva start -->
+    <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
+      <div class="offcanvas-body p-0">
+          <div class="container container-xs vh-100 py-1">
+              <div class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3" bis_skin_checked="1">
+                  <!-- <a href="home.html">
+                      <div class="logo position-absolute d-flex justify-content-center w-100"
+                          style="bottom: 90px; z-index: 9999; left: 0" bis_skin_checked="1">
+                          <img src="../img/home-x-logo.png" alt="" srcset="" class="w-25" />
+                      </div>
+                  </a> -->
+                  <div class="row" bis_skin_checked="1">
+                      <div class="top-headbread px-2" bis_skin_checked="1">
+                          <div class="card position-relative br-yellow py-2 px-2 mb-15" style="
+              background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+              background-size: cover;
+              border-radius: 13px;border: 1px solid #f0b30db8;
+            " bis_skin_checked="1">
+                              <div class="row align-items-center" bis_skin_checked="1">
+                                  <div class="col-7" bis_skin_checked="1">
+                                      <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
+                                          <div class="mr-10">
+                                            <div class="avatar-header rounded-circle overflow-hidden">
+                                              <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                                            </div>
+                                          </div>
+
+                                          <div class="avatar-content" bis_skin_checked="1">
+                                              <span class="text-yellow fs-9">Welcome</span>
+
+                                              <h4 class="text-white fs-18">King@x</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+
+                                  <!-- test starts -->
+                                  <div class="col-5 d-flex justify-content-end">
+                                      <div class="btn-group dropdown-wrapper lang_drop_down_container">
+                                          <button class="btn dropdown-toggle text-white fs-10 br-yellow mbet" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Choose Language
+                                          </button>
+                                          <ul class="dropdown-menu bg-gr p-0 bg-transparent text-center" aria-labelledby="dropdownMenuLink">
+                                              <li class="lang_drop_down fs-12 fw-600">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">English</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Marathi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Hindi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Gujarati</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Tamil</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bangali</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Telugu</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Kannada</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Malayalam</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bhojpuri</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- <div class="menu-header-bg-area"></div> -->
+              <div class="list-group list-group-flush list-group-cus px-3 mt-3 menu-custom-hight">
+                  <div class="list-group-item list-group-item-action flex-column ShowSubList">
+                      <div class="d-flex align-items-center w-100">
+                          <div class="list-icon">
+                              <img src="../img/icon/icon-profile.png">
+                          </div>
+                          <span class="list-text">Account details</span>
+                          <span class="ms-auto">
+                              <img src="../img/icon/icon-plus-circle.png" alt="plus">
+                          </span>
+                      </div>
+                      <div class="list-group-sub" style="display: none">
+                          <a href="./myaccount.html" class="text-decoration_none text-white">
+                              <div class="list-group-sub-item">
+                                  <span>My Account</span>
+                                  <span class="ms-auto">
+                                      <img src="../img/icon/icon-arrow-right.png">
+                                  </span>
+                              </div>
+                          </a>
+
+                          <div class="text-decoration_none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              <div class="list-group-sub-item">
+                                  <span>My Commission</span>
+                                  <span class="ms-auto">
+                                      <img src="../img/icon/icon-arrow-right.png">
+                                  </span>
+                              </div>
+                          </div>
+                          <div class="text-decoration_none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              <div class="list-group-sub-item">
+                                  <span>My Id's</span>
+                                  <span class="ms-auto">
+                                      <img src="../img/icon/icon-arrow-right.png">
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <a href="bonuses.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-bonus-offer.png">
+                      </div>
+                      <span class="list-text">Bonus &amp; Offers</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+
+                  <div class="list-group-item list-group-item-action flex-column ShowSubList">
+                      <div class="d-flex align-items-center w-100">
+                          <div class="list-icon">
+                              <img src="../img/icon/icon-view-list.png">
+                          </div>
+                          <span class="list-text">View Transcations</span>
+                          <span class="ms-auto">
+                              <img src="../img/icon/icon-plus-circle.png" alt="plus">
+                          </span>
+                      </div>
+                      <div class="list-group-sub" style="display: none">
+                          <a href="./Mybet.html" class="text-decoration_none text-white">
+                              <div class="list-group-sub-item">
+                                  <span>My Bets</span>
+                                  <span class="ms-auto">
+                                      <img src="../img/icon/icon-arrow-right.png">
+                                  </span>
+                              </div>
+                          </a>
+                          <a href="./mybetprofitloss.html" class="text-decoration_none text-white">
+                              <div class="list-group-sub-item">
+                                  <span>Profit &amp; Loss</span>
+                                  <span class="ms-auto">
+                                      <img src="../img/icon/icon-arrow-right.png">
+                                  </span>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+
+                  <a href="./refer&amp;earn.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-refer.png">
+                      </div>
+                      <span class="list-text">Refer and Earn</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+
+                  <a href="./myrefferal.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-forward.png">
+                      </div>
+                      <span class="list-text">My Referal</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+
+                  <div class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-prediction.png">
+                      </div>
+                      <span class="list-text">Prediction (Get Tips)</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </div>
+
+                  <a href="./customerSupport.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-customer-support.png">
+                      </div>
+                      <span class="list-text">Customer Support</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+
+                  <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="offcanvas" data-bs-target="#offcanvasetting"
+                  aria-controls="offcanvasetting">
+                      <div class="list-icon" >
+                          <img src="../img/icon/icon-x-shadow.png">
+                      </div>
+                      <span class="list-text">Setting</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+
+                  <div class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-how-play.png">
+                      </div>
+                      <span class="list-text">How to Play</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </div>
+
+                  <div class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-edit.png">
+                      </div>
+                      <span class="list-text">Rules &amp; Regulations</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </div>
+
+                  <a href="./main.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-edit.png">
+                      </div>
+                      <span class="list-text" an="">Logout</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+              </div>
+              
+          </div>
+
+          <!-- modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content bg-transparent">
+                      <div class="modal-body px-4 py-0">
+                          <div class="position-relative">
+                              <img src="../img/pop-up/pop-up-bg.png" alt="" class="w-100">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- modal canva end -->
+</body>
+
+</html>

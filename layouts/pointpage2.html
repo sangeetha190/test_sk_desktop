@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sikander PlayX</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/new_style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <style>
+      .border_box-shadow {
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      .border_white {
+        border: 0.5px solid #ffffff7b;
+      }
+      .bg-dark_blue {
+        background-color: #446385;
+      }
+      .bg-gold {
+        background-color: #c9a950;
+      }
+      .bg-sliver {
+        background-color: #b6b9be;
+      }
+      .w_280_h_41 {
+        width: 280px;
+        height: 41px;
+      }
+      .h-41 {
+        height: 41px;
+      }
+      .loyalty_img {
+        width: 33px;
+        height: 28px;
+        margin-right: 10px;
+      }
+      .bank-detail.mb-3.text-dark.px-0 {
+        padding: 1px 0;
+      }
+      .app-main.point_container .bank-detail__row {
+        margin-bottom: 1px;
+      }
+      .z-index-1 {
+        z-index: 1;
+      }
+      .card-tile {
+        background-color: #3f1954;
+      }
+      .points_image {
+        background-color: #3f1954 !important;
+        background: url(" ../img/avatar/home/box-shad0.5.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        /* border: 1px solid #f0b30db8; */
+      }
+      .card-detail {
+        background-color: #fff !important;
+      }
+
+      .flex_card_container .card {
+        width: 83px;
+        height: 38.69px;
+        padding: 4px 7px 0px;
+        margin: 1px;
+        border-radius: 3px;
+        line-height: 14px;
+        background: #a0a0a0;
+      }
+      .pointpage_grey_bg .card {
+        background-color: #a0a0a0;
+        height: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container container-xs home-bg">
+      <!-- header Starts -->
+      <nav class="navbar navbar-expand-lg bg-purple br-yellow fixed-top">
+        <div class="container">
+          <img src="../img/play-X-logonew.png" alt="logo" class="w-11" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 text-white fs-15 fw-600 gap-2"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="main_new_page.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="inplay.html">In-play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="teenpatti.html">Teenpatti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="livecasino.html">Casino</a>
+              </li>
+            </ul>
+            <div class="d-flex g-15 align-items-center" role="search">
+              <button
+                class="btn btn-yellow rounded-pill header-btnyellow fs-14"
+                type="submit"
+              >
+                <i class="fa-solid fa-phone"></i> <a href="customerSupport.html" class="text-decoration_none text-black">Call</a>
+              </button>
+
+              <div class="header-searchicon">
+                <div class="search">
+                  <button class="search__button position-absolute">
+                    <svg
+                      class="search__icon"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                    >
+                      <g>
+                        <path
+                          d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                  <input
+                    type="text"
+                    class="search__input position-relative"
+                    placeholder="Search"
+                  />
+                </div>
+              </div>
+
+              <div class="avatar-header rounded-circle overflow-hidden">
+                <img
+                  src="../img/lapimg-home/header-img.png"
+                  alt=""
+                  srcset=""
+                  width="52"
+                  class="rounded-circle"
+                />
+              </div>
+
+              <div class="d-flex align-items-center">
+                <i
+                  class="fa-solid fa-bars text-white fs-20"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- laptop nav end -->
+      <div
+        class="d-flex justify-content-center fixed-top w-100 topheader_lap"
+        style="
+          background-image: url(../img/header/bg-background\ head.png);
+          width: 100% !important;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        "
+      >
+        <div class="w-100 d-flex justify-content-center">
+          <div class="d-flex justify-content-center" style="width: 483px">
+            <div
+              class="home-header d-flex justify-content-between align-items-center pt-4 z-3 page-header lapbackground-none"
+              style="z-index: 12345 !important"
+            >
+              <a
+                href="deposite.html"
+                class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center justify-content-center"
+              >
+                <img src="../img/icon/icon-deposit.png" width="14" />
+                <span class="ms-2 pl-5">Deposit</span>
+              </a>
+              <a href="./home.html" class="lap-height80">
+                <img
+                  src="../img/home-x-logo.png"
+                  class="logo_xnew position-relative"
+                />
+              </a>
+
+              <a
+                href="withdrawal.html"
+                class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="../img/icon/icon-withdrawal.png"
+                  width="14"
+                  style="color: white"
+                />
+                <span class="ms-2">Withdrawal</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="home-header d-flex justify-content-between align-items-center pt-4 z-3 h-66 lap-none"
+      >
+        <a
+          href="deposite.html"
+          class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center"
+        >
+          <img src="../img/icon/icon-deposit.png" width="14" />
+          <span class="ms-2 pl-5">Deposit</span>
+        </a>
+        <a href="./home.html">
+          <img
+            src="../img/home-x-logo.png"
+            class="logo_xnew position-relative"
+          />
+        </a>
+        <a
+          href="withdrawal.html"
+          class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center"
+        >
+          <img
+            src="../img/icon/icon-withdrawal.png"
+            width="14"
+            style="color: white"
+          />
+          <span class="ms-2">Withdrawal</span>
+        </a>
+      </div>
+      <div class="home-header-bg-area h-66"></div>
+      <!-- header Ends -->
+      <!-- <div class="container container-xs app-bg vh-100 overflow-x"> -->
+      <div
+        class="container container-xs position-relative overflow-x_hidden p-0 mt-5 col-lg-10 col-xxl-7 mt-md-5 pt-md-5"
+      >
+        <div class="mt-2 mt-md-5 point_container">
+          <div class="mt-2">
+            <!-- top card starts -->
+            <div class="d-flex w-100 px-1 mb-3 lap-none">
+              <div class="card-detail d-flex flex-column yellow-br">
+                <div class="row gx-2">
+                  <div class="col">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <img
+                        src="../img/avatar.png"
+                        width="35"
+                        class="rounded-circle mb-1"
+                      />
+                      <span class="fs-12 fw-500 mb-1">King@X</span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <!-- <div class="d-flex justify-content-center align-items-center">
+                                <div class="fw-600 fs-24 me-2">69</div>
+                                <img src="../img/icon/icon-star-award.png" width="24" />
+                            </div> -->
+                      <!-- <div class="fs-10 ms-3 fw-500">Global Ranking</div> -->
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="d-flex align-items-center justify-content-center"
+                    >
+                      <div
+                        class="d-flex align-items-start justify-content-center mt-2"
+                      >
+                        <img src="../img/icon/icon-golde.png" class="mt-1" />
+                        <div
+                          class="d-flex flex-column align-items-center justify-content-center ms-2 fw-600"
+                        >
+                          <div class="fs-15">Gold club</div>
+                          <div class="fs-10">Player</div>
+                          <div class="text-blue fs-8 fw-700">View Club T&C</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row gx-2">
+                  <div class="col">
+                    <div
+                      class="points_image d-flex flex-column align-items-center bg-dark-pink py-1 px-2 rounded-1"
+                    >
+                      <div class="d-flex align-items-center">
+                        <span class="text-white me-2 fw-700">12,526</span>
+                        <!-- <img src="../img/icon/icon-money.svg" width="16" /> -->
+                      </div>
+                      <div class="fs-10 fw-600 text-white">
+                        Available Balance
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="points_image d-flex flex-column align-items-center bg-grey py-1 px-2 rounded-1"
+                    >
+                      <div class="text-white me-2 fw-700">10&nbsp;Lac</div>
+                      <div class="fs-10 fw-600 text-white">
+                        Deposite Monthly
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div
+                      class="points_image d-flex flex-column align-items-center bg-grey py-1 px-2 rounded-1"
+                    >
+                      <div class="text-white me-2 fw-700">20</div>
+                      <div class="fs-10 fw-600 text-white">Monthly Active</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- desktop Card Starts -->
+            <div
+              class="d-flex px-1 mb-3 mobile-tab-none lap-profile mt-2 px-md-3"
+            >
+              <div class="card-detail d-flex flex-column">
+                <div class="row">
+                  <div
+                    class="col d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center profile-img pt-3 pb-2"
+                    >
+                      <img
+                        src="../img/lapimg-home/header-img.png"
+                        width="80"
+                        class="rounded-circle mb-1"
+                      />
+                      <span class="fs-16 fw-500 mb-1">King@X</span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center bg-dark-pink py-1 px-2 rounded-1 bg-vio-part"
+                    >
+                      <div
+                        class="d-flex align-items-center justify-content-center flex-column m-auto"
+                      >
+                        <div class="d-flex align-items-center py-1">
+                          <span class="text-yellow me-2 fs-17 fw-700"
+                            >25,000</span
+                          >
+                        </div>
+                        <div class="fs-12 fw-600 text-white">
+                          Lifetime Bonus
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center bg-grey py-1 px-2 rounded-1 bg-vio-part"
+                    >
+                      <div
+                        class="d-flex align-items-center justify-content-center flex-column m-auto py-1"
+                      >
+                        <div class="text-yellow me-2 fs-17 fw-700">4,400</div>
+                        <div class="fs-12 fw-600 text-white">Bonus Wallet</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="col d-flex align-items-center justify-content-center"
+                  >
+                    <div
+                      class="d-flex flex-column align-items-center bg-grey py-1 px-2 rounded-1 bg-vio-part"
+                    >
+                      <div
+                        class="d-flex align-items-center justify-content-center flex-column m-auto py-1"
+                      >
+                        <div class="text-yellow me-2 fs-17 fw-700">6000</div>
+                        <div class="fs-12 fw-600 text-white">
+                          Widthdrawal Bonus
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="col d-flex align-items-center justify-content-center"
+                  >
+                    <img
+                      src="../img/icon/icon-golde.png"
+                      class="mt-1"
+                      width="25"
+                    />
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center ms-2 fw-600"
+                    >
+                      <div class="fs-20 text-black">Gold club</div>
+                      <div class="fs-12 text-black">Player</div>
+                      <div class="text-blue fs-7">View Club T&amp;C</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- desktop Card Ends -->
+            <!-- top card Ends -->
+            <div class="w-100 px-md-3">
+              <a href="./pointpage.html">
+                <img
+                  src="../img/avatar/bonus/capsule.png"
+                  alt=""
+                  srcset=""
+                  class="w-100 lap-none"
+                />
+                <img
+                  src="../img/point_page_img1.png"
+                  alt=""
+                  srcset=""
+                  class="w-100 border_box-shadow br-5 mobile-tab-none mt-md-5 mb-md-5"
+                />
+              </a>
+            </div>
+          </div>
+
+          <div class="py-2 text-center font-italic">
+            <h4 class="text-white fs-20 pb-md-2">This Month Club Position</h4>
+
+            <!-- This Month Club Position starts -->
+
+            <div class="px-md-4 mx-md-2 pointpage_grey_bg mobile-tab-none">
+              <div class="row">
+                <div class="col-md-3 px-0">
+                  <div class="card bg-sliver">
+                    <div class="text-white text-left p-2">
+                      <p class="fw-500 m-0 fs-18 p-0">7 Lac</p>
+                      <span class="fs-9 m-0">Total Desposit</span>
+                      <img
+                        src="../img/avatar/points/up-load.png"
+                        alt="image_vector"
+                        width="25px"
+                        class="position-absolute top-0 end-0 m-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 px-1">
+                  <div class="card bg-sliver">
+                    <div class="text-white text-left p-2">
+                      <p class="fw-500 mb-0 p-0">5 Lac</p>
+                      <span class="fs-9">For Platinum</span>
+                      <img
+                        src="../img/avatar/points/Frame (2).png"
+                        alt="image_vector"
+                        width="30x"
+                        class="position-absolute top-0 end-0 m-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 px-0">
+                  <div class="card bg-sliver">
+                    <div class="text-white text-left p-2">
+                      <!-- <p class="fw-500 m-0 p-0 fs-16">7 Lac</p> -->
+                      <!-- <span class="fs-9 m-0">For Gold</span> -->
+                      <p class="fs-9 mt-4">For Gold</p>
+                      <img
+                        src="../img/avatar/points/Frame (2).png"
+                        alt="image_vector"
+                        width="30px"
+                        class="position-absolute top-0 end-0 m-2"
+                      />
+                      <img
+                        src="../img/avatar/points/Vector (2).png"
+                        alt="image_vector"
+                        width="28px"
+                        class="position-absolute top-0 end-0 mt-2 mx-5"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 px-1">
+                  <div class="card bg-sliver">
+                    <div class="text-white text-left p-2">
+                      <p class="fs-9 mt-4">For Sliver</p>
+                      <img
+                        src="../img/avatar/points/Frame (2).png"
+                        alt="image_vector"
+                        width="30px"
+                        class="position-absolute top-0 end-0 m-2"
+                      />
+                      <img
+                        src="../img/avatar/points/Vector (2).png"
+                        alt="image_vector"
+                        width="28px"
+                        class="position-absolute top-0 end-0 mt-2 mx-5"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row 2 Starts -->
+              <div class="row pt-1">
+                <div class="col-md-3 px-0">
+                  <div class="card bg-sliver">
+                    <div class="text-white text-left p-2">
+                      <p class="fw-500 m-0 p-0">14</p>
+                      <span class="fs-9 m-0">Total Days Active</span>
+                      <img
+                        src="../img/avatar/points/up-load.png"
+                        alt="image_vector"
+                        width="25px"
+                        class="position-absolute top-0 end-0 m-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 px-1">
+                  <div class="card bg-sliver">
+                    <div class="text-white text-left p-2">
+                      <p class="fw-500 mb-0 p-0">9 Days</p>
+                      <span class="fs-9">For Platinum</span>
+                      <img
+                        src="../img/avatar/points/Frame (2).png"
+                        alt="image_vector"
+                        width="30px"
+                        class="position-absolute top-0 end-0 m-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 px-0">
+                  <div class="card bg-sliver">
+                    <div class="text-white text-left p-2">
+                      <p class="fw-500 m-0 p-0 fs-16">6 Days</p>
+                      <span class="fs-9 m-0">For Gold</span>
+                      <img
+                        src="../img/avatar/points/Frame (2).png"
+                        alt="image_vector"
+                        width="30px"
+                        class="position-absolute top-0 end-0 m-2"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 px-1">
+                  <div class="card bg-sliver">
+                    <div class="text-white text-left p-2">
+                      <p class="fs-9 mt-4">For Sliver</p>
+                      <img
+                        src="../img/avatar/points/Frame (2).png"
+                        alt="image_vector"
+                        width="30px"
+                        class="position-absolute top-0 end-0 m-2"
+                      />
+                      <img
+                        src="../img/avatar/points/Vector (2).png"
+                        alt="image_vector"
+                        width="28px"
+                        class="position-absolute top-0 end-0 mt-2 mx-5"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- row 2 Ends -->
+            </div>
+            <!-- mobile version Starts -->
+            <div
+              class="d-flex flex-wrap justify-content-center align-items-center flex_card_container lap-none"
+            >
+              <div class="card bg-sliver">
+                <div class="text-white text-left">
+                  <p class="fw-500 m-0 p-0">7 Lac</p>
+                  <span class="fs-9 m-0">Total Desposit</span>
+                  <img
+                    src="../img/avatar/points/up-load.png"
+                    alt="image_vector"
+                    width="15px"
+                    class="position-absolute top-0 end-0 mt-1 mx-1"
+                  />
+                </div>
+              </div>
+
+              <div class="card bg-sliver">
+                <div class="text-white text-left">
+                  <p class="fw-500 mb-0 p-0">5 Lac</p>
+                  <span class="fs-9">For Platinum</span>
+                  <img
+                    src="../img/avatar/points/Frame (2).png"
+                    alt="image_vector"
+                    width="18px"
+                    class="position-absolute top-0 end-0"
+                  />
+                </div>
+              </div>
+              <div class="card bg-sliver positon-relative">
+                <div class="text-white">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      src="../img/avatar/points/Vector (2).png"
+                      alt="image_vector"
+                      width="18px"
+                    />
+                  </div>
+
+                  <img
+                    src="../img/avatar/points/Frame (2).png"
+                    alt="image_vector"
+                    width="18px"
+                    class="position-absolute top-0 end-0"
+                  />
+                  <!-- <p class="fw-700 mb-0 p-0"></p> -->
+                  <span class="fs-9">For Gold</span>
+                </div>
+              </div>
+              <div class="card bg-sliver positon-relative">
+                <div class="text-white">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      src="../img/avatar/points/Vector (2).png"
+                      alt="image_vector"
+                      width="18px"
+                    />
+                  </div>
+
+                  <img
+                    src="../img/avatar/points/Frame (2).png"
+                    alt="image_vector"
+                    width="18px"
+                    class="position-absolute top-0 end-0"
+                  />
+                  <!-- <p class="fw-700 mb-0 p-0"></p> -->
+                  <span class="fs-8">For Silver</span>
+                </div>
+              </div>
+              <div class="card bg-sliver">
+                <div class="text-white text-left">
+                  <p class="fw-500 mb-0 p-0">14</p>
+                  <span class="fs-8">Total Days Active</span>
+                  <img
+                    src="../img/avatar/points/Frame (2).png"
+                    alt="image_vector"
+                    width="18px"
+                    class="position-absolute top-0 end-0"
+                  />
+                </div>
+              </div>
+              <div class="card bg-sliver">
+                <div class="text-white text-left">
+                  <p class="fw-500 mb-0 p-0">9 Days</p>
+                  <span class="fs-8">For Platinum</span>
+                  <img
+                    src="../img/avatar/points/Frame (2).png"
+                    alt="image_vector"
+                    width="18px"
+                    class="position-absolute top-0 end-0"
+                  />
+                </div>
+              </div>
+              <div class="card bg-sliver">
+                <div class="text-white text-left">
+                  <p class="fw-500 mb-0 p-0">6 Days</p>
+                  <span class="fs-8">For Gold</span>
+                  <img
+                    src="../img/avatar/points/Frame (2).png"
+                    alt="image_vector"
+                    width="18px"
+                    class="position-absolute top-0 end-0"
+                  />
+                </div>
+              </div>
+              <div class="card bg-sliver positon-relative">
+                <div class="text-white">
+                  <div class="d-flex justify-content-center align-items-center">
+                    <img
+                      src="../img/avatar/points/Vector (2).png"
+                      alt="image_vector"
+                      width="18px"
+                    />
+                  </div>
+
+                  <img
+                    src="../img/avatar/points/Frame (2).png"
+                    alt="image_vector"
+                    width="18px"
+                    class="position-absolute top-0 end-0"
+                  />
+                  <!-- <p class="fw-700 mb-0 p-0"></p> -->
+                  <span class="fs-8">For Silver</span>
+                </div>
+              </div>
+            </div>
+            <!-- mobile version Ends -->
+            <!-- This Month Club Position Ends -->
+          </div>
+
+          <div class="mt-4 px-4">
+            <div
+              class="border_white br-5 bg-dark_blue h-41 text-light fw-800 fs-16 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="../img/avatar/points/Frame.png"
+                alt="icon"
+                class="loyalty_img"
+              />
+              <span>Club Platinum</span>
+            </div>
+
+            <!-- test starts -->
+            <div class="bank-detail mb-3 text-dark px-0 br-nonepoint">
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Monthly Deposit</span>
+                </div>
+                <div class="bank-detail__data">10 Lac and Above</div>
+              </div>
+
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Monthly Active Days</span>
+                </div>
+                <div class="bank-detail__data">20 and Above</div>
+              </div>
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Lossback Bonus</span>
+                </div>
+                <div class="bank-detail__data">10%</div>
+              </div>
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Referral Bonus</span>
+                </div>
+                <div class="bank-detail__data">10%</div>
+              </div>
+            </div>
+            <!-- test Ends -->
+          </div>
+          <div class="mt-4 px-4">
+            <div
+              class="border_white br-5 bg-gold h-41 text-light fw-800 fs-16 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="../img/avatar/points/golde-icon 1.png"
+                alt="icon"
+                width="28px"
+                height="28px"
+              />
+              <span class="px-2">Club Gold</span>
+            </div>
+            <!-- test starts -->
+            <div class="bank-detail mb-3 text-dark px-0 br-nonepoint">
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Montly Deposit</span>
+                </div>
+                <div class="bank-detail__data">5 Lac to 10 Lac</div>
+              </div>
+
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Monthly Active Days</span>
+                </div>
+                <div class="bank-detail__data">16 Days and Above</div>
+              </div>
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Lossback Bonus</span>
+                </div>
+                <div class="bank-detail__data">7%</div>
+              </div>
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Referral Bonus</span>
+                </div>
+                <div class="bank-detail__data">7%</div>
+              </div>
+            </div>
+            <!-- test Ends -->
+          </div>
+          <div class="mt-4 px-4">
+            <div
+              class="border_white br-5 bg-sliver h-41 text-light fw-800 fs-16 d-flex justify-content-center align-items-center"
+            >
+              <img
+                src="../img/avatar/points/Layer_1.png"
+                alt="icon"
+                width="28px"
+                height="28px"
+              />
+              <span class="px-2">Club Silver</span>
+            </div>
+            <!-- test starts -->
+            <div class="bank-detail mb-3 text-dark px-0 br-nonepoint">
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Montly Deposit</span>
+                </div>
+                <div class="bank-detail__data">1 Lac to 5 Lac</div>
+              </div>
+
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Monthly Active Days</span>
+                </div>
+                <div class="bank-detail__data">12 Days and Above</div>
+              </div>
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Lossback Bonus</span>
+                </div>
+                <div class="bank-detail__data">6%</div>
+              </div>
+              <div class="bank-detail__row px-3" style="margin-bottom: 1px">
+                <div class="bank-detail__label">
+                  <span class="fs-13">Referral Bonus</span>
+                </div>
+                <div class="bank-detail__data">6%</div>
+              </div>
+            </div>
+            <!-- test Ends -->
+          </div>
+          <div class="footer-bg-area"></div>
+        </div>
+
+        <!-- footer starts -->
+        <div class="footer lap-none">
+          <div class="footer-tab flex-grow-1 after-line">
+            <a href="home.html" class="tab-action">
+              <img src="../img/icon/icon-x-active.svg" class="tab-icon" />
+              <div class="tab-label">Home</div>
+            </a>
+          </div>
+          <div class="footer-tab flex-grow-1 after-line">
+            <a href="./inplay.html" class="tab-action">
+              <img src="../img/icon/icon-play.svg" class="tab-icon" />
+              <div class="tab-label">In-Play</div>
+            </a>
+          </div>
+          <div class="footer-tab flex-grow-1">
+            <a href="./refer&earn.html" class="tab-action">
+              <img src="../img/icon/icon-refer.svg" class="tab-icon" />
+              <div class="tab-label">Refer &amp; Earn</div>
+            </a>
+          </div>
+          <div class="footer-tab flex-grow-1 before-line">
+            <a href="./livecasino.html" class="tab-action">
+              <img src="../img/icon//icon-casino.svg" class="tab-icon" />
+              <div class="tab-label">Casino</div>
+            </a>
+          </div>
+          <div class="footer-tab flex-grow-1 before-line">
+            <a href="menu.html" class="tab-action">
+              <img src="../img/icon/icon-menu-bar.svg" class="tab-icon" />
+              <div class="tab-label" style="margin-bottom: -8px">Menu</div>
+            </a>
+          </div>
+        </div>
+        <!-- footer Ends -->
+      </div>
+    </div>
+
+     <!-- modal canva start -->
+     <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasetting" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
+      <div class="offcanvas-body p-0">
+          <div class="container container-xs vh-100 py-1">
+              <div class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3" bis_skin_checked="1">
+                  <!-- <a href="home.html">
+                      <div class="logo position-absolute d-flex justify-content-center w-100"
+                          style="bottom: 90px; z-index: 9999; left: 0" bis_skin_checked="1">
+                          <img src="../img/home-x-logo.png" alt="" srcset="" class="w-25" />
+                      </div>
+                  </a> -->
+                  <div class="row" bis_skin_checked="1">
+                      <div class="top-headbread px-2" bis_skin_checked="1">
+                          <div class="card position-relative br-yellow py-2 px-2 mb-15" style="
+              background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+              background-size: cover;
+              border-radius: 13px;border: 1px solid #f0b30db8;
+            " bis_skin_checked="1">
+                              <div class="row align-items-center" bis_skin_checked="1">
+                                  <div class="col-7" bis_skin_checked="1">
+                                      <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
+                                          <div class="mr-10">
+                                            <div class="avatar-header rounded-circle overflow-hidden">
+                                              <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                                            </div>
+                                          </div>
+  
+                                          <div class="avatar-content" bis_skin_checked="1">
+                                              <span class="text-yellow fs-9">Welcome</span>
+  
+                                              <h4 class="text-white fs-18">King@x</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                  <!-- test starts -->
+                                  <div class="col-5 d-flex justify-content-end">
+                                      <div class="btn-group dropdown-wrapper lang_drop_down_container">
+                                          <button class="btn dropdown-toggle text-white fs-10 br-yellow mbet" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Choose Language
+                                          </button>
+                                          <ul class="dropdown-menu bg-gr p-0 bg-transparent text-center" aria-labelledby="dropdownMenuLink">
+                                              <li class="lang_drop_down fs-12 fw-600">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">English</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Marathi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Hindi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Gujarati</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Tamil</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bangali</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Telugu</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Kannada</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Malayalam</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bhojpuri</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- <div class="menu-header-bg-area"></div> -->
+              <div class="app-main px-3">
+                <div>
+                  <div class="setting-list">
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Account</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#account">
+                        Private <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+        
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Language</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#language">
+                        English <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Graphics</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#graphics">
+                        High <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Resolution</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#resolution">
+                        Ultra <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">Music</div>
+                        <div class="swith-display off">off</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">Bet Sharing</div>
+                        <div class="swith-display on">on</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">
+                          P&amp;L Sharing <span class="fs-10">(Referral)</span>
+                        </div>
+                        <div class="swith-display on">on</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">Notification</div>
+                        <div class="swith-display off">off</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">Popup</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Media Quality</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#mediaQuality">
+                        <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__switch-title">
+                        <div class="setting-list-itme__title">Sound</div>
+                        <div class="swith-display on">on</div>
+                      </div>
+                      <div class="setting-list-itme__action">
+                        <label class="switch">
+                          <input type="checkbox" checked="">
+                          <span class="slider"></span>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal" data-bs-toggle="modal" data-bs-target="#bet_stake">
+                      <div class="setting-list-itme__title">Bet Stakes</div>
+                      <div class="setting-list-itme__action">
+                        <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <!-- <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Block Account</div>
+                      <div class="setting-list-itme__action">
+                        <span class="text-grey ps-1">></span>
+                      </div>
+                    </div> -->
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Customer Support</div>
+                      <div class="setting-list-itme__action">
+                        <a href="customerSupport.html" class="text-decoration-none">
+                          <span class="text-grey ps-1">&gt;</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Private Policy</div>
+                      <div class="setting-list-itme__action">
+                        <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Term Of Service</div>
+                      <div class="setting-list-itme__action">
+                        <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                    <div class="setting-list-item fst-normal">
+                      <div class="setting-list-itme__title">Delete Account</div>
+                      <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#deleteAccount">
+                        <span class="text-grey ps-1">&gt;</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="footer-bg-area"></div>
+              </div>
+              
+          </div>
+  
+          <!-- modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content bg-transparent">
+                      <div class="modal-body px-4 py-0">
+                          <div class="position-relative">
+                              <img src="../img/pop-up/pop-up-bg.png" alt="" class="w-100">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- modal canva end -->
+  
+  <!-- setting end -->
+  
+    <!-- modal canva start -->
+    <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
+      <div class="offcanvas-body p-0">
+          <div class="container container-xs vh-100 py-1">
+              <div class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3" bis_skin_checked="1">
+                  <!-- <a href="home.html">
+                      <div class="logo position-absolute d-flex justify-content-center w-100"
+                          style="bottom: 90px; z-index: 9999; left: 0" bis_skin_checked="1">
+                          <img src="../img/home-x-logo.png" alt="" srcset="" class="w-25" />
+                      </div>
+                  </a> -->
+                  <div class="row" bis_skin_checked="1">
+                      <div class="top-headbread px-2" bis_skin_checked="1">
+                          <div class="card position-relative br-yellow py-2 px-2 mb-15" style="
+              background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+              background-size: cover;
+              border-radius: 13px;border: 1px solid #f0b30db8;
+            " bis_skin_checked="1">
+                              <div class="row align-items-center" bis_skin_checked="1">
+                                  <div class="col-7" bis_skin_checked="1">
+                                      <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
+                                          <div class="mr-10">
+                                            <div class="avatar-header rounded-circle overflow-hidden">
+                                              <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                                            </div>
+                                          </div>
+  
+                                          <div class="avatar-content" bis_skin_checked="1">
+                                              <span class="text-yellow fs-9">Welcome</span>
+  
+                                              <h4 class="text-white fs-18">King@x</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                  <!-- test starts -->
+                                  <div class="col-5 d-flex justify-content-end">
+                                      <div class="btn-group dropdown-wrapper lang_drop_down_container">
+                                          <button class="btn dropdown-toggle text-white fs-10 br-yellow mbet" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Choose Language
+                                          </button>
+                                          <ul class="dropdown-menu bg-gr p-0 bg-transparent text-center" aria-labelledby="dropdownMenuLink">
+                                              <li class="lang_drop_down fs-12 fw-600">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">English</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Marathi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Hindi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Gujarati</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Tamil</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bangali</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Telugu</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Kannada</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Malayalam</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bhojpuri</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- <div class="menu-header-bg-area"></div> -->
+              <div class="list-group list-group-flush list-group-cus px-3 mt-3 menu-custom-hight">
+                  <div class="list-group-item list-group-item-action flex-column ShowSubList">
+                      <div class="d-flex align-items-center w-100">
+                          <div class="list-icon">
+                              <img src="../img/icon/icon-profile.png">
+                          </div>
+                          <span class="list-text">Account details</span>
+                          <span class="ms-auto">
+                              <img src="../img/icon/icon-plus-circle.png" alt="plus">
+                          </span>
+                      </div>
+                      <div class="list-group-sub" style="display: none">
+                          <a href="./myaccount.html" class="text-decoration_none text-white">
+                              <div class="list-group-sub-item">
+                                  <span>My Account</span>
+                                  <span class="ms-auto">
+                                      <img src="../img/icon/icon-arrow-right.png">
+                                  </span>
+                              </div>
+                          </a>
+  
+                          <div class="text-decoration_none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              <div class="list-group-sub-item">
+                                  <span>My Commission</span>
+                                  <span class="ms-auto">
+                                      <img src="../img/icon/icon-arrow-right.png">
+                                  </span>
+                              </div>
+                          </div>
+                          <div class="text-decoration_none text-white" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                              <div class="list-group-sub-item">
+                                  <span>My Id's</span>
+                                  <span class="ms-auto">
+                                      <img src="../img/icon/icon-arrow-right.png">
+                                  </span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+  
+                  <a href="bonuses.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-bonus-offer.png">
+                      </div>
+                      <span class="list-text">Bonus &amp; Offers</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+  
+                  <div class="list-group-item list-group-item-action flex-column ShowSubList">
+                      <div class="d-flex align-items-center w-100">
+                          <div class="list-icon">
+                              <img src="../img/icon/icon-view-list.png">
+                          </div>
+                          <span class="list-text">View Transcations</span>
+                          <span class="ms-auto">
+                              <img src="../img/icon/icon-plus-circle.png" alt="plus">
+                          </span>
+                      </div>
+                      <div class="list-group-sub" style="display: none">
+                          <a href="./Mybet.html" class="text-decoration_none text-white">
+                              <div class="list-group-sub-item">
+                                  <span>My Bets</span>
+                                  <span class="ms-auto">
+                                      <img src="../img/icon/icon-arrow-right.png">
+                                  </span>
+                              </div>
+                          </a>
+                          <a href="./mybetprofitloss.html" class="text-decoration_none text-white">
+                              <div class="list-group-sub-item">
+                                  <span>Profit &amp; Loss</span>
+                                  <span class="ms-auto">
+                                      <img src="../img/icon/icon-arrow-right.png">
+                                  </span>
+                              </div>
+                          </a>
+                      </div>
+                  </div>
+  
+                  <a href="./refer&amp;earn.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-refer.png">
+                      </div>
+                      <span class="list-text">Refer and Earn</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+  
+                  <a href="./myrefferal.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-forward.png">
+                      </div>
+                      <span class="list-text">My Referal</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+  
+                  <div class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-prediction.png">
+                      </div>
+                      <span class="list-text">Prediction (Get Tips)</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </div>
+  
+                  <a href="./customerSupport.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-customer-support.png">
+                      </div>
+                      <span class="list-text">Customer Support</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+  
+                  <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="offcanvas" data-bs-target="#offcanvasetting"
+                  aria-controls="offcanvasetting">
+                      <div class="list-icon" >
+                          <img src="../img/icon/icon-x-shadow.png">
+                      </div>
+                      <span class="list-text">Setting</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+  
+                  <div class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-how-play.png">
+                      </div>
+                      <span class="list-text">How to Play</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </div>
+  
+                  <div class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-edit.png">
+                      </div>
+                      <span class="list-text">Rules &amp; Regulations</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </div>
+  
+                  <a href="./main.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-edit.png">
+                      </div>
+                      <span class="list-text" an="">Logout</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                  </a>
+              </div>
+              
+          </div>
+  
+          <!-- modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content bg-transparent">
+                      <div class="modal-body px-4 py-0">
+                          <div class="position-relative">
+                              <img src="../img/pop-up/pop-up-bg.png" alt="" class="w-100">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- modal canva end -->
+  </body>
+</html>

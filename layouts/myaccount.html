@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sikander PlayX</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+
+    <style>
+      .input-box {
+        font-size: 16px;
+        border: none;
+        border-bottom: 2px solid #ccc;
+        color: #08aeea;
+        width: 100%;
+        background-color: transparent;
+        transition: border-color 0.3s ease-in-out;
+      }
+
+      .underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        /* background-color: #08AEEA; */
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- sample -->
+
+    <div class="container container-xs home-bg">
+      <nav class="navbar navbar-expand-lg bg-purple br-yellow fixed-top">
+        <div class="container">
+          <img src="../img/play-X-logonew.png" alt="logo" class="w-11" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 text-white fs-15 fw-600 gap-2"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">In-play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Teenpatti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Casino</a>
+              </li>
+            </ul>
+            <div class="d-flex g-15 align-items-center" role="search">
+              <button
+                class="btn btn-yellow rounded-pill header-btnyellow fs-14"
+                type="submit"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+
+              <div class="header-searchicon">
+                <div class="search">
+                  <button class="search__button position-absolute">
+                    <svg
+                      class="search__icon"
+                      aria-hidden="true"
+                      viewBox="0 0 24 24"
+                    >
+                      <g>
+                        <path
+                          d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                        ></path>
+                      </g>
+                    </svg>
+                  </button>
+                  <input
+                    type="text"
+                    class="search__input position-relative"
+                    placeholder="Search"
+                  />
+                </div>
+              </div>
+
+              <div class="avatar-header rounded-circle overflow-hidden">
+                <img
+                  src="../img/lapimg-home/header-img.png"
+                  alt=""
+                  srcset=""
+                  width="52"
+                  class="rounded-circle"
+                />
+              </div>
+
+              <div class="d-flex align-items-center">
+                <i
+                  class="fa-solid fa-bars text-white fs-20"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- laptop nav end -->
+
+      <!-- start test  -->
+      <!-- start test  -->
+      <div
+        class="d-flex justify-content-center fixed-top w-100 topheader_lap"
+        style="
+          background-image: url(../img/header/bg-background\ head.png);
+          width: 100% !important;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+        "
+      >
+        <div class="w-100 d-flex justify-content-center">
+          <div class="d-flex justify-content-center" style="width: 483px">
+            <div
+              class="home-header d-flex justify-content-between align-items-center pt-4 z-3 page-header lapbackground-none"
+              style="z-index: 12345 !important"
+            >
+              <a
+                href="deposite.html"
+                class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center justify-content-center"
+              >
+                <img src="../img/icon/icon-deposit.png" width="14" />
+                <span class="ms-2 pl-5">Deposit</span>
+              </a>
+              <a href="./home.html" class="lap-height80">
+                <img
+                  src="../img/home-x-logo.png"
+                  class="logo_xnew position-relative"
+                />
+              </a>
+
+              <a
+                href="withdrawal.html"
+                class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center justify-content-center"
+              >
+                <img
+                  src="../img/icon/icon-withdrawal.png"
+                  width="14"
+                  style="color: white"
+                />
+                <span class="ms-2">Withdrawal</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="home-header-bg-area"></div>
+
+      <div class="pt-md-5 mt-md-2">
+        <div
+          class="container container-xs position-relative overflow-x_hidden p-0 mt-md-5 col-lg-10 col-xxl-7 pt-5"
+        >
+          <div
+            class="avatar-bread my-5 lap-none position-relative mb-25 px-2 mb-0 mt-5 pt-3"
+            bis_skin_checked="1"
+          >
+            <a href="home.html">
+              <div
+                class="logo position-absolute d-flex justify-content-center w-100"
+                style="bottom: 90px; z-index: 9999; left: 0"
+                bis_skin_checked="1"
+              >
+                <img
+                  src="../img/home-x-logo.png"
+                  alt=""
+                  srcset=""
+                  class="w-25"
+                />
+              </div>
+            </a>
+            <div class="row" bis_skin_checked="1">
+              <div class="top-headbread px-2" bis_skin_checked="1">
+                <div
+                  class="card position-relative br-yellow py-4 px-3 mb-15"
+                  style="
+                    background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+                    background-size: cover;
+                    border-radius: 13px;
+                  "
+                  bis_skin_checked="1"
+                >
+                  <div class="row align-items-center" bis_skin_checked="1">
+                    <div class="col-7" bis_skin_checked="1">
+                      <div
+                        class="d-flex align-items-center justify-content-start"
+                        bis_skin_checked="1"
+                      >
+                        <div class="w-40 mr-10">
+                          <a href="./avatar.html" class="text-decoration_none">
+                            <img
+                              src="../img/avatar/top-bread/Mask group (7).png"
+                              alt=""
+                              srcset=""
+                              class="w-100"
+                            />
+                          </a>
+                        </div>
+
+                        <div class="avatar-content" bis_skin_checked="1">
+                          <span class="text-yellow fs-9">Welcome</span>
+
+                          <h4 class="text-white fs-18">King@x</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- test starts -->
+                    <div class="col-5 d-flex justify-content-end">
+                      <div
+                        class="btn-group dropdown-wrapper lang_drop_down_container"
+                      >
+                        <button
+                          class="btn dropdown-toggle text-white fs-10 br-yellow mbet"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Choose Language
+                        </button>
+                        <ul
+                          class="dropdown-menu bg-gr p-0 bg-transparent text-center"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <li class="lang_drop_down fs-12 fw-600">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >English</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Marathi</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Hindi</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Gujarati</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Tamil</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Bangali</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Telugu</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Kannada</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Malayalam</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Bhojpuri</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- test Ends -->
+                    <!-- <div
+                    class="col-5 d-flex justify-content-end"
+                    bis_skin_checked="1"
+                  >
+                    <div class="dropdown-lang" bis_skin_checked="1">
+                      <div
+                        class="dropdown z-index99999"
+                        style="z-index: 99999999"
+                        bis_skin_checked="1"
+                      >
+                        <a
+                          class="btn dropdown-toggle text-white fs-10 br-yellow mbet"
+                          href="#"
+                          role="button"
+                          id="dropdownMenuLink"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Choose Language
+                        </a>
+    
+                        <ul
+                          class="dropdown-menu bg-gr p-0 background-transparent"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <li class="lang_drop_down">
+                            <a class="dropdown-item fs-10" href="#">Action</a>
+                          </li>
+                          <li class="lang_drop_down">
+                            <a class="dropdown-item" href="#">Another action</a>
+                          </li>
+                          <li class="lang_drop_down">
+                            <a class="dropdown-item" href="#"
+                              >Something else here</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="mx-2 px-2 card overflow-x_hidden"
+            style="background-color: #170026"
+          >
+            <!-- Lap display starts -->
+            <!-- lap -->
+            <div class="container">
+              <div
+                class="avatar-bread my-md-0 position-relative px-0 mb-0 mt-0 pt-3 mobile-tab-none"
+                bis_skin_checked="1"
+              >
+                <div class="row" bis_skin_checked="1">
+                  <div class="top-headbread px-0" bis_skin_checked="1">
+                    <div
+                      class="card position-relative br-yellow py-2 px-3"
+                      style="
+                        background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+                        background-size: cover;
+                        border-radius: 13px;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                      "
+                      bis_skin_checked="1"
+                    >
+                      <div class="row align-items-center" bis_skin_checked="1">
+                        <div class="col-7" bis_skin_checked="1">
+                          <div class="d-flex">
+                            <div class="d-flex align-items-center">
+                              <div class="w-25" bis_skin_checked="1">
+                                <img
+                                  src="../img/Laptop/avatar/Mask group (8).png"
+                                  alt=""
+                                  srcset=""
+                                  class="w-100"
+                                />
+                              </div>
+
+                              <div class="avatar-content" bis_skin_checked="1">
+                                <span class="text-yellow fs-9">Welcome</span>
+
+                                <h4 class="text-white fs-18">King@x</h4>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- test starts -->
+                        <div class="col-5 d-flex justify-content-end"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- lap-end -->
+            <!-- Lap display Ends -->
+            <div class="d-flex align-items-center my-4">
+              <img
+                src="../img/avatar/acc-det/Vector (1).png"
+                alt=""
+                srcset=""
+                class="mr-10"
+                style="width: 15px; height: 15px"
+              />
+              <h4 class="fs-18 fw-500 text-white m-0">Account Detail</h4>
+            </div>
+
+            <div class="card px-3 py-3 mb-15">
+              <div class="d-flex">
+                <div class="img-acc d-flex justify-content-end">
+                  <img
+                    src="../img/avatar/acc-det/Vector (3).png"
+                    alt=""
+                    srcset=""
+                    class="mr-15"
+                    width="18"
+                  />
+                </div>
+                <div class="img-acc content">
+                  <span class="fs-16 fw-600">Mobile</span>
+                </div>
+              </div>
+
+              <div class="mobile-no">
+                <input
+                  class="fs-16 fw-600 ml-15 border-0"
+                  value="+91 XXXXXX1535"
+                />
+              </div>
+            </div>
+
+            <div class="card px-3 py-3 mb-15">
+              <div class="d-flex">
+                <div class="img-acc d-flex justify-content-end">
+                  <img
+                    src="../img/avatar/acc-det/Vector (4).png"
+                    alt=""
+                    srcset=""
+                    width="18"
+                    class="mr-15"
+                    style="width: 18px; height: 18px"
+                  />
+                </div>
+                <div class="img-acc content">
+                  <span class="fs-16 fw-600">User Name</span>
+                </div>
+              </div>
+
+              <div
+                class="mobile-no d-flex justify-content-between justify-content-md-start"
+              >
+                <input class="fs-16 fw-600 ml-15 border-0" value="King@x" />
+                <span class="fs-12 fw-400 text-blue">Change</span>
+              </div>
+            </div>
+
+            <div class="card px-3 py-3 mb-15">
+              <div class="d-flex">
+                <div class="img-acc d-flex">
+                  <img
+                    src="../img/avatar/acc-det/Vector (5).png"
+                    alt=""
+                    srcset=""
+                    width="18"
+                    height="18"
+                    class="mr-15"
+                  />
+                </div>
+                <div class="img-acc content justify-content-between">
+                  <span class="fs-16 fw-500">Password</span>
+                </div>
+              </div>
+
+              <div
+                class="mobile-no d-flex justify-content-between justify-content-md-start align-items-center"
+              >
+                <div class="input-wrapper">
+                  <input
+                    class="input-box"
+                    class="mr-15"
+                    type="text"
+                    placeholder=""
+                  />
+                </div>
+
+                <span class="fs-12 fw-400 ml-15 text-blue">Change</span>
+              </div>
+            </div>
+
+            <div class="card px-3 py-3 mb-15">
+              <div class="d-flex">
+                <div class="img-acc d-flex justify-content-end">
+                  <img
+                    src="../img/avatar/acc-det/Vector (7).png"
+                    alt=""
+                    srcset=""
+                    width="18"
+                    height="18"
+                    class="mr-15"
+                    s
+                  />
+                </div>
+                <div class="img-acc content">
+                  <span class="fs-16 fw-500">Email ID</span>
+                </div>
+              </div>
+
+              <div
+                class="mobile-no d-flex justify-content-between justify-content-md-start"
+              >
+                <div class="input-wrapper">
+                  <input
+                    class="input-box"
+                    class="mr-15"
+                    type="text"
+                    placeholder=""
+                  />
+                </div>
+                <span class="fs-12 fw-400 ml-15 text-blue">Change</span>
+              </div>
+            </div>
+
+            <div class="my-3">
+              <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-md-4 mb-3">
+                  <img
+                    src="../img/avatar/acc-det/fb 1.png"
+                    alt=""
+                    srcset=""
+                    class="w-100"
+                  />
+                </div>
+                <div class="col-6 col-md-4 mb-3">
+                  <img
+                    src="../img/avatar/acc-det/TG 1.png"
+                    alt=""
+                    srcset=""
+                    class="w-100"
+                  />
+                </div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                <div class="col-6 col-md-4">
+                  <img
+                    src="../img/avatar/acc-det/ig 1.png"
+                    alt=""
+                    srcset=""
+                    class="w-100"
+                  />
+                </div>
+              </div>
+
+              <div class="personal-info my-0 mt-5 mb-0">
+                <div
+                  class="d-flex align-items-center py-2 br-1 br_bt_lightgrey"
+                >
+                  <img
+                    src="../img/avatar/acc-det/Group.png"
+                    alt=""
+                    srcset=""
+                    width="20"
+                    height="20"
+                    class="mr-10"
+                  />
+                  <h4 class="fs-16 fw-400 text-white m-0">
+                    Personal Information
+                  </h4>
+                </div>
+                <div class="card p-10 mt-10 px-4 py-4">
+                  <div class="row text-dard-grey fs-14 mb-2">
+                    <div class="col-4">Name</div>
+                    <div class="col-8 fs-15 fw-500 text-black">:N/A</div>
+                  </div>
+
+                  <div class="row text-dard-grey fs-14 mb-2">
+                    <div class="col-4">Date Of Birth</div>
+                    <div class="col-8 fs-15 fw-500 text-black">:N/A</div>
+                  </div>
+                  <div class="row text-dard-grey fs-14 mb-2">
+                    <div class="col-4">Pin Code</div>
+                    <div class="col-6 fs-15 fw-400 text-black">:N/A</div>
+
+                    <div
+                      class="col-2 fs-13 fw-500 text-blue d-flex align-items-center"
+                    >
+                      Add Address Details
+                    </div>
+                  </div>
+                  <div class="row text-dard-grey fs-14">
+                    <div class="col-4">Location</div>
+                    <div class="col-8 fw-400 text-blue">:Show On Map</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer-bg-area"></div>
+
+              <div class="footer lap-none">
+                <div class="footer-tab flex-grow-1 after-line">
+                  <a href="home.html" class="tab-action">
+                    <img src="../img/icon/icon-x.svg" class="tab-icon" />
+                    <div class="tab-label">Home</div>
+                  </a>
+                </div>
+                <div class="footer-tab flex-grow-1 after-line">
+                  <a class="tab-action">
+                    <img src="../img/icon/icon-play.svg" class="tab-icon" />
+                    <div class="tab-label">In-Play</div>
+                  </a>
+                </div>
+                <div class="footer-tab flex-grow-1">
+                  <a class="tab-action">
+                    <img src="../img/icon/icon-refer.svg" class="tab-icon" />
+                    <div class="tab-label">Refer &amp; Earn</div>
+                  </a>
+                </div>
+                <div class="footer-tab flex-grow-1 before-line">
+                  <a class="tab-action">
+                    <img src="../img/icon//icon-casino.svg" class="tab-icon" />
+                    <div class="tab-label">Casino</div>
+                  </a>
+                </div>
+                <div class="footer-tab flex-grow-1 before-line">
+                  <a href="menu.html" class="tab-action">
+                    <img src="../img/icon/icon-menu-bar.svg" class="tab-icon" />
+                    <div class="tab-label" style="margin-bottom: -8px">
+                      Menu
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal canva start -->
+    <div
+      class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="offcanvas-body p-0">
+        <div class="container container-xs vh-100 py-1">
+          <div
+            class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3"
+            bis_skin_checked="1"
+          >
+            <!-- <a href="home.html">
+                <div class="logo position-absolute d-flex justify-content-center w-100"
+                    style="bottom: 90px; z-index: 9999; left: 0" bis_skin_checked="1">
+                    <img src="../img/home-x-logo.png" alt="" srcset="" class="w-25" />
+                </div>
+            </a> -->
+            <div class="row" bis_skin_checked="1">
+              <div class="top-headbread px-2" bis_skin_checked="1">
+                <div
+                  class="card position-relative br-yellow py-2 px-2 mb-15"
+                  style="
+                    background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+                    background-size: cover;
+                    border-radius: 13px;
+                    border: 1px solid #f0b30db8;
+                  "
+                  bis_skin_checked="1"
+                >
+                  <div class="row align-items-center" bis_skin_checked="1">
+                    <div class="col-7" bis_skin_checked="1">
+                      <div
+                        class="d-flex align-items-center justify-content-start"
+                        bis_skin_checked="1"
+                      >
+                        <div class="mr-10">
+                          <div
+                            class="avatar-header rounded-circle overflow-hidden"
+                          >
+                            <img
+                              src="../img/lapimg-home/header-img.png"
+                              alt=""
+                              srcset=""
+                              width="52"
+                              class="rounded-circle"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="avatar-content" bis_skin_checked="1">
+                          <span class="text-yellow fs-9">Welcome</span>
+
+                          <h4 class="text-white fs-18">King@x</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- test starts -->
+                    <div class="col-5 d-flex justify-content-end">
+                      <div
+                        class="btn-group dropdown-wrapper lang_drop_down_container"
+                      >
+                        <button
+                          class="btn dropdown-toggle text-white fs-10 br-yellow mbet"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Choose Language
+                        </button>
+                        <ul
+                          class="dropdown-menu bg-gr p-0 bg-transparent text-center"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <li class="lang_drop_down fs-12 fw-600">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >English</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Marathi</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Hindi</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Gujarati</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Tamil</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Bangali</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Telugu</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Kannada</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Malayalam</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Bhojpuri</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="menu-header-bg-area"></div> -->
+          <div
+            class="list-group list-group-flush list-group-cus px-3 mt-3 menu-custom-hight"
+          >
+            <div
+              class="list-group-item list-group-item-action flex-column ShowSubList"
+            >
+              <div class="d-flex align-items-center w-100">
+                <div class="list-icon">
+                  <img src="../img/icon/icon-profile.png" />
+                </div>
+                <span class="list-text">Account details</span>
+                <span class="ms-auto">
+                  <img src="../img/icon/icon-plus-circle.png" alt="plus" />
+                </span>
+              </div>
+              <div class="list-group-sub" style="display: none">
+                <a
+                  href="./myaccount.html"
+                  class="text-decoration_none text-white"
+                >
+                  <div class="list-group-sub-item">
+                    <span>My Account</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </a>
+
+                <div
+                  class="text-decoration_none text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <div class="list-group-sub-item">
+                    <span>My Commission</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="text-decoration_none text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <div class="list-group-sub-item">
+                    <span>My Id's</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="bonuses.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-bonus-offer.png" />
+              </div>
+              <span class="list-text">Bonus &amp; Offers</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <div
+              class="list-group-item list-group-item-action flex-column ShowSubList"
+            >
+              <div class="d-flex align-items-center w-100">
+                <div class="list-icon">
+                  <img src="../img/icon/icon-view-list.png" />
+                </div>
+                <span class="list-text">View Transcations</span>
+                <span class="ms-auto">
+                  <img src="../img/icon/icon-plus-circle.png" alt="plus" />
+                </span>
+              </div>
+              <div class="list-group-sub" style="display: none">
+                <a href="./Mybet.html" class="text-decoration_none text-white">
+                  <div class="list-group-sub-item">
+                    <span>My Bets</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="./mybetprofitloss.html"
+                  class="text-decoration_none text-white"
+                >
+                  <div class="list-group-sub-item">
+                    <span>Profit &amp; Loss</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <a
+              href="./refer&amp;earn.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-refer.png" />
+              </div>
+              <span class="list-text">Refer and Earn</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="./myrefferal.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-forward.png" />
+              </div>
+              <span class="list-text">My Referal</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <div
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-prediction.png" />
+              </div>
+              <span class="list-text">Prediction (Get Tips)</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </div>
+
+            <a
+              href="./customerSupport.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-customer-support.png" />
+              </div>
+              <span class="list-text">Customer Support</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="settings.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-x-shadow.png" />
+              </div>
+              <span class="list-text">Setting</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <div
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-how-play.png" />
+              </div>
+              <span class="list-text">How to Play</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </div>
+
+            <div
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-edit.png" />
+              </div>
+              <span class="list-text">Rules &amp; Regulations</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </div>
+
+            <a
+              href="./main.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-edit.png" />
+              </div>
+              <span class="list-text" an="">Logout</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- modal -->
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent">
+              <div class="modal-body px-4 py-0">
+                <div class="position-relative">
+                  <img src="../img/pop-up/pop-up-bg.png" alt="" class="w-100" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal canva end -->
+  </body>
+</html>
