@@ -601,7 +601,8 @@ swiper-container.mySwiper.button-slider.lap-m-0  swiper-slide {
 
 button.deposit_button.fs-14.fw-700.h-34.w-100 {
   font-size: 17px !important;
-  height: 40px !important;
+  height: 44px !important;
+  border-radius: 8px;
 }
 swiper-container.mySwiper.patti.customer-support swiper-slide {
   width: 25% !important;
@@ -857,6 +858,17 @@ z-index: 99999999999;
   }
   }
 
+
+
+  .custom-scroll {
+    overflow-y: scroll; /* Enables vertical scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.custom-scroll::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
 
 
 

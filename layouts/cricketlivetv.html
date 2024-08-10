@@ -23,7 +23,7 @@
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="../js/sample.js"></script>
   <style>
-    a.btn.btn-sm.btn-theme-outline.rounded-pill.text-nowrap.fs-12.fw-500.px-3.py-1.me-2 {
+    /* a.btn.btn-sm.btn-theme-outline.rounded-pill.text-nowrap.fs-12.fw-500.px-3.py-1.me-2 {
       border-radius: 5px !important;
       color: white;
       background: #401a58;
@@ -36,8 +36,23 @@
       border: 0.5px solid #f9f21199;
       font-size: 13px !important;
       font-weight: 600;
-    }
+    } */
 
+     a.btn.btn-sm.btn-theme-outline.rounded-pill.text-nowrap.fs-12.fw-500.px-3.py-1.me-2 {
+    border-radius: 5px !important;
+    color: black;
+    background: #ffffff;
+    /* width: 100% !important; */
+    padding: 0px 10px !important;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid #f9f21199;
+    font-size: 13px !important;
+    font-weight: 600;
+    border-radius: 12px !important;
+}
     a.btn.btn-sm.btn-theme-outline.rounded-pill.text-nowrap.fs-12.fw-500.px-3.py-1.me-2.active {
       background: #f2ff00;
       color: #000;
@@ -187,82 +202,57 @@
   <!---lap view end-->
   <div class="container container-xs home-bg vh-100 overflow-x_hidden mt-5">
     <div class="app-header-bg-area h-65"></div>
-    <div class=" mt-1 table-alignment overflow-x_hidden">
-      <!-- second slider -->
+    <div class=" mt-1 table-alignment overflow-x_hidden mt-5 pt-3">
+         <!-- second slider -->
 
-      <div class="row align-content-center">
-        <div class="col-lg-2 mobile-tab-none">
-          <a href="withdrawal.html" class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center">
-            <img src="../img/icon/money.png" width="18" />
-            <span class="ms-2">0.00</span>
-          </a>
-        </div>
-        <div class="col-lg-8">
-          <div class="wrapper">
-            <swiper-container class="mySwiper button-slider  lap-m-0" slides-per-view="auto">
-              <swiper-slide>
-                <a href="inplay.html"
-                  class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2 d-flex justify-content-center active br-none">
-                  <img src="../img/icon/fluent_live-24-filled.png"
-                    style="width: 23px; border: none !important" />Live</a>
-              </swiper-slide>
-              <swiper-slide>
-                <a href="inplay.html"
-                  class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Ind Vs
-                  Ban</a>
-              </swiper-slide>
-              <swiper-slide>
-                <a href="inplay.html"
-                  class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Ind Vs
-                  Ban</a>
-              </swiper-slide>
-
-              <swiper-slide>
-                <a href="inplay.html"
-                  class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Ind Vs
-                  Ban</a>
-              </swiper-slide>
-              <swiper-slide>
-                <a href="inplay.html"
-                  class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Ind Vs
-                  Ban</a>
-              </swiper-slide>
-              <swiper-slide>
-                <a href="inplay.html"
-                  class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Ind Vs
-                  Ban</a>
-              </swiper-slide>
-
-              <swiper-slide>
-                <a href="inplay.html"
-                  class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Ind Vs
-                  Ban</a>
-              </swiper-slide>
-
-              <swiper-slide>
-                <a href="inplay.html"
-                  class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Ind Vs
-                  Ban</a>
-              </swiper-slide>
-              <!-- Slider main container -->
-            </swiper-container>
+         <div class="row align-content-center px-4 live_button_style mx-1">
+          <div class="col-lg-2 mobile-tab-none d-flex justify-content-start">
+            <a href="withdrawal.html" class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center">
+              <img src="../img/icon/icon-money.svg" width="18" />
+              <span class="ms-2">0.00</span>
+            </a>
+          </div>
+          <div class="col-lg-8">
+            <div class="wrapper d-flex gap-15 justify-content-center">
+           
+                  <a href="inplay.html"
+                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2 d-flex justify-content-center active br-none">
+                    <img src="../img/icon/fluent_live-24-filled.png"
+                      style="width: 23px; border: none !important" />Live</a>
+              
+                  <a href="inplay.html"
+                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Ind Vs
+                    Ban</a>
+           
+                  <a href="inplay.html"
+                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Fritz Vs Mochizuki</a>
+               
+                  <a href="inplay.html"
+                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Ind Vs
+                    Ban</a>
+          
+                  <a href="inplay.html"
+                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Fritz Vs Mochizuki</a>
+               
+                 
+            </div>
+          </div>
+          <div class="col-lg-2 mobile-tab-none d-flex justify-content-end">
+            <a href="withdrawal.html" class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center">
+              <img src="../img/icon/icon-star.svg" width="18" />
+              <span class="ms-2">0</span>
+            </a>
+          </div>
+  
+  
+          <div class="col-lg-12">
+  
           </div>
         </div>
-        <div class="col-lg-2 mobile-tab-none">
-          <a href="withdrawal.html" class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center">
-            <img src="../img/icon/icon-star.svg" width="18" />
-            <span class="ms-2">0</span>
-          </a>
-        </div>
+        <!-- end -->
 
 
-        <div class="col-lg-12">
 
-        </div>
-      </div>
-
-
-      <!-- end -->
 
 
       <!-- second slider -->
@@ -622,7 +612,7 @@
               </div>
               <div
                 class="live-logon d-flex justify-content-center align-items-center w-100 mb-2 yellow-br mobile-tab-none"
-                style="height: 219px; background-color: #170026;border-radius: 10px;">
+                style="height: 300px; background-color: #170026;border-radius: 10px;">
                 <img src="../img/play-X-logo.png" alt="" srcset="" class="w-50 w-xl-25 " />
               </div>
 
@@ -2398,17 +2388,17 @@
                         </span>
                     </a>
 
-                    <div class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <div class="list-icon">
-                            <img src="../img/icon/icon-how-play.png">
-                        </div>
-                        <span class="list-text">How to Play</span>
-                        <span class="ms-auto">
-                            <img src="../img/icon/icon-arrow-right.png">
-                        </span>
-                    </div>
-
-                    <div class="list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <a href="./undermaintence_page.html" class="list-group-item list-group-item-action">
+                      <div class="list-icon">
+                          <img src="../img/icon/icon-how-play.png">
+                      </div>
+                      <span class="list-text">How to Play</span>
+                      <span class="ms-auto">
+                          <img src="../img/icon/icon-arrow-right.png">
+                      </span>
+                    </a>
+      
+                    <a href="./undermaintence_page.html" class="list-group-item list-group-item-action">
                         <div class="list-icon">
                             <img src="../img/icon/icon-edit.png">
                         </div>
@@ -2416,9 +2406,9 @@
                         <span class="ms-auto">
                             <img src="../img/icon/icon-arrow-right.png">
                         </span>
-                    </div>
-
-                    <a href="./main.html" class="list-group-item list-group-item-action">
+                    </a>
+      
+                    <a href="./joinnow.html" class="list-group-item list-group-item-action">
                         <div class="list-icon">
                             <img src="../img/icon/icon-edit.png">
                         </div>
@@ -2581,9 +2571,7 @@
                 </button>
               </li>
               <li class="nav-item mx-2" role="presentation">
-                <button class="nav-link tab-btn_w-113 fw-600" id="pills-premium2-tab" data-bs-toggle="pill"
-                  data-bs-target="#pills-premium2" type="button" role="tab" aria-controls="pills-profile"
-                  aria-selected="false" tabindex="-1">
+                <button class="nav-link tab-btn_w-113 fw-600">
                   Premium
                 </button>
               </li>
@@ -2592,79 +2580,50 @@
           <!-- tab nav ends -->
 
           <div class="bet filter-btn">
-            <!-- scrolling-btn -->
+           <!-- scrolling-btn -->
             <!-- second slider -->
-            <div class="my-3">
-              <swiper-container class="mySwiper button-slider" slides-per-view="auto">
-                <swiper-slide role="group" aria-label="1 / 6" class="swiper-slide-active">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2 d-flex justify-content-center active">All</a>
-                </swiper-slide>
-                <swiper-slide role="group" aria-label="2 / 6" class="swiper-slide-next">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Session</a>
-                </swiper-slide>
-                <swiper-slide role="group" aria-label="3 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Player</a>
-                </swiper-slide>
+            <div class="my-3 d-flex gap-20 overflow-x-scroll custom-scroll justify-content-center">
+              
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2 d-flex justify-content-center active">All</a>
+            
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Session</a>
+            
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Player</a>
+       
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Fan
+                Of</a>
+          
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Odd
+                Even</a>
+ 
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Other</a>
+           
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">All</a>
+           
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Session</a>
+           
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Player</a>
+         
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Odd Even</a>
+       
+              <a href="#"
+                class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Fan Of </a>
+           
+         
+        </div>
 
-                <swiper-slide role="group" aria-label="4 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Fan
-                    off</a>
-                </swiper-slide>
-                <swiper-slide role="group" aria-label="5 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Odd
-                    Even</a>
-                </swiper-slide>
-                <swiper-slide role="group" aria-label="6 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Others</a>
-                </swiper-slide>
-                <swiper-slide role="group" aria-label="6 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Others</a>
-                </swiper-slide>
-                <swiper-slide role="group" aria-label="6 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Others</a>
-                </swiper-slide>
-
-                <swiper-slide role="group" aria-label="6 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Others</a>
-                </swiper-slide>
-
-                <swiper-slide role="group" aria-label="6 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Others</a>
-                </swiper-slide>
-
-                <swiper-slide role="group" aria-label="6 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Others</a>
-                </swiper-slide>
-
-                <swiper-slide role="group" aria-label="6 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Others</a>
-                </swiper-slide>
-                <swiper-slide role="group" aria-label="6 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Others</a>
-                </swiper-slide> <swiper-slide role="group" aria-label="6 / 6">
-                  <a href="#"
-                    class="btn btn-sm btn-theme-outline rounded-pill text-nowrap fs-12 fw-500 px-3 py-1 me-2">Others</a>
-                </swiper-slide>
-
-                <!-- Slider main container -->
-              </swiper-container>
-            </div>
-
-            <!-- end -->
-            <!-- scrolling btn end -->
+        <!-- end -->
+        <!-- scrolling btn end -->
           </div>
 
 
