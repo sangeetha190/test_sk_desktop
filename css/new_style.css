@@ -876,7 +876,20 @@ z-index: 99999999999;
 #mediaQuality .modal-dialog{
  margin-right: inherit !important;
 }
+
+
+#account .modal-dialog   .modal-content,
+#language .modal-dialog   .modal-content,
+#graphics .modal-dialog   .modal-content,
+#resolution .modal-dialog   .modal-content,
+#mediaQuality .modal-dialog   .modal-content{
+  margin-right: 90px !important;
+}
   }
+
+
+
+  .modal-content
 
 
 
