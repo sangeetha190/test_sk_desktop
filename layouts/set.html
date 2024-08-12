@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sikander PlayX</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container container-xs home-bg py-1">
+      <!-- <div class="app-header">
+                <div class="app-nav-bar">
+                    <div class="app-nav-ba__wrapper">
+                        <a href="menu.html" class="app-nav-bar__link">
+                            <img src="../img/icon/icon-left-arrow.png" />
+                        </a>
+                        <span class="app-nav-bar__title">Settings</span>
+                    </div>
+                    <div>
+                        <img src="../img/header-nav-x.png" />
+                    </div>
+                </div>
+            </div>
+            <div class="app-header-bg-area"></div> -->
+
+      <!-- <div class="home-header-bg-area"></div> -->
+    <div class="app-main px-3">
+        <div>
+          <div class="setting-list">
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__title">Account</div>
+              <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#account">
+                Private <span class="text-grey ps-1">&gt;</span>
+              </div>
+            </div>
+
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__title">Language</div>
+              <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#language">
+                English <span class="text-grey ps-1">&gt;</span>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__title">Graphics</div>
+              <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#graphics">
+                High <span class="text-grey ps-1">&gt;</span>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__title">Resolution</div>
+              <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#resolution">
+                Ultra <span class="text-grey ps-1">&gt;</span>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__switch-title">
+                <div class="setting-list-itme__title">Music</div>
+                <div class="swith-display off">off</div>
+              </div>
+              <div class="setting-list-itme__action">
+                <label class="switch">
+                  <input type="checkbox" checked="">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__switch-title">
+                <div class="setting-list-itme__title">Bet Sharing</div>
+                <div class="swith-display on">on</div>
+              </div>
+              <div class="setting-list-itme__action">
+                <label class="switch">
+                  <input type="checkbox" checked="">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__switch-title">
+                <div class="setting-list-itme__title">
+                  P&amp;L Sharing <span class="fs-10">(Referral)</span>
+                </div>
+                <div class="swith-display on">on</div>
+              </div>
+              <div class="setting-list-itme__action">
+                <label class="switch">
+                  <input type="checkbox" checked="">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__switch-title">
+                <div class="setting-list-itme__title">Notification</div>
+                <div class="swith-display off">off</div>
+              </div>
+              <div class="setting-list-itme__action">
+                <label class="switch">
+                  <input type="checkbox" checked="">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__switch-title">
+                <div class="setting-list-itme__title">Popup</div>
+              </div>
+              <div class="setting-list-itme__action">
+                <label class="switch">
+                  <input type="checkbox" checked="">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__title">Media Quality</div>
+              <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#mediaQuality">
+                <span class="text-grey ps-1">&gt;</span>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__switch-title">
+                <div class="setting-list-itme__title">Sound</div>
+                <div class="swith-display on">on</div>
+              </div>
+              <div class="setting-list-itme__action">
+                <label class="switch">
+                  <input type="checkbox" checked="">
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal" data-bs-toggle="modal" data-bs-target="#bet_stake">
+              <div class="setting-list-itme__title">Bet Stakes</div>
+              <div class="setting-list-itme__action">
+                <span class="text-grey ps-1">&gt;</span>
+              </div>
+            </div>
+            <!-- <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__title">Block Account</div>
+              <div class="setting-list-itme__action">
+                <span class="text-grey ps-1">></span>
+              </div>
+            </div> -->
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__title">Customer Support</div>
+              <div class="setting-list-itme__action">
+                <a href="customerSupport.html" class="text-decoration-none">
+                  <span class="text-grey ps-1">&gt;</span>
+                </a>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__title">Private Policy</div>
+              <div class="setting-list-itme__action">
+                <span class="text-grey ps-1">&gt;</span>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__title">Term Of Service</div>
+              <div class="setting-list-itme__action">
+                <span class="text-grey ps-1">&gt;</span>
+              </div>
+            </div>
+            <div class="setting-list-item fst-normal">
+              <div class="setting-list-itme__title">Delete Account</div>
+              <div class="setting-list-itme__action" data-bs-toggle="modal" data-bs-target="#deleteAccount">
+                <span class="text-grey ps-1">&gt;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bg-area"></div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-tab flex-grow-1 after-line">
+          <a href="home.html" class="tab-action">
+            <img src="../img/icon/icon-x.svg" class="tab-icon" />
+            <div class="tab-label">Home</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1 after-line">
+          <a class="tab-action">
+            <img src="../img/icon/icon-play.svg" class="tab-icon" />
+            <div class="tab-label">In-Play</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1">
+          <a class="tab-action">
+            <img src="../img/icon/icon-refer.svg" class="tab-icon" />
+            <div class="tab-label">Refer &amp; Earn</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1 before-line">
+          <a class="tab-action">
+            <img src="../img/icon//icon-casino.svg" class="tab-icon" />
+            <div class="tab-label">Casino</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1 before-line">
+          <a href="menu.html" class="tab-action">
+            <img src="../img/icon/icon-menu-bar-active.svg" class="tab-icon" />
+            <div class="tab-label" style="margin-bottom: -8px">Menu</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  <!-- setting-popp -->
+    <!-- Modal -->
+    <div class="modal fade" id="account" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
+      >
+        <div class="modal-content" style="width: 190px">
+          <div class="modal-body p-0">
+            <div class="list-group setting-list">
+              <button
+                type="button"
+                class="list-group-item list-group-item-action setting-list__title"
+              >
+                Account
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Public
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Private
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="language" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
+      >
+        <div class="modal-content" style="width: 190px">
+          <div class="modal-body p-0">
+            <div class="list-group setting-list">
+              <button
+                type="button"
+                class="list-group-item list-group-item-action setting-list__title"
+              >
+                Language
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                English
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Marathi
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Hindi
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Gujarati
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Tamil
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Telugu
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Kannada
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Malayalam
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Bhojpuri
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="graphics" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
+      >
+        <div class="modal-content" style="width: 190px">
+          <div class="modal-body p-0">
+            <div class="list-group setting-list">
+              <button
+                type="button"
+                class="list-group-item list-group-item-action setting-list__title"
+              >
+                Graphics
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                High
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Medium
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Low
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="resolution" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
+      >
+        <div class="modal-content" style="width: 190px">
+          <div class="modal-body p-0">
+            <div class="list-group setting-list">
+              <button
+                type="button"
+                class="list-group-item list-group-item-action setting-list__title"
+              >
+                Resolution
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action"
+              >
+                Low
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Medium
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                High
+              </button>
+              <button
+                type="button"
+                class="list-group-item list-group-item-action text-purple"
+              >
+                Ultra
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="mediaQuality" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
+      >
+        <div class="modal-content" style="width: 300px">
+          <div class="modal-header modal-header-cus">
+            <h5 class="modal-title">Media Quality</h5>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="d-flex flex-column pe-4">
+                <span class="fs-10 fw-600 text-capitalize text-dark"
+                  >Use Less Mobile Data</span
+                >
+                <span class="fs-6 fw-400 text-capitalize text-dard-grey"
+                  >Using Less Mobile data may affect your experience on
+                  Instagram. For example, photos and videos may take longer to
+                  load.</span
+                >
+              </div>
+              <div>
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between mb-2">
+              <div class="d-flex flex-column pe-4">
+                <span class="fs-10 fw-600 text-capitalize text-dark"
+                  >Upload at highest quality</span
+                >
+                <span class="fs-6 fw-400 text-capitalize text-dard-grey"
+                  >Always upload the highest-quality photos and videos, even if
+                  uploading takes longer. When this is off, we'll automatically
+                  adjust upload quality to fit network conditions.</span
+                >
+              </div>
+              <div>
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="d-flex flex-column pe-4">
+                <span class="fs-10 fw-600 text-capitalize text-dark"
+                  >Disable HDR video playback</span
+                >
+                <span class="fs-6 fw-400 text-capitalize text-dard-grey"
+                  >HDR (high dynamic range) video offers greater quality in
+                  areas of extreme brightness or darkness. As a result, HDR
+                  content will appear brighter than standard content.</span
+                >
+              </div>
+              <div>
+                <label class="switch">
+                  <input type="checkbox" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ <!-- setting-popp end-->
+   
+
+  </body>
+</html>
