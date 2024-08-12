@@ -873,7 +873,8 @@ z-index: 99999999999;
 #language .modal-dialog,
 #graphics .modal-dialog,
 #resolution .modal-dialog,
-#mediaQuality .modal-dialog{
+#mediaQuality .modal-dialog,
+#deleteAccount .modal-dialog{
  margin-right: inherit !important;
 }
 
@@ -882,8 +883,22 @@ z-index: 99999999999;
 #language .modal-dialog   .modal-content,
 #graphics .modal-dialog   .modal-content,
 #resolution .modal-dialog   .modal-content,
-#mediaQuality .modal-dialog   .modal-content{
+#mediaQuality .modal-dialog   .modal-content,
+#deleteAccount .modal-dialog .modal-content{
   margin-right: 90px !important;
+}
+
+
+#bet_stake .modal-dialog {
+  max-width: 400px;
+  margin-right: inherit;
+  margin-left: auto;
+}
+
+#deleteAccount .modal-dialog .modal-content {
+  margin-right: 20px !important;
+  position: relative;
+  left: -45px;
 }
   }
 
