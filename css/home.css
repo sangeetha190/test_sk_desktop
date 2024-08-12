@@ -1471,6 +1471,10 @@ span.text-purple.fs-11.fw-650 {
     width: 37% !important;
     margin-right: 5px !important;
   }
+  swiper-container.mySwiper.button-slider swiper-slide {
+    width: 8% !important;
+    margin-right: 0px !important;
+  }
 }
 
 @media (min-width: 1400px) {
