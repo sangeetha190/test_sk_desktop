@@ -868,11 +868,15 @@ z-index: 99999999999;
     display: none; /* For Chrome, Safari, and Opera */
 }
 
-
-
-
-
-
+@media (min-width: 576px) {
+#account .modal-dialog,
+#language .modal-dialog,
+#graphics .modal-dialog,
+#resolution .modal-dialog,
+#mediaQuality .modal-dialog{
+ margin-right: inherit !important;
+}
+  }
 
 
 
