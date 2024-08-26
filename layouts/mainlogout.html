@@ -282,8 +282,24 @@
 
 
   <style>
+.position-absolute.d-none.shadowbox-btn{
+  background: #380d545b !important;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          display: flex;
+          align-items: center !important;
+          transition: 0.3s;
+}
 
+.slider-main swiper-slide{
+  transition: 0.3s;
+}
 
+    .slider-main swiper-slide:hover .position-absolute.d-none.shadowbox-btn {
+        display: block !important;
+    }
   </style>
 
 
@@ -353,13 +369,23 @@
               </div>
             </div>
 
-            <div class="avatar-header rounded-circle overflow-hidden">
+            <!-- <div class="avatar-header rounded-circle overflow-hidden">
               <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
             </div>
 
             <div class="d-flex align-items-center ">
               <i class="fa-solid fa-bars text-white fs-20" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                 aria-controls="offcanvasRight"></i>
+            </div> -->
+
+
+            <div class="d-flex g-15">
+                <a href="./customerSupport.html" class="text-decoration-none">
+                    <button class="btn btn-yellow rounded-pill header-btnyellow fs-14  bg-white" type="submit"> Login</button>
+                  </a>
+                  <a href="./customerSupport.html" class="text-decoration-none">
+                    <button class="btn btn-yellow rounded-pill header-btnyellow fs-14" type="submit"> Signup</button>
+                  </a>
             </div>
 
 
@@ -522,41 +548,14 @@ background-size: 100% 100%;
          
       ">
             <div class="d-flex align-items-center justify-content-center h-100">
-              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
+              <button>button</button>
             </div>
         </div>
         
         </swiper-slide>
-          <swiper-slide>
-            <a href="#" class="position-relative"><img src="../img/main/lapbanner/Group 567.png" alt="" srcset=""></a>
-            <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
-         
-      ">
-            <div class="d-flex align-items-center justify-content-center h-100">
-              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
-            </div>
-        </div>
-          </swiper-slide>
-          <swiper-slide>
-            <a href="#" class="position-relative"><img src="../img/main/lapbanner/Group 570.png" alt="" srcset=""></a>
-            <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
-         
-      ">
-            <div class="d-flex align-items-center justify-content-center h-100">
-              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
-            </div>
-        </div>
-          </swiper-slide>
-          <swiper-slide>
-            <a href="#" class="position-relative"><img src="../img/main/lapbanner/Group 569.png" alt="" srcset=""></a>
-            <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
-         
-      ">
-            <div class="d-flex align-items-center justify-content-center h-100">
-              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
-            </div>
-        </div>
-          </swiper-slide>
+          <swiper-slide><a href="#"><img src="../img/main/lapbanner/Group 567.png" alt="" srcset=""></a></swiper-slide>
+          <swiper-slide><a href="#"><img src="../img/main/lapbanner/Group 570.png" alt="" srcset=""></a></swiper-slide>
+          <swiper-slide><a href="#"><img src="../img/main/lapbanner/Group 569.png" alt="" srcset=""></a></swiper-slide>
         </swiper-container>
 
 
@@ -743,19 +742,7 @@ background-size: 100% 100%;
 
           <swiper-container class="mySwiper patti remove_br" loop="true" rewind="true" slides-per-view="auto"
             free-mode="true">
-            <swiper-slide >
-              <a href="#" class="position-relative">
-    <img src="../img/main/3_1_1.png" />
-              </a>
-          
-              <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
-         
-      ">
-            <div class="d-flex align-items-center justify-content-center h-100">
-              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
-            </div>
-        </div>
-            </swiper-slide>
+            <swiper-slide><img src="../img/main/3_1_1.png" /></swiper-slide>
             <swiper-slide><img src="../img/main/3_1_2.png" /></swiper-slide>
             <swiper-slide><img src="../img/main/3_1_3.png" /></swiper-slide>
             <swiper-slide><img src="../img/main/3_1_4.png" /></swiper-slide>
@@ -1082,15 +1069,7 @@ background-size: 100% 100%;
 
               <img src="../img/left/post-13 1.png" alt="" srcset="" class="w-100" />
               <img src="../img/left/post-18 2.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 791.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 792.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-2.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 793.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-3.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 794.png" alt="" srcset="" class="w-100" />
-             
+              <img src="../img/left/post-17 1.png" alt="" srcset="" class="w-100" />
             </div>
           </div>
           <div class="col-xl-10 col-lg-9 col-md-12 p-0 lap-wi-79">
@@ -6686,7 +6665,7 @@ background-size: 100% 100%;
                           </span>
                       </a>
         
-                      <a href="./indexlogout.html" class="list-group-item list-group-item-action">
+                      <a href="./index.html" class="list-group-item list-group-item-action">
                           <div class="list-icon">
                               <img src="../img/icon/icon-edit.png">
                           </div>

@@ -674,6 +674,11 @@ swiper-container.mySwiper.table-slidepop.inplaydesk swiper-slide {
   background: #380d54;
 }
 
+.avatar-select {
+  width: 75px !important;
+  height: 75px !important;
+}
+
 }
 
 
@@ -904,7 +909,66 @@ z-index: 99999999999;
 
 
 
-  .modal-content
+  .alfa_font_family, .slider_purple_btn {
+    font-family: "inter", serif;
+}
+
+
+.d-flex.slider_purple_btn.align-items-center img {
+  margin-right: 5px;
+}
+
+swiper-container.mySwiper.avatar{
+  margin: 0;
+}
+
+swiper-container.mySwiper.avatar
+swiper-slide {
+
+  width: 75px !important;
+}
+
+
+.position-absolute.d-none.shadowbox-btn{
+  background: #380d545b !important;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          display: flex;
+          align-items: center !important;
+          transition: 0.3s;
+}
+
+.slider-main swiper-slide{
+  transition: 0.3s;
+}
+
+.slider-main swiper-slide:hover .position-absolute.d-none.shadowbox-btn {
+        display: block !important;
+ }
+
+
+    .w-100.d-flex.g-3.overflow-x-auto {
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Hides vertical scrollbar */
+    white-space: nowrap; /* Prevents line breaks */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.w-100.d-flex.g-3.overflow-x-auto::-webkit-scrollbar { 
+    display: none; /* Safari and Chrome */
+}
+
+
+
+a.card-tile.justify-content-center.withdraw{
+  background-image: url(../img/avatar/home/withdraw.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50px !important;
+}
 
 
 

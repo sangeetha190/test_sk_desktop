@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sikander PlayX</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container container-xs vh-100 intro-bg" id="intro">
+      <div class="d-flex align-items-center justify-content-center vh-100">
+        <img src="../img/Intro_X.png" class="intro-splash-logo-x lap-none" />
+        <img
+          src="../img/play-X-logo.png"
+          class="intro-splash-play-x-logo lap-none"
+          style="display: none"
+        />
+        <img
+          src="../img/Intro_X.png"
+          class="intro-splash-logo-x mobile-tab-none"
+          style="width: 28%; height: auto"
+        />
+        <img
+          src="../img/play-X-logo.png"
+          class="intro-splash-play-x-logo mobile-tab-none"
+          style="display: none; width: 46%; height: auto"
+        />
+      </div>
+    </div>
+    <script>
+      $("#intro").click(function () {
+        $(".intro-splash-logo-x").css("display", "none");
+        $(".intro-splash-play-x-logo").css("display", "block");
+        $(".intro-splash-play-x-logo mobile-tab-none").css("display", "block");
+        $(this).addClass("joinnow");
+
+        $(".joinnow").click(function () {
+          location.replace("mainlogout.html");
+        });
+      });
+    </script>
+  </body>
+</html>

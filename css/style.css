@@ -343,7 +343,7 @@ body {
   border-radius: 5px;
   border: 1px solid #7d6850;
   background: #251629;
-  background: linear-gradient(135deg, #251629 0, #3b2741 51%, #251629 100%);
+  /* background: linear-gradient(135deg, #251629 0, #3b2741 51%, #251629 100%); */
   background-image: url(../img/avatar/home/box-shad0.5.png);
   background-repeat: no-repeat;
   background-size: cover;

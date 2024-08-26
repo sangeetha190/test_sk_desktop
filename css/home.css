@@ -18,7 +18,7 @@ button.btn.btn-sm.btn-grey.fw-600.fs-10.me-1.mb-2.px-1 > img {
 }
 .alfa_font_family,
 .slider_purple_btn {
-  font-family: "Alfa Slab One", serif;
+  /* font-family: "Alfa Slab One", serif; */
 }
 .btn-purple {
   width: 100%;
@@ -418,8 +418,8 @@ swiper-slide:nth-child(5n) {
 }
 @media (min-width: 401px) {
   .slider_purple_btn {
-    width: 100px;
-    padding: 22px;
+    width: 115px;
+    padding: 17px 10px;
     font-size: 14px;
     font-weight: 400;
     height: 50px !important;
@@ -1535,7 +1535,7 @@ nav.navbar.navbar-expand-lg.bg-purple.br-yellow {
 
 .search__input:focus {
   outline: none;
-  background-color: #f0eeee;
+
 }
 
 .search__input::-webkit-input-placeholder {
