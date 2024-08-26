@@ -281,11 +281,47 @@
   <!-- new -->
 
 
-  <style>
+<style>
+    .image_play_btn_hover_effect  swiper-slide {
+            position: relative;
+            display: inline-block;
+        }
 
+    .image_play_btn_hover_effect    swiper-slide img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
 
-  </style>
+        .image_play_btn_hover_effect      .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
 
+        .image_play_btn_hover_effect  .play-button {
+    width: 60px;
+    height: 60px;
+    background-color: #F2FF00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+    .image_play_btn_hover_effect    swiper-slide:hover .overlay {
+            opacity: 1;
+        }
+</style>
 
   <!-- new end -->
 </head>
@@ -486,7 +522,7 @@ background-size: 100% 100%;
 
       <div class="slider-main home-banner ban-main_page remove_br main_border-radius mt-4 mb-2 lap-none">
 
-        <swiper-container class="mySwiper mainbanner" slides-per-view="auto" slides-per-view="auto" rewind="true"
+        <swiper-container class="mySwiper mainbanner " slides-per-view="auto" slides-per-view="auto" rewind="true"
           loop="true" centered-slides="true">
           <swiper-slide>
             
@@ -741,7 +777,7 @@ background-size: 100% 100%;
           <h3 class="text-white fs-12 fw-700 mt-0" style="margin-top: 0px !important;">Teen Patti</h3>
 
 
-          <swiper-container class="mySwiper patti remove_br" loop="true" rewind="true" slides-per-view="auto"
+          <swiper-container class="mySwiper patti remove_br " loop="true" rewind="true" slides-per-view="auto"
             free-mode="true">
             <swiper-slide >
               <a href="#" class="position-relative">
@@ -1105,7 +1141,7 @@ background-size: 100% 100%;
                 </div>
 
 
-                <swiper-container class="mySwiper no-border " space-between="10" slides-per-view="4"
+                <swiper-container class="mySwiper no-border image_play_btn_hover_effect" space-between="10" slides-per-view="4"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
 
@@ -1238,11 +1274,13 @@ background-size: 100% 100%;
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Key Tournaments</h3>
 
-                <swiper-container class="mySwiper no-border " space-between="10" slides-per-view="11"
+                <swiper-container class="mySwiper no-border" id="mySwiper_hover" space-between="10" slides-per-view="11"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
-                    <img src="../img/main/02.png" alt="" srcset="" /></swiper-slide>
+                    <img src="../img/main/02.png" alt="" srcset="" />
+                    <div class="overlay"></div>
+                  </swiper-slide>
 
                   <swiper-slide>
                     <img src="../img/main/03.png" alt="" srcset="" /></swiper-slide>
@@ -4878,16 +4916,7 @@ background-size: 100% 100%;
               </div>
               <!-- card inplay end -->
             </div>
-
-
-
             <!-- match slider Ends -->
-
-
-
-
-
-
             <!-- Score Card  start-->
             <div class="wrapper h-170  remove_br">
               <div class="container-full title-heads text-left">
@@ -5736,7 +5765,6 @@ background-size: 100% 100%;
 
             </div>
             <!-- top Catches end -->
-
             <!-- stump Rattlers -->
             <div class="wrapper slider_w-200">
               <div class="container-full title-heads text-left">
@@ -5767,7 +5795,6 @@ background-size: 100% 100%;
 
             </div>
             <!-- stump Rattlers Ends-->
-
             <!-- second slider -->
             <!-- second slider -->
             <div class="wrapper h-170 m-15 remove_br">
@@ -5782,11 +5809,7 @@ background-size: 100% 100%;
                 <swiper-slide><img src="../img/avatar/home/secsl (2).png" /></swiper-slide>
               </swiper-container>
             </div>
-
             <!-- end -->
-
-
-
             <!-- modal canva start -->
         <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasetting" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
           <div class="offcanvas-body p-0">
@@ -6442,9 +6465,7 @@ background-size: 100% 100%;
           </div>
         </div>
         <!-- modal canva end -->
-
       <!-- setting end -->
-
         <!-- modal canva start -->
         <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
           <div class="offcanvas-body p-0">
@@ -6715,9 +6736,7 @@ background-size: 100% 100%;
           </div>
         </div>
         <!-- modal canva end -->
-
             <!-- end -->
-
             <!-- social-links -->
             <div class="row px-4">
               <div class="col-lg-4 col-md-12 container">
@@ -6810,9 +6829,6 @@ background-size: 100% 100%;
         </div>
       </div>
     </div>
-
-
-
   </div>
 
   <!-- Modal -->
@@ -6836,8 +6852,6 @@ background-size: 100% 100%;
   </div>
   <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-
   <!-- Modal -->
   <div class="modal fade" id="login_pop_up" tabindex="-1" aria-labelledby="login_pop_upLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -6856,7 +6870,6 @@ background-size: 100% 100%;
       </div>
     </div>
   </div>
-
   <!-- Modal -->
   <div class="modal fade" id="alertpoppage" tabindex="-1" aria-labelledby="alertpoppageLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -6928,11 +6941,7 @@ background-size: 100% 100%;
       </div>
     </div>
   </div>
-
-
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
   <!-- spinner test Ends -->
   <script>
     const swiper = new Swiper(".swiper.second", {
@@ -6968,8 +6977,6 @@ background-size: 100% 100%;
       },
     });
   </script>
-
-
   <!-- table open close -->
   <script>
     var previousAccordion = null;
@@ -7081,8 +7088,6 @@ background-size: 100% 100%;
       },
     });
   </script>
-
-
   <script>
     var mySwiper = new Swiper('.mySwiper.button-slider', {
       spaceBetween: 10,
@@ -7137,8 +7142,58 @@ background-size: 100% 100%;
   </script>
 
 
+<script>
+  const mySwiper_hover = document.querySelector("#mySwiper_hover img");
+  console.log(mySwiper_hover);
+  // Select all swiper-slide elements
+const slides = document.querySelectorAll('.swiper-slide');
 
+slides.forEach(slide => {
+  const img = slide.querySelector('img');
+  const overlay = slide.querySelector('.overlay');
 
+  // Create a play button element
+  const playButton = document.createElement('button');
+  playButton.classList.add('play-button');
+  playButton.innerHTML = '▶️'; // Unicode for play button
+
+  // Add the play button to the overlay
+  overlay.appendChild(playButton);
+
+  // Show overlay on hover
+  img.addEventListener('mouseenter', () => {
+    overlay.style.display = 'flex';
+  });
+
+  // Hide overlay when not hovering
+  img.addEventListener('mouseleave', () => {
+    overlay.style.display = 'none';
+  });
+});
+
+</script>
+
+<script>
+  // Select all swiper slides
+  const swiperSlides = document.querySelectorAll('swiper-slide');
+
+  swiperSlides.forEach(slide => {
+      // Create the overlay div
+      const overlay = document.createElement('div');
+      overlay.className = 'overlay';
+
+      // Create the play button div
+      const playButton = document.createElement('div');
+      playButton.className = 'play-button';
+      playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+
+      // Append the play button to the overlay
+      overlay.appendChild(playButton);
+
+      // Append the overlay to the swiper slide
+      slide.appendChild(overlay);
+  });
+</script>
 
 
 </body>
