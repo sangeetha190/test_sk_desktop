@@ -20,7 +20,84 @@
   <script src="../js/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="../js/sample.js"></script>
+  <style>
+    .image_play_btn_hover_effect  swiper-slide {
+            position: relative;
+            display: inline-block;
+        }
 
+          swiper-slide img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .image_play_btn_hover_effect .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #380d545b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .image_play_btn_hover_effect .overlay .fa-solid.fa-play{
+          position: relative;
+          left: 3px;
+        }
+        .image_play_btn_hover_effect  .play-button {
+    width: 54px;
+    height: 54px;
+    background-color: #F2FF00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.image_play_btn_hover_effect.play-button_small .play-button{
+  width: 40px !important;
+  height:40px !important;
+
+}
+
+.image_play_btn_hover_effect.play-button_small .overlay .fa-solid.fa-play{
+          position: relative;
+          left: 2px;
+          font-size: 20px;
+        }
+    .image_play_btn_hover_effect swiper-slide:hover .overlay {
+            opacity: 1;
+        }
+
+
+.image_play_btn_hover_effect.live_casino_play_btn .overlay{
+  height: 70% !important;
+  border-radius: 0 !important;
+}
+
+/* Latestnew play btn */
+.image_play_btn_hover_effect .text_btn_play-button {
+    background-color: #F2FF00;
+    border-radius: 10px;
+    padding: 6px 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+/* Latestnew play btn Ends*/
+  </style>
 </head>
 
 <body>
@@ -75,7 +152,10 @@
             </div>
 
             <div class="avatar-header rounded-circle overflow-hidden">
-              <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+              <a href="./avatar.html">
+                <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+              </a>
+            
             </div>
 
             <div class="d-flex align-items-center ">
@@ -237,51 +317,79 @@
         <swiper-container class="mySwiper casino" slides-per-view="auto" loop="true">
 
           <swiper-slide>
-            <div>
-              <a href="#" class="text-decoration_none">
+              <a href="#" class="text-decoration_none position-relative">
                 <img src="../img/Laptop/livecasino/mainslider/Group 571.png" />
               </a>
+            
+              <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
+         
+      ">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
             </div>
+        </div>
 
           </swiper-slide>
           <swiper-slide>
-            <div>
-              <a href="./slotgame.html" class="text-decoration_none">
+              <a href="./slotgame.html" class="text-decoration_none position-relative">
                 <img src="../img/Laptop/livecasino/mainslider/Group 567.png" />
               </a>
+              <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
+         
+      ">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
             </div>
+        </div>
 
           </swiper-slide>
           <swiper-slide>
-            <div>
-              <a href="./sexycasino.html" class="text-decoration_none">
+              <a href="./sexycasino.html" class="text-decoration_none position-relative">
                 <img src="../img/Laptop/livecasino/mainslider/39621869_8723373 1.png" />
               </a>
+              <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
+         
+      ">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
             </div>
+        </div>
           </swiper-slide>
-
           <swiper-slide>
-            <div>
-              <a href="#" class="text-decoration_none">
+              <a href="#" class="text-decoration_none position-relative">
                 <img src="../img/Laptop/livecasino/mainslider/Group 571.png" />
               </a>
-            </div>
-
+              <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
+         
+              ">
+                    <div class="d-flex align-items-center justify-content-center h-100">
+                      <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
+                    </div>
+                </div>
           </swiper-slide>
           <swiper-slide>
-            <div>
-              <a href="./slotgame.html" class="text-decoration_none">
+              <a href="./slotgame.html" class="text-decoration_none position-relative">
                 <img src="../img/Laptop/livecasino/mainslider/Group 567.png" />
               </a>
-            </div>
-
+              <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
+         
+              ">
+                    <div class="d-flex align-items-center justify-content-center h-100">
+                      <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
+                    </div>
+                </div>
           </swiper-slide>
           <swiper-slide>
-            <div>
-              <a href="./sexycasino.html" class="text-decoration_none">
+              <a href="./sexycasino.html" class="text-decoration_none position-relative">
                 <img src="../img/Laptop/livecasino/mainslider/39621869_8723373 1.png" />
               </a>
+              <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
+         
+      ">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
             </div>
+        </div>
           </swiper-slide>
         </swiper-container>
       </div>
@@ -378,106 +486,170 @@
       <!-- end -->
       <!----mobile-end-->
       <!-- second slider -->
-      <div class="wrapper mt-10 lap-bg-purple mobile-tab-none">
+      <div class="wrapper-scroll my-4 lap-bg-purple py-2 px-2" style="margin-left: 10px;">
         <!-- Slider main container -->
 
-        <swiper-container class="mySwiper button-slider" loop="true" rewind="true" slides-per-view="auto"
-          free-mode="true">
-          <swiper-slide>
-
+        <div class="w-100 d-flex g-3 overflow-x-auto" style="gap:10px">
+          <div>
             <a href="./inplay.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">In Play</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/image 9.png" alt="" srcset="" width="20">
+                <p class=" m-0">Ezugi</p>
+                
               </div>
             </a>
-          </swiper-slide>
-          <swiper-slide>
-
+          </div>
+          <div>
             <a href="./inplayCricket.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">Cricket</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/image 10.png" alt="" srcset="" width="20">
+                <p class=" m-0">Evalution <br> Game</p>
               </div>
             </a>
-          </swiper-slide>
-          <swiper-slide>
-
+          </div>
+          <div>
             <a href="./inplayfootball.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">Football</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/image 11.png" alt="" srcset="" width="20">
+                <p class=" m-0">Royal  <br> Gaming</p>
               </div>
             </a>
-          </swiper-slide>
+          </div>
 
-          <swiper-slide>
-
+          <div>
             <a href="./inplaytennis.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">Tennis</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/fortune 1.png" alt="" srcset="" width="20">
+                <p class=" m-0">BetGametv</p>
               </div>
             </a>
-          </swiper-slide>
-          <swiper-slide>
-
+          </div>
+          <div>
             <a href="./inplay.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">Sports Book</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/image 12.png" alt="" srcset="" width="20">
+                <p class=" m-0">Sexybcrt</p>
               </div>
             </a>
-          </swiper-slide>
-          <swiper-slide>
-
+          </div>
+          <div>
             <a href="./inplay.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">Fantasy</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/image 13.png" alt="" srcset="" width="20">
+                <p class=" m-0">Smartsoft  <br> Gaming</p>
               </div>
             </a>
-          </swiper-slide>
+          </div>
 
-          <swiper-slide>
-
+          <div>
             <a href="./inplay.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">Teen Patti</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/image 69.png" alt="" srcset="" width="20">
+                <p class=" m-0">Gamzix</p>
               </div>
             </a>
-          </swiper-slide>
+          </div>
 
-          <swiper-slide>
-
+          <div>
             <a href="./inplay.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">contest</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/success 2.png" alt="" srcset="" width="20">
+                <p class=" m-0">RoyalGame  <br> Virtual</p>
               </div>
             </a>
-          </swiper-slide>
+          </div>
 
-          <swiper-slide>
-
+          <div>
             <a href="./inplay.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">7Up 7Down</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/image 71.png" alt="" srcset="" width="20">
+                <p class=" m-0">Spiribe</p>
               </div>
             </a>
-          </swiper-slide>
-          <swiper-slide>
+          </div>
 
+          <div>
             <a href="./inplay.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">7Up 7Down</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/chronometer 1.png" alt="" srcset="" width="20">
+                <p class=" m-0">In Play</p>
+                
               </div>
             </a>
-          </swiper-slide>
-          <swiper-slide>
+          </div>
+          <div>
+            <a href="./inplayCricket.html" class="text-decoration_none">
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/cricket-player 1.png" alt="" srcset="" width="20">
+                <p class=" m-0">Cricket</p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <a href="./inplayfootball.html" class="text-decoration_none">
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/football 2.png" alt="" srcset="" width="20">
+                <p class=" m-0">Football</p>
+              </div>
+            </a>
+          </div>
 
+          <div>
+            <a href="./inplaytennis.html" class="text-decoration_none">
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/tennis 2.png" alt="" srcset="" width="20">
+                <p class=" m-0">Tennis</p>
+              </div>
+            </a>
+          </div>
+          <div>
             <a href="./inplay.html" class="text-decoration_none">
-              <div class="">
-                <p class="slider_purple_btn">7Up 7Down</p>
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/sports 1.png" alt="" srcset="" width="20">
+                <p class=" m-0">Sports Book</p>
               </div>
             </a>
-          </swiper-slide>
+          </div>
+          <div>
+            <a href="./inplay.html" class="text-decoration_none">
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/magic-wand 1.png" alt="" srcset="" width="20">
+                <p class=" m-0">Fantasy</p>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="./inplay.html" class="text-decoration_none">
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/card-game 1.png" alt="" srcset="" width="20">
+                <p class=" m-0">Teen Patti</p>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="./inplay.html" class="text-decoration_none">
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/success 2.png" alt="" srcset="" width="20">
+                <p class=" m-0">contest</p>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="./inplay.html" class="text-decoration_none">
+              <div class="d-flex slider_purple_btn align-items-center">
+                <img src="../img/Laptop/buttonicon/image 71.png" alt="" srcset="" width="20">
+                <p class=" m-0">7Up 7Down</p>
+              </div>
+            </a>
+          </div>
 
 
-        </swiper-container>
+
+     
+        </div>
 
       </div>
       <!-- end -->
@@ -693,7 +865,6 @@
       </div>
 
       <!-----mobile-tab-none-->
-
       <div class="lap-block container-fluid p-0 pl-30 pr-0">
         <div class="row">
           <div class="col-xl-2 col-lg-3 mobile-tab-none p-0">
@@ -714,8 +885,10 @@
                           <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
                             <div class="mr-10">
                               <div class="avatar-header rounded-circle overflow-hidden">
+                                <a href="./avatar.html">
                                 <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52"
                                   class=" rounded-circle">
+                                  </a>
                               </div>
                             </div>
 
@@ -941,7 +1114,8 @@
 
             <!-- key tournament -->
             <div class="wrapper h-140 pb-3 mt-4 mobile-tab-none">
-              <swiper-container class="mySwiper live-casino" space-between="10" slides-per-view="3"
+              <swiper-container class="mySwiper live-casino play_btn_icon image_play_btn_hover_effect swiper-slide_btn
+              " space-between="10" slides-per-view="3"
                 slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
                 <swiper-slide>
                   <div>
@@ -1021,7 +1195,7 @@
             <!-- key tournament -->
             <div class="wrapper h-140 pb-3 my-2 mobile-tab-none">
 
-              <swiper-container class="mySwiper no-border" space-between="10" slides-per-view="5" slides-per-view="auto"
+              <swiper-container class="mySwiper no-border play_btn_icon image_play_btn_hover_effect" space-between="10" slides-per-view="5" slides-per-view="auto"
                 loop="true" rewind="true" space-between="10" free-mode="true">
 
                 <swiper-slide>
@@ -1054,7 +1228,7 @@
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-2">Virtual Gaming</h3>
 
-                <swiper-container class="mySwiper" slides-per-view="auto" slides-per-view="auto" rewind="true"
+                <swiper-container class="mySwiper play_btn_icon image_play_btn_hover_effect" slides-per-view="auto" slides-per-view="auto" rewind="true"
                   loop="true">
                   <swiper-slide>
                     <img src="../img/live_casino/s_1.png" alt="" srcset="" /></swiper-slide>
@@ -1141,7 +1315,9 @@
                                               <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
                                                   <div class="mr-10">
                                                     <div class="avatar-header rounded-circle overflow-hidden">
+                                                      <a href="./avatar.html">
                                                       <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                                                      </a>
                                                     </div>
                                                   </div>
       
@@ -1384,7 +1560,9 @@
                                               <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
                                                   <div class="mr-10">
                                                     <div class="avatar-header rounded-circle overflow-hidden">
+                                                      <a href="./avatar.html">
                                                       <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                                                      </a>
                                                     </div>
                                                   </div>
       
@@ -1849,7 +2027,8 @@
 
               <div class="row">
 
-                <swiper-container class="mySwiper no-border card_livecasino" space-between="10" slides-per-view="6"
+                <swiper-container class="mySwiper no-border card_livecasino play_btn_icon image_play_btn_hover_effect live_casino_play_btn
+                " space-between="10" slides-per-view="6"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
@@ -2043,7 +2222,8 @@
                   </swiper-slide>
 
                 </swiper-container>
-                <swiper-container class="mySwiper no-border card_livecasino" space-between="10" slides-per-view="6"
+                <swiper-container class="mySwiper no-border card_livecasino play_btn_icon image_play_btn_hover_effect live_casino_play_btn
+                " space-between="10" slides-per-view="6"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
@@ -2226,7 +2406,8 @@
 
               <div class="row">
 
-                <swiper-container class="mySwiper no-border card_livecasino" space-between="10" slides-per-view="6"
+                <swiper-container class="mySwiper no-border card_livecasino play_btn_icon image_play_btn_hover_effect live_casino_play_btn
+                " space-between="10" slides-per-view="6"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
@@ -2393,7 +2574,8 @@
                   </swiper-slide>
 
                 </swiper-container>
-                <swiper-container class="mySwiper no-border card_livecasino" space-between="10" slides-per-view="6"
+                <swiper-container class="mySwiper no-border card_livecasino play_btn_icon image_play_btn_hover_effect live_casino_play_btn
+                " space-between="10" slides-per-view="6"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
@@ -2560,10 +2742,7 @@
                   </swiper-slide>
 
                 </swiper-container>
-
               </div>
-
-
             </div>
 
             <!----lap-card end-->
@@ -2574,7 +2753,8 @@
                 <h3 class="text-white fs-12 fw-700">Latest Gaming 2024</h3>
               </div>
 
-              <swiper-container class="mySwiper latest-game" space-between="10" slides-per-view="3">
+              <swiper-container class="mySwiper latest-game play_btn_icon image_play_btn_hover_effect swiper-slide_btn
+              " space-between="10" slides-per-view="3">
                 <swiper-slide><img src="../img/avatar/home/secsl (3).png" /></swiper-slide>
                 <swiper-slide><img src="../img/avatar/home/secsl (5).png" /></swiper-slide>
                 <swiper-slide><img src="../img/avatar/home/secsl (1).png" /></swiper-slide>
@@ -3139,7 +3319,7 @@
     </div>
   </div>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <script src="../js/swiper.js"></script>
 
   <script>
     var TrandingSlider = new Swiper(".tranding-slider", {
@@ -3199,6 +3379,51 @@
       },
     });
   </script>
+
+<script>
+  // Select all swiper slides
+  const swiperSlides = document.querySelectorAll('.play_btn_icon swiper-slide');
+
+  swiperSlides.forEach(slide => {
+      // Create the overlay div
+      const overlay = document.createElement('div');
+      overlay.className = 'overlay';
+
+      // Create the play button div
+      const playButton = document.createElement('div');
+      playButton.className = 'play-button';
+      playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+
+      // Append the play button to the overlay
+      overlay.appendChild(playButton);
+
+      // Append the overlay to the swiper slide
+      slide.appendChild(overlay);
+  });
+</script>
+
+
+<script>
+  // Select all swiper slides
+  const swiperSlide_play = document.querySelectorAll('.swiper-slide_btn swiper-slide ');
+
+  swiperSlide_play.forEach(slide => {
+      // Create the overlay div
+      const overlay = document.createElement('div');
+      overlay.className = 'overlay';
+
+      // Create the play button div
+      const playButton = document.createElement('div');
+      playButton.className = 'text_btn_play-button';
+      playButton.innerHTML = 'Play';
+
+      // Append the play button to the overlay
+      overlay.appendChild(playButton);
+
+      // Append the overlay to the swiper slide
+      slide.appendChild(overlay);
+  });
+</script>
 </body>
 
 </html>

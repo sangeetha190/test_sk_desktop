@@ -986,7 +986,7 @@ input:checked + .slider:before {
   margin-bottom: 1px !important;
 }
 .text-yellow {
-  color: #f2ff00;
+  color: #f2ff00 !important;
 }
 .g-10 {
   gap: 10px;

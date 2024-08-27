@@ -418,8 +418,8 @@ swiper-slide:nth-child(5n) {
 }
 @media (min-width: 401px) {
   .slider_purple_btn {
-    width: 115px;
-    padding: 17px 10px;
+    max-width: 132px;
+    padding: 10px 10px;
     font-size: 14px;
     font-weight: 400;
     height: 50px !important;
@@ -826,7 +826,7 @@ button.bg-lightred.br-5.w-100.fs-12.fw-700 {
 }
 button#pills-fancy-tab,
 button#pills-premium2-tab {
-  width: 110px !important;
+  width: 120px !important;
 }
 span.text-purple.fs-11.fw-650 {
   font-size: 12px !important;
@@ -1617,3 +1617,23 @@ a.list-group-item.list-group-item-action.px-2.py-1.text-left.border-bottomlightg
 
 }
 
+
+
+@media(min-width:1000px) and (max-width:1100px){
+  .logo_xnew {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+img.logo_xnew.position-relative {
+  top: -0px;
+}
+
+}
+
+@media(min-width:1100px)  and (max-width:1200px){
+  nav.navbar.navbar-expand-lg.bg-purple.br-yellow.fixed-top .container.col-md-12 {
+    max-width: 100% !important;
+    margin: 0;
+}
+}

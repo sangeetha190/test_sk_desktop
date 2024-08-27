@@ -282,26 +282,83 @@
 
 
   <style>
-.position-absolute.d-none.shadowbox-btn{
-  background: #380d545b !important;
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          display: flex;
-          align-items: center !important;
-          transition: 0.3s;
+    .image_play_btn_hover_effect  swiper-slide {
+            position: relative;
+            display: inline-block;
+        }
+
+          swiper-slide img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .image_play_btn_hover_effect .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #380d545b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .image_play_btn_hover_effect .overlay .fa-solid.fa-play{
+          position: relative;
+          left: 3px;
+        }
+        .image_play_btn_hover_effect  .play-button {
+    width: 54px;
+    height: 54px;
+    background-color: #F2FF00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
 }
 
-.slider-main swiper-slide{
-  transition: 0.3s;
+.image_play_btn_hover_effect.play-button_small .play-button{
+  width: 40px !important;
+  height:40px !important;
+
 }
 
-    .slider-main swiper-slide:hover .position-absolute.d-none.shadowbox-btn {
-        display: block !important;
-    }
+.image_play_btn_hover_effect.play-button_small .overlay .fa-solid.fa-play{
+          position: relative;
+          left: 2px;
+          font-size: 20px;
+        }
+    .image_play_btn_hover_effect swiper-slide:hover .overlay {
+            opacity: 1;
+        }
+
+
+.image_play_btn_hover_effect.live_casino_play_btn .overlay{
+  height: 70% !important;
+  border-radius: 0 !important;
+}
+
+/* Latestnew play btn */
+.image_play_btn_hover_effect .text_btn_play-button {
+    background-color: #F2FF00;
+    border-radius: 10px;
+    padding: 6px 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+/* Latestnew play btn Ends*/
   </style>
-
 
   <!-- new end -->
 </head>
@@ -321,7 +378,7 @@
 
 
     <nav class="navbar navbar-expand-lg bg-purple br-yellow fixed-top">
-      <div class="container">
+      <div class="container col-md-12">
         <img src="../img/play-X-logonew.png" alt="logo" class="
       w-11">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -370,7 +427,10 @@
             </div>
 
             <!-- <div class="avatar-header rounded-circle overflow-hidden">
-              <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+              <a href="./avatar.html">
+                <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+              </a>
+            
             </div>
 
             <div class="d-flex align-items-center ">
@@ -512,18 +572,12 @@ background-size: 100% 100%;
 
       <div class="slider-main home-banner ban-main_page remove_br main_border-radius mt-4 mb-2 lap-none">
 
-        <swiper-container class="mySwiper mainbanner" slides-per-view="auto" slides-per-view="auto" rewind="true"
+        <swiper-container class="mySwiper mainbanner " slides-per-view="auto" slides-per-view="auto" rewind="true"
           loop="true" centered-slides="true">
           <swiper-slide>
-            
             <a href="#" class="position-relative">
             <img src="../img/main/CRICKET---1 1.png" alt="" srcset="">
-
-
           </a>
-
-          
-        
         </swiper-slide>
           <swiper-slide><a href="#"><img src="../img/main/FOOTBALL---2 1.png" alt="" srcset=""></a></swiper-slide>
           <swiper-slide><a href="#"><img src="../img/main/TENNIS---3 1.png" alt="" srcset=""></a></swiper-slide>
@@ -548,14 +602,41 @@ background-size: 100% 100%;
          
       ">
             <div class="d-flex align-items-center justify-content-center h-100">
-              <button>button</button>
+              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
             </div>
         </div>
         
         </swiper-slide>
-          <swiper-slide><a href="#"><img src="../img/main/lapbanner/Group 567.png" alt="" srcset=""></a></swiper-slide>
-          <swiper-slide><a href="#"><img src="../img/main/lapbanner/Group 570.png" alt="" srcset=""></a></swiper-slide>
-          <swiper-slide><a href="#"><img src="../img/main/lapbanner/Group 569.png" alt="" srcset=""></a></swiper-slide>
+          <swiper-slide>
+            <a href="#" class="position-relative"><img src="../img/main/lapbanner/Group 567.png" alt="" srcset=""></a>
+            <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
+         
+      ">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
+            </div>
+        </div>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="#" class="position-relative"><img src="../img/main/lapbanner/Group 570.png" alt="" srcset=""></a>
+            <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
+         
+      ">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
+            </div>
+        </div>
+          </swiper-slide>
+          <swiper-slide>
+            <a href="#" class="position-relative"><img src="../img/main/lapbanner/Group 569.png" alt="" srcset=""></a>
+            <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
+         
+      ">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
+            </div>
+        </div>
+          </swiper-slide>
         </swiper-container>
 
 
@@ -563,7 +644,7 @@ background-size: 100% 100%;
       </div>
 
       <!-- second slider -->
-      <div class="wrapper my-4 lap-bg-purple py-2 px-2" style="margin-left: 10px;">
+      <div class="wrapper-scroll my-4 lap-bg-purple py-2 px-2" style="margin-left: 10px;">
         <!-- Slider main container -->
 
         <div class="w-100 d-flex g-3 overflow-x-auto" style="gap:10px">
@@ -740,9 +821,21 @@ background-size: 100% 100%;
           <h3 class="text-white fs-12 fw-700 mt-0" style="margin-top: 0px !important;">Teen Patti</h3>
 
 
-          <swiper-container class="mySwiper patti remove_br" loop="true" rewind="true" slides-per-view="auto"
+          <swiper-container class="mySwiper patti remove_br " loop="true" rewind="true" slides-per-view="auto"
             free-mode="true">
-            <swiper-slide><img src="../img/main/3_1_1.png" /></swiper-slide>
+            <swiper-slide >
+              <a href="#" class="position-relative">
+    <img src="../img/main/3_1_1.png" />
+              </a>
+          
+              <div class="position-absolute d-none shadowbox-btn" style="border-radius: 12px;
+         
+      ">
+            <div class="d-flex align-items-center justify-content-center h-100">
+              <button class="btn btn-yellow  py-2 fs-17" style="width:150px">Play</button>
+            </div>
+        </div>
+            </swiper-slide>
             <swiper-slide><img src="../img/main/3_1_2.png" /></swiper-slide>
             <swiper-slide><img src="../img/main/3_1_3.png" /></swiper-slide>
             <swiper-slide><img src="../img/main/3_1_4.png" /></swiper-slide>
@@ -1069,7 +1162,15 @@ background-size: 100% 100%;
 
               <img src="../img/left/post-13 1.png" alt="" srcset="" class="w-100" />
               <img src="../img/left/post-18 2.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/post-17 1.png" alt="" srcset="" class="w-100" />
+              <img src="../img/left/Mask group.png" alt="" srcset="" class="w-100" />
+              <img src="../img/left/Group 791.png" alt="" srcset="" class="w-100" />
+              <img src="../img/left/Mask group-1.png" alt="" srcset="" class="w-100" />
+              <img src="../img/left/Group 792.png" alt="" srcset="" class="w-100" />
+              <img src="../img/left/Mask group-2.png" alt="" srcset="" class="w-100" />
+              <img src="../img/left/Group 793.png" alt="" srcset="" class="w-100" />
+              <img src="../img/left/Mask group-3.png" alt="" srcset="" class="w-100" />
+              <img src="../img/left/Group 794.png" alt="" srcset="" class="w-100" />
+             
             </div>
           </div>
           <div class="col-xl-10 col-lg-9 col-md-12 p-0 lap-wi-79">
@@ -1084,7 +1185,7 @@ background-size: 100% 100%;
                 </div>
 
 
-                <swiper-container class="mySwiper no-border " space-between="10" slides-per-view="4"
+                <swiper-container class="mySwiper no-border play_btn_icon image_play_btn_hover_effect" space-between="10" slides-per-view="4"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
 
@@ -1119,7 +1220,7 @@ background-size: 100% 100%;
             <!-- key tournament -->
             <div class="wrapper h-140 pb-3 mobile-tab-none">
 
-              <swiper-container class="mySwiper no-border" space-between="10" slides-per-view="5" slides-per-view="auto"
+              <swiper-container class="mySwiper no-border play_btn_icon image_play_btn_hover_effect" space-between="10" slides-per-view="5" slides-per-view="auto"
                 loop="true" rewind="true" space-between="10" free-mode="true">
 
                 <swiper-slide>
@@ -1151,7 +1252,7 @@ background-size: 100% 100%;
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Virtual Gaming</h3>
 
-                <swiper-container class="mySwiper" slides-per-view="auto" slides-per-view="auto" rewind="true"
+                <swiper-container class="mySwiper play_btn_icon image_play_btn_hover_effect" slides-per-view="auto" slides-per-view="auto" rewind="true"
                   loop="true">
                   <swiper-slide>
                     <img src="../img/live_casino/s_1.png" alt="" srcset="" /></swiper-slide>
@@ -1217,11 +1318,13 @@ background-size: 100% 100%;
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Key Tournaments</h3>
 
-                <swiper-container class="mySwiper no-border " space-between="10" slides-per-view="11"
+                <swiper-container class="mySwiper no-border" id="mySwiper_hover" space-between="10" slides-per-view="11"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
-                    <img src="../img/main/02.png" alt="" srcset="" /></swiper-slide>
+                    <img src="../img/main/02.png" alt="" srcset="" />
+                    <div class="overlay"></div>
+                  </swiper-slide>
 
                   <swiper-slide>
                     <img src="../img/main/03.png" alt="" srcset="" /></swiper-slide>
@@ -4857,16 +4960,7 @@ background-size: 100% 100%;
               </div>
               <!-- card inplay end -->
             </div>
-
-
-
             <!-- match slider Ends -->
-
-
-
-
-
-
             <!-- Score Card  start-->
             <div class="wrapper h-170  remove_br">
               <div class="container-full title-heads text-left">
@@ -5259,7 +5353,7 @@ background-size: 100% 100%;
 
                 <h3 class="text-white fs-12 fw-700 px-3">Talk Of the Town!</h3>
 
-                <swiper-container class="mySwiper no-border" space-between="10" slides-per-view="6.5"
+                <swiper-container class="mySwiper no-border play_btn_icon image_play_btn_hover_effect" space-between="10" slides-per-view="6.5"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
@@ -5301,7 +5395,7 @@ background-size: 100% 100%;
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Sports Ke Sikander</h3>
 
-                <swiper-container class="mySwiper" slides-per-view="auto" slides-per-view="auto" rewind="true"
+                <swiper-container class="mySwiper play_btn_icon image_play_btn_hover_effect play-button_small" slides-per-view="auto" slides-per-view="auto" rewind="true"
                   loop="true">
                   <swiper-slide>
                     <img src="../img/Laptop/1.png" alt="" srcset="" /></swiper-slide>
@@ -5360,7 +5454,7 @@ background-size: 100% 100%;
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Soccer Ke Khabre</h3>
 
-                <swiper-container class="mySwiper" slides-per-view="auto" slides-per-view="auto" rewind="true"
+                <swiper-container class="mySwiper play_btn_icon image_play_btn_hover_effect play-button_small" slides-per-view="auto" slides-per-view="auto" rewind="true"
                   loop="true">
                   <swiper-slide>
                     <img src="../img/Laptop/1.png" alt="" srcset="" /></swiper-slide>
@@ -5419,7 +5513,7 @@ background-size: 100% 100%;
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Cricket ke Charcha</h3>
 
-                <swiper-container class="mySwiper" slides-per-view="auto" slides-per-view="auto" rewind="true"
+                <swiper-container class="mySwiper play_btn_icon image_play_btn_hover_effect play-button_small" slides-per-view="auto" slides-per-view="auto" rewind="true"
                   loop="true">
                   <swiper-slide>
                     <img src="../img/Laptop/1.png" alt="" srcset="" /></swiper-slide>
@@ -5478,7 +5572,7 @@ background-size: 100% 100%;
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Asli Gentleman</h3>
 
-                <swiper-container class="mySwiper" slides-per-view="auto" slides-per-view="auto" rewind="true"
+                <swiper-container class="mySwiper play_btn_icon image_play_btn_hover_effect play-button_small" slides-per-view="auto" slides-per-view="auto" rewind="true"
                   loop="true">
                   <swiper-slide>
                     <img src="../img/Laptop/1.png" alt="" srcset="" /></swiper-slide>
@@ -5537,7 +5631,7 @@ background-size: 100% 100%;
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Ab India Banega Sikander</h3>
 
-                <swiper-container class="mySwiper" slides-per-view="auto" slides-per-view="auto" rewind="true"
+                <swiper-container class="mySwiper play_btn_icon image_play_btn_hover_effect play-button_small" slides-per-view="auto" slides-per-view="auto" rewind="true"
                   loop="true">
                   <swiper-slide>
                     <img src="../img/Laptop/1.png" alt="" srcset="" /></swiper-slide>
@@ -5596,7 +5690,7 @@ background-size: 100% 100%;
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Upcoming Action</h3>
 
-                <swiper-container class="mySwiper" slides-per-view="auto" slides-per-view="auto" rewind="true"
+                <swiper-container class="mySwiper play_btn_icon image_play_btn_hover_effect play-button_small" slides-per-view="auto" slides-per-view="auto" rewind="true"
                   loop="true">
                   <swiper-slide>
                     <img src="../img/Laptop/1.png" alt="" srcset="" /></swiper-slide>
@@ -5657,7 +5751,7 @@ background-size: 100% 100%;
                 <h3 class="text-white fs-12 fw-700 px-3">Biggest Sixes</h3>
 
 
-                <swiper-container class="mySwiper no-border" space-between="2" slides-per-view="3"
+                <swiper-container class="mySwiper no-border play_btn_icon image_play_btn_hover_effect play-button_small" space-between="2" slides-per-view="3"
                   slides-per-view="auto" loop="true" rewind="true" space-between="5" free-mode="true">
 
                   <swiper-slide style="width:207px !important" data-bs-toggle="modal" data-bs-target="#alertpoppage">
@@ -5688,7 +5782,7 @@ background-size: 100% 100%;
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Top Catches</h3>
 
-                <swiper-container class="mySwiper no-border" space-between="10" slides-per-view="3"
+                <swiper-container class="mySwiper no-border play_btn_icon image_play_btn_hover_effect play-button_small" space-between="10" slides-per-view="3"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide style="width:207px !important" data-bs-toggle="modal" data-bs-target="#alertpoppage">
@@ -5715,12 +5809,11 @@ background-size: 100% 100%;
 
             </div>
             <!-- top Catches end -->
-
             <!-- stump Rattlers -->
             <div class="wrapper slider_w-200">
               <div class="container-full title-heads text-left">
                 <h3 class="text-white fs-12 fw-700 px-3">Stump Rattlers</h3>
-                <swiper-container class="mySwiper no-border" space-between="10" slides-per-view="3"
+                <swiper-container class="mySwiper no-border play_btn_icon image_play_btn_hover_effect play-button_small" space-between="10" slides-per-view="3"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide style="width:207px !important" data-bs-toggle="modal" data-bs-target="#alertpoppage">
@@ -5746,14 +5839,13 @@ background-size: 100% 100%;
 
             </div>
             <!-- stump Rattlers Ends-->
-
             <!-- second slider -->
             <!-- second slider -->
             <div class="wrapper h-170 m-15 remove_br">
               <div class="container title-heads text-left">
                 <h3 class="text-white fs-12 fw-700">Latest Gaming 2024</h3>
               </div>
-              <swiper-container class="mySwiper latest-game" space-between="10" slides-per-view="4">
+              <swiper-container class="mySwiper latest-game play_btn_icon image_play_btn_hover_effect swiper-slide_btn" space-between="10" slides-per-view="4">
                 <swiper-slide><img src="../img/avatar/home/secsl (1).png" /></swiper-slide>
                 <swiper-slide><img src="../img/avatar/home/secsl (4).png" /></swiper-slide>
                 <swiper-slide><img src="../img/avatar/home/secsl (5).png" /></swiper-slide>
@@ -5761,11 +5853,7 @@ background-size: 100% 100%;
                 <swiper-slide><img src="../img/avatar/home/secsl (2).png" /></swiper-slide>
               </swiper-container>
             </div>
-
             <!-- end -->
-
-
-
             <!-- modal canva start -->
         <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasetting" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
           <div class="offcanvas-body p-0">
@@ -5788,8 +5876,10 @@ background-size: 100% 100%;
                                       <div class="col-7" bis_skin_checked="1">
                                           <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
                                               <div class="mr-10">
-                                                <div class="avatar-header rounded-circle overflow-hidden">
+                                               <div class="avatar-header rounded-circle overflow-hidden">
+                                                  <a href="./avatar.html">
                                                   <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                                                  </a>
                                                 </div>
                                               </div>
   
@@ -6403,8 +6493,6 @@ background-size: 100% 100%;
     </div>
   </div>
   <!-- bet stake Ends -->
-
-  
               <!-- modal -->
               <!-- Modal -->
               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -6421,9 +6509,7 @@ background-size: 100% 100%;
           </div>
         </div>
         <!-- modal canva end -->
-
       <!-- setting end -->
-
         <!-- modal canva start -->
         <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
           <div class="offcanvas-body p-0">
@@ -6447,13 +6533,14 @@ background-size: 100% 100%;
                                           <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
                                               <div class="mr-10">
                                                 <div class="avatar-header rounded-circle overflow-hidden">
-                                                  <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                                                  <a href="./avatar.html">
+                                                    <img src="../img/lapimg-home/header-img.png" alt="profile" srcset="" width="52" class=" rounded-circle">
+                                                  </a>
                                                 </div>
                                               </div>
   
                                               <div class="avatar-content" bis_skin_checked="1">
                                                   <span class="text-yellow fs-9">Welcome</span>
-  
                                                   <h4 class="text-white fs-18">King@x</h4>
                                               </div>
                                           </div>
@@ -6665,7 +6752,7 @@ background-size: 100% 100%;
                           </span>
                       </a>
         
-                      <a href="./index.html" class="list-group-item list-group-item-action">
+                      <a href="./indexlogout.html" class="list-group-item list-group-item-action">
                           <div class="list-icon">
                               <img src="../img/icon/icon-edit.png">
                           </div>
@@ -6694,9 +6781,7 @@ background-size: 100% 100%;
           </div>
         </div>
         <!-- modal canva end -->
-
             <!-- end -->
-
             <!-- social-links -->
             <div class="row px-4">
               <div class="col-lg-4 col-md-12 container">
@@ -6789,9 +6874,6 @@ background-size: 100% 100%;
         </div>
       </div>
     </div>
-
-
-
   </div>
 
   <!-- Modal -->
@@ -6814,9 +6896,7 @@ background-size: 100% 100%;
     </div>
   </div>
   <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-
-
+  <script src="../js/swiper.js"></script>
   <!-- Modal -->
   <div class="modal fade" id="login_pop_up" tabindex="-1" aria-labelledby="login_pop_upLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -6835,7 +6915,6 @@ background-size: 100% 100%;
       </div>
     </div>
   </div>
-
   <!-- Modal -->
   <div class="modal fade" id="alertpoppage" tabindex="-1" aria-labelledby="alertpoppageLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -6907,11 +6986,7 @@ background-size: 100% 100%;
       </div>
     </div>
   </div>
-
-
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-
   <!-- spinner test Ends -->
   <script>
     const swiper = new Swiper(".swiper.second", {
@@ -6947,8 +7022,6 @@ background-size: 100% 100%;
       },
     });
   </script>
-
-
   <!-- table open close -->
   <script>
     var previousAccordion = null;
@@ -7060,8 +7133,6 @@ background-size: 100% 100%;
       },
     });
   </script>
-
-
   <script>
     var mySwiper = new Swiper('.mySwiper.button-slider', {
       spaceBetween: 10,
@@ -7116,9 +7187,81 @@ background-size: 100% 100%;
   </script>
 
 
+<script>
+  const mySwiper_hover = document.querySelector("#mySwiper_hover img");
+  console.log(mySwiper_hover);
+  // Select all swiper-slide elements
+const slides = document.querySelectorAll('.swiper-slide');
+
+slides.forEach(slide => {
+  const img = slide.querySelector('img');
+  const overlay = slide.querySelector('.overlay');
+
+  // Create a play button element
+  const playButton = document.createElement('button');
+  playButton.classList.add('play-button');
+  playButton.innerHTML = '▶️'; // Unicode for play button
+
+  // Add the play button to the overlay
+  overlay.appendChild(playButton);
+
+  // Show overlay on hover
+  img.addEventListener('mouseenter', () => {
+    overlay.style.display = 'flex';
+  });
+
+  // Hide overlay when not hovering
+  img.addEventListener('mouseleave', () => {
+    overlay.style.display = 'none';
+  });
+});
+
+</script>
+
+<script>
+  // Select all swiper slides
+  const swiperSlides = document.querySelectorAll('.play_btn_icon swiper-slide');
+
+  swiperSlides.forEach(slide => {
+      // Create the overlay div
+      const overlay = document.createElement('div');
+      overlay.className = 'overlay';
+
+      // Create the play button div
+      const playButton = document.createElement('div');
+      playButton.className = 'play-button';
+      playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+
+      // Append the play button to the overlay
+      overlay.appendChild(playButton);
+
+      // Append the overlay to the swiper slide
+      slide.appendChild(overlay);
+  });
+</script>
 
 
+<script>
+  // Select all swiper slides
+  const swiperSlide_play = document.querySelectorAll('.swiper-slide_btn swiper-slide ');
 
+  swiperSlide_play.forEach(slide => {
+      // Create the overlay div
+      const overlay = document.createElement('div');
+      overlay.className = 'overlay';
+
+      // Create the play button div
+      const playButton = document.createElement('div');
+      playButton.className = 'text_btn_play-button';
+      playButton.innerHTML = 'Play';
+
+      // Append the play button to the overlay
+      overlay.appendChild(playButton);
+
+      // Append the overlay to the swiper slide
+      slide.appendChild(overlay);
+  });
+</script>
 
 </body>
 
