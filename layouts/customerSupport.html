@@ -60,6 +60,84 @@
         background: #b3b3b3;
       }
     </style>
+    <style>
+      .image_play_btn_hover_effect swiper-slide {
+        position: relative;
+        display: inline-block;
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .image_play_btn_hover_effect .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #380d545b;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 10px;
+      }
+
+      .image_play_btn_hover_effect .overlay .fa-solid.fa-play {
+        position: relative;
+        left: 3px;
+      }
+      .image_play_btn_hover_effect .play-button {
+        width: 54px;
+        height: 54px;
+        background-color: #f2ff00;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+        color: rgb(0, 0, 0);
+      }
+
+      .image_play_btn_hover_effect.play-button_small .play-button {
+        width: 40px !important;
+        height: 40px !important;
+      }
+
+      .image_play_btn_hover_effect.play-button_small
+        .overlay
+        .fa-solid.fa-play {
+        position: relative;
+        left: 2px;
+        font-size: 20px;
+      }
+      .image_play_btn_hover_effect swiper-slide:hover .overlay {
+        opacity: 1;
+      }
+
+      .image_play_btn_hover_effect.live_casino_play_btn .overlay {
+        height: 70% !important;
+        border-radius: 0 !important;
+      }
+
+      /* Latestnew play btn */
+      .image_play_btn_hover_effect .text_btn_play-button {
+        background-color: #f2ff00;
+        border-radius: 10px;
+        padding: 6px 40px !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 700;
+        color: rgb(0, 0, 0);
+      }
+      /* Latestnew play btn Ends*/
+    </style>
   </head>
   <body>
     <div class="container container-xs home-bg position-relative">
@@ -211,47 +289,88 @@
         class="container container-xs position-relative overflow-x_hidden home-bg p-0 mt-5 col-lg-12 mt-5 vh-100"
       >
         <div class="over overflow-x_hidden deskmt-95">
-          <!-- second slider -->
-          <div class="wrapper h-170 mt-5">
+          <!-- Slider Starts -->
+          <div class="wrapper h-170 lap-bg-purple mt-4">
             <swiper-container
-              class="mySwiper latest-game"
+              class="mySwiper latest-game play_btn_icon image_play_btn_hover_effect play-button_small"
               space-between="10"
               slides-per-view="4"
             >
               <swiper-slide
-                ><img src="../img/avatar/home/secsl (1).png"
-              /></swiper-slide>
+                role="group"
+                aria-label="1 / 5"
+                class="swiper-slide-active"
+                style="width: 193px; margin-right: 10px"
+                ><img src="../img/avatar/home/secsl (1).png" />
+                <div class="overlay">
+                  <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <div class="text_btn_play-button">Play</div>
+                </div></swiper-slide
+              >
               <swiper-slide
-                ><img src="../img/avatar/home/secsl (4).png"
-              /></swiper-slide>
+                role="group"
+                aria-label="2 / 5"
+                class="swiper-slide-next"
+                style="width: 193px; margin-right: 10px"
+                ><img src="../img/avatar/home/secsl (4).png" />
+                <div class="overlay">
+                  <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <div class="text_btn_play-button">Play</div>
+                </div></swiper-slide
+              >
               <swiper-slide
-                ><img src="../img/avatar/home/secsl (5).png"
-              /></swiper-slide>
+                role="group"
+                aria-label="3 / 5"
+                style="width: 193px; margin-right: 10px"
+                ><img src="../img/avatar/home/secsl (5).png" />
+                <div class="overlay">
+                  <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <div class="text_btn_play-button">Play</div>
+                </div></swiper-slide
+              >
               <swiper-slide
-                ><img src="../img/avatar/home/secsl (3).png"
-              /></swiper-slide>
+                role="group"
+                aria-label="4 / 5"
+                style="width: 193px; margin-right: 10px"
+                ><img src="../img/avatar/home/secsl (3).png" />
+                <div class="overlay">
+                  <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <div class="text_btn_play-button">Play</div>
+                </div></swiper-slide
+              >
               <swiper-slide
-                ><img src="../img/avatar/home/secsl (2).png"
-              /></swiper-slide>
-              <swiper-slide
-                ><img src="../img/avatar/home/secsl (1).png"
-              /></swiper-slide>
-              <swiper-slide
-                ><img src="../img/avatar/home/secsl (4).png"
-              /></swiper-slide>
-              <swiper-slide
-                ><img src="../img/avatar/home/secsl (5).png"
-              /></swiper-slide>
-              <swiper-slide
-                ><img src="../img/avatar/home/secsl (3).png"
-              /></swiper-slide>
-              <swiper-slide
-                ><img src="../img/avatar/home/secsl (2).png"
-              /></swiper-slide>
+                role="group"
+                aria-label="5 / 5"
+                style="width: 193px; margin-right: 10px"
+                ><img src="../img/avatar/home/secsl (2).png" />
+                <div class="overlay">
+                  <div class="play-button">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                </div>
+                <div class="overlay">
+                  <div class="text_btn_play-button">Play</div>
+                </div></swiper-slide
+              >
             </swiper-container>
           </div>
-
-          <!-- end -->
+          <!-- Slider Ends -->
 
           <!-- 
                 <div class="d-flex w-100 px-1 mb-2">
@@ -262,11 +381,14 @@
                  -->
 
           <div class="lh-1 text-center px-2 mb-3">
-            <span class="fs-10 fw-600 lh-1" style="color: #808285"
-              >if you need instant support then select the below category option
-              to reach us quickly. our support team will reply as soon as
-              possible after you send us a message</span
+            <p
+              class="fs-18 fw-600 lh-1 text-capitalize m-0"
+              style="color: #808285"
             >
+              if you need instant support then select the below category option
+              <br />to reach us quickly. Our support team will reply as soon as
+              possible after you send us a message
+            </p>
           </div>
 
           <div class="text-white fw-600 text-center my-3">
@@ -1237,6 +1359,30 @@
         } else {
           header.classList.remove(toggleClass);
         }
+      });
+    </script>
+
+    <script>
+      // Select all swiper slides
+      const swiperSlide_play = document.querySelectorAll(
+        ".swiper-slide_btn swiper-slide "
+      );
+
+      swiperSlide_play.forEach((slide) => {
+        // Create the overlay div
+        const overlay = document.createElement("div");
+        overlay.className = "overlay";
+
+        // Create the play button div
+        const playButton = document.createElement("div");
+        playButton.className = "text_btn_play-button";
+        playButton.innerHTML = "Play";
+
+        // Append the play button to the overlay
+        overlay.appendChild(playButton);
+
+        // Append the overlay to the swiper slide
+        slide.appendChild(overlay);
       });
     </script>
   </body>
