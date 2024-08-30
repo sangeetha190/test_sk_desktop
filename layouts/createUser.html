@@ -6,6 +6,12 @@
     <title>Sikander PlayX</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      referrerpolicy="no-referrer"
+    />
     <style>
       .create-user-bg.bg_image_both_L_M {
         background-image: url(../img/create-user-bg.png);
@@ -30,13 +36,108 @@
   </head>
   <body>
     <div class="container container-xs vh-100 create-user-bg bg_image_both_L_M">
+      <nav class="navbar navbar-expand-lg bg-purple br-yellow fixed-top">
+        <div class="container col-md-12">
+          <img src="../img/play-X-logonew.png" alt="logo" class="w-11" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 text-white fs-15 fw-600 gap-2"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="main_new_page.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="inplay.html">In-play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="teenpatti.html"
+                  >Teenpatti</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Casino</a>
+              </li>
+            </ul>
+            <div class="d-flex g-15 align-items-center" role="search">
+              <a href="./customerSupport.html" class="text-decoration-none">
+                <button
+                  class="btn btn-yellow rounded-pill header-btnyellow fs-14"
+                  type="submit"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </a>
+              <div class="d-flex g-15">
+                <a href="./login.html" class="text-decoration-none">
+                  <button
+                    class="btn btn-yellow rounded-pill header-btnyellow fs-14 bg-white"
+                    type="submit"
+                  >
+                    Login
+                  </button>
+                </a>
+                <a href="./joinnow.html" class="text-decoration-none">
+                  <button
+                    class="btn btn-yellow rounded-pill header-btnyellow fs-14 bg-white"
+                    type="submit"
+                  >
+                    Signup
+                  </button>
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <button
+                    class="btn btn-yellow rounded-pill bg-yellow fs-14"
+                    type="submit"
+                  >
+                    Demo Login
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="d-flex justify-content-center fixed-top w-100 topheader_lap mobile-tab-none"
+      >
+        <div class="w-100 d-flex justify-content-center">
+          <div class="d-flex justify-content-center">
+            <div
+              class="home-header d-flex justify-content-center align-items-center pt-4 z-3 page-header lapbackground-none"
+              style="z-index: 12345 !important"
+            >
+              <a href="main_new_page.html" class="lap-height80">
+                <img
+                  src="../img/home-x-logo.png"
+                  class="logo_xnew position-relative"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row justify-content-center">
         <div class="col-sm-9 col-md-5 col-lg-5 col-xl-4 px-0">
-          <div class="d-flex flex-column justify-content-between vh-100">
-            <div class="d-flex justify-content-center w-100">
-              <img src="../img/play-X-logo.png" class="center_image-width" />
-              <!-- style="width: 250px; height: 250px; margin-top: -20px" -->
-            </div>
+          <div
+            class="d-flex flex-column justify-content-between align-content-end vh-100"
+            style="padding-top: 140px"
+          >
             <div class="px-3" style="margin-top: -40px">
               <div class="login-title text-center mb-4">Create Username</div>
               <div class="mb-4">

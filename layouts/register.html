@@ -17,9 +17,9 @@
       @media (min-width: 700px) {
         .register-bg.bg_image_both_L_M {
           background-image: url(../img/Laptop/login/Register\ Page.png);
-    
-        background-size: cover;
-        background-position: center;
+
+          background-size: cover;
+          background-position: center;
         }
         .register-bg.bg_image_both_L_M .center_image-width {
           width: 40%;
@@ -32,9 +32,135 @@
   </head>
   <body>
     <div class="container container-xs vh-100 register-bg bg_image_both_L_M">
+      <nav class="navbar navbar-expand-lg bg-purple br-yellow fixed-top">
+        <div class="container col-md-12">
+          <img src="../img/play-X-logonew.png" alt="logo" class="w-11" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 text-white fs-15 fw-600 gap-2"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-white"
+                  aria-current="page"
+                  href="main_new_page.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="inplay.html">In-play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="teenpatti.html"
+                  >Teenpatti</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Casino</a>
+              </li>
+            </ul>
+            <div class="d-flex g-15 align-items-center" role="search">
+              <a href="./customerSupport.html" class="text-decoration-none">
+                <button
+                  class="btn btn-yellow rounded-pill header-btnyellow fs-14"
+                  type="submit"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </a>
+              <!-- <div class="header-searchicon">
+                <div class="search">
+                  <button class="search__button position-absolute">
+                    <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
+                      <g>
+                        <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                        </path>
+                      </g>
+                    </svg>
+                  </button>
+                  <input type="text" class="search__input position-relative" placeholder="Search">
+  
+                </div>
+              </div> -->
+
+              <!-- <div class="avatar-header rounded-circle overflow-hidden">
+                <a href="./avatar.html">
+                  <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                </a>
+              
+              </div>
+  
+              <div class="d-flex align-items-center ">
+                <i class="fa-solid fa-bars text-white fs-20" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"></i>
+              </div> -->
+
+              <div class="d-flex g-15">
+                <a href="./login.html" class="text-decoration-none">
+                  <button
+                    class="btn btn-yellow rounded-pill header-btnyellow fs-14 bg-white"
+                    type="submit"
+                  >
+                    Login
+                  </button>
+                </a>
+                <a href="./joinnow.html" class="text-decoration-none">
+                  <button
+                    class="btn btn-yellow rounded-pill header-btnyellow fs-14 bg-white"
+                    type="submit"
+                  >
+                    Signup
+                  </button>
+                </a>
+                <a href="#" class="text-decoration-none">
+                  <button
+                    class="btn btn-yellow rounded-pill bg-yellow fs-14"
+                    type="submit"
+                  >
+                    Demo Login
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        class="d-flex justify-content-center fixed-top w-100 topheader_lap mobile-tab-none"
+      >
+        <div class="w-100 d-flex justify-content-center">
+          <div class="d-flex justify-content-center">
+            <div
+              class="home-header d-flex justify-content-center align-items-center pt-4 z-3 page-header lapbackground-none"
+              style="z-index: 12345 !important"
+            >
+              <a href="main_new_page.html" class="lap-height80">
+                <img
+                  src="../img/home-x-logo.png"
+                  class="logo_xnew position-relative"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row justify-content-center">
         <div class="col-sm-9 col-md-5 col-lg-5 col-xl-4 px-0">
-          <div class="d-flex flex-column justify-content-between vh-100">
+          <div
+            class="d-flex flex-column justify-content-between vh-100"
+            style="padding-top: 140px"
+          >
             <div class="d-flex justify-content-center w-100 mt-2">
               <img
                 src="../img/multiple-exchange.png"
@@ -87,7 +213,9 @@
                     >Already a player ?</a
                   ></span
                 >
-                <a href="./login.html" class="text-yellow text-decoration-none">Log in</a>
+                <a href="./login.html" class="text-yellow text-decoration-none"
+                  >Log in</a
+                >
               </div>
             </div>
           </div>
