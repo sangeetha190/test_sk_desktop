@@ -276,6 +276,8 @@
       width: 88%;
       padding: 0px 40px;
     }
+
+
   </style>
 
   <!-- new -->
@@ -358,6 +360,53 @@
     color: rgb(0, 0, 0);
 }
 /* Latestnew play btn Ends*/
+
+
+
+  </style>
+
+  <style>
+    .custom_play_btn_hover_effect .hove_lay_img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.custom_play_btn_hover_effect .custom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #380d545b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.custom_play_btn_hover_effect .custom-play-button {
+  width: 40px !important;
+  height:40px !important;
+    background-color: #F2FF00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+          font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+.custom_play_btn_hover_effect .hove_lay_img:hover .custom-overlay {
+    opacity: 1;
+}
+.custom_play_btn_hover_effect .fa-solid.fa-play{
+          position: relative;
+          left: 2px;
+        }
+
   </style>
 
   <!-- new end -->
@@ -381,8 +430,7 @@
       <div class="container col-md-12">
         <img src="../img/play-X-logonew.png" alt="logo" class="
       w-11">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -404,19 +452,14 @@
           </ul>
           <div class="d-flex g-15 align-items-center" role="search">
             <a href="./customerSupport.html" class="text-decoration-none">
-              <button class="btn btn-yellow rounded-pill header-btnyellow fs-14" type="submit"><i
-                class="fa-solid fa-phone"></i> Call</button>
+              <button class="btn btn-yellow rounded-pill header-btnyellow fs-14" type="submit"><i class="fa-solid fa-phone"></i> Call</button>
             </a>
-           
-
-
-            <div class="header-searchicon">
+            <!-- <div class="header-searchicon">
               <div class="search">
                 <button class="search__button position-absolute">
                   <svg class="search__icon" aria-hidden="true" viewBox="0 0 24 24">
                     <g>
-                      <path
-                        d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+                      <path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
                       </path>
                     </g>
                   </svg>
@@ -424,7 +467,7 @@
                 <input type="text" class="search__input position-relative" placeholder="Search">
 
               </div>
-            </div>
+            </div> -->
 
             <!-- <div class="avatar-header rounded-circle overflow-hidden">
               <a href="./avatar.html">
@@ -440,18 +483,16 @@
 
 
             <div class="d-flex g-15">
-                <a href="./customerSupport.html" class="text-decoration-none">
+                <a href="./login.html" class="text-decoration-none">
                     <button class="btn btn-yellow rounded-pill header-btnyellow fs-14  bg-white" type="submit"> Login</button>
                   </a>
-                  <a href="./customerSupport.html" class="text-decoration-none">
-                    <button class="btn btn-yellow rounded-pill header-btnyellow fs-14" type="submit"> Signup</button>
+                  <a href="./joinnow.html" class="text-decoration-none">
+                    <button class="btn btn-yellow rounded-pill header-btnyellow fs-14  bg-white" type="submit"> Signup</button>
+                  </a>
+                  <a href="#" class="text-decoration-none">
+                    <button class="btn btn-yellow rounded-pill bg-yellow fs-14 " type="submit"> Demo Login</button>
                   </a>
             </div>
-
-
-
-
-
           </div>
         </div>
       </div>
@@ -521,7 +562,7 @@ background-size: 100% 100%;
 
           <div class="d-flex flex-grow-1 tab-viewgrownon">
             <div class="col d-flex justify-content-end col-flex0">
-              <a href="./pointpage2.html" class="card-tile">
+              <a href="#" class="card-tile">
                 <div class="mb-2">
                   <img src="../img/icon/icon-money.svg" width="21" />
                 </div>
@@ -540,7 +581,7 @@ background-size: 100% 100%;
               </a>
             </div>
             <div class="col d-flex justify-content-start col-flex0">
-              <a href="./mybetsports.html" class="card-tile">
+              <a href="#" class="card-tile">
                 <div class="mb-2">
                   <img src="../img/icon/icon-achivements.svg" width="22" />
                 </div>
@@ -644,7 +685,7 @@ background-size: 100% 100%;
       </div>
 
       <!-- second slider -->
-      <div class="wrapper-scroll my-4 lap-bg-purple py-2 px-2" style="margin-left: 10px;">
+      <div class="wrapper-scroll my-4 lap-bg-purple py-2 px-2  overflow-x-auto" style="margin-left: 10px;">
         <!-- Slider main container -->
 
         <div class="w-100 d-flex g-3 overflow-x-auto" style="gap:10px">
@@ -1066,10 +1107,10 @@ background-size: 100% 100%;
                   </span> -->
                 </a>
 
-                <a href="#"
+                <a
                   class="list-group-item list-group-item-action px-2 py-1 text-black text-left bg-yellow">
                   <div class="list-icon me-1">
-                    <img src="../img/icon/stumpvqev 1 (1).png" class="w-80">
+                    <img src="../img/icon/stumpvqev 1 (1).png" class="w-80" style="filter: invert(1);">
                   </div>
                   <span class="list-text fs-14">Cricket</span>
                   <!-- <span class="ms-auto">
@@ -1145,44 +1186,83 @@ background-size: 100% 100%;
 
 
             </div>
-            <div class="col-12 d-flex flex-column p-3" style="gap: 10px; padding-left: 5px">
-              <img src="../img/left/1_1 1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/6_6 1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/3_3 1.png" alt="" srcset="" class="w-100" />
-              <div class="d-flex align-items-center justify-content-center">
-                <img src="../img/left/Asset 1 1.png" alt="" srcset="" class="w-75" />
-              </div>
-              <!-- <div class="d-flex justify-content-center">
-              <img
-                src="../img/live_casino/11_ 2.png"
-                alt=""
-                srcset=""
-              />
-            </div> -->
 
-              <img src="../img/left/post-13 1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/post-18 2.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 791.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 792.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-2.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 793.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-3.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 794.png" alt="" srcset="" class="w-100" />
-             
+            <!-- test slider Starts -->
+
+
+            <!-- <div class="col-12 d-flex flex-column p-3 custom_play_btn_hover_effect swiper-slide" style="gap: 10px; padding-left: 5px">
+              <div class="hove_lay_img">
+                  <img src="../img/left/1_1 1.png" alt="" srcset="" class="w-100" />
+              </div>
+              <div class="hove_lay_img">
+                  <img src="../img/left/1_1 1.png" alt="" srcset="" class="w-100" />
+              </div>
+              <div class="hove_lay_img">
+                  <img src="../img/left/1_1 1.png" alt="" srcset="" class="w-100" />
+              </div>
+              <div class="hove_lay_img">
+                  <img src="../img/left/1_1 1.png" alt="" srcset="" class="w-100" />
+              </div>
+          </div> -->
+          
+            <div class="col-12 d-flex flex-column p-3 custom_play_btn_hover_effect swiper-slide" style="gap: 10px; padding-left: 5px">
+              <div class="hove_lay_img">
+                <img src="../img/left/1_1 1.png" alt="" srcset="" class="w-100" />
+              </div>
+              <div class="hove_lay_img">
+              <img src="../img/left/6_6 1.png" alt="" srcset="" class="w-100" />
             </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/3_3 1.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <div class="d-flex align-items-center justify-content-center">
+                  <img src="../img/left/Asset 1 1.png" alt="" srcset="" class="w-75" />
+              </div>
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/post-13 1.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/post-18 2.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 791.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group-1.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 792.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group-2.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 793.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group-3.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 794.png" alt="" srcset="" class="w-100" />
+            </div>
+            </div>
+          <!-- test slider Ends -->
           </div>
           <div class="col-xl-10 col-lg-9 col-md-12 p-0 lap-wi-79">
 
 
             <!-- key tournament -->
-            <div class="wrapper h-140 pb-3 my-4 mt-5">
+            <div class="wrapper h-140 pb-3 my-4 mt-4 pt-3">
               <div class="container-full title-heads text-left">
-                <div class="px-3">
+                <!-- <div class="px-3">
                   <p class="m-0 p-0 fs-10 text-gray">Because of You</p>
                   <h3 class="text-white fs-12 fw-700 m-0 mb-2">Casino Lobby</h3>
-                </div>
+                </div> -->
 
 
                 <swiper-container class="mySwiper no-border play_btn_icon image_play_btn_hover_effect" space-between="10" slides-per-view="4"
@@ -6986,7 +7066,9 @@ background-size: 100% 100%;
       </div>
     </div>
   </div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="../js/swiper.js"></script>
+
+  <script src="../js/sample.js"></script>
   <!-- spinner test Ends -->
   <script>
     const swiper = new Swiper(".swiper.second", {
@@ -7240,7 +7322,6 @@ slides.forEach(slide => {
   });
 </script>
 
-
 <script>
   // Select all swiper slides
   const swiperSlide_play = document.querySelectorAll('.swiper-slide_btn swiper-slide ');
@@ -7261,6 +7342,29 @@ slides.forEach(slide => {
       // Append the overlay to the swiper slide
       slide.appendChild(overlay);
   });
+</script>
+
+<script>
+// Select all elements with the class `hove_lay_img`
+const playbutton_on_img = document.querySelectorAll('.custom_play_btn_hover_effect .hove_lay_img');
+
+playbutton_on_img.forEach(imgContainer => {
+    // Create the overlay div
+    const overlay = document.createElement('div');
+    overlay.className = 'custom-overlay';
+
+    // Create the play button div
+    const playButton = document.createElement('div');
+    playButton.className = 'custom-play-button';
+    playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+
+    // Append the play button to the overlay
+    overlay.appendChild(playButton);
+
+    // Append the overlay to the image container
+    imgContainer.appendChild(overlay);
+});
+
 </script>
 
 </body>

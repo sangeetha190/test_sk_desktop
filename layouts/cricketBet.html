@@ -79,8 +79,49 @@
     .w-65 {
       width: 65%;
     }
-   
   </style>
+
+<style>
+  .custom_play_btn_hover_effect .hove_lay_img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.custom_play_btn_hover_effect .custom-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #380d545b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+.custom_play_btn_hover_effect .custom-play-button {
+width: 40px !important;
+height:40px !important;
+  background-color: #F2FF00;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+        font-size: 25px;
+  color: rgb(0, 0, 0);
+}
+.custom_play_btn_hover_effect .hove_lay_img:hover .custom-overlay {
+  opacity: 1;
+}
+.custom_play_btn_hover_effect .fa-solid.fa-play{
+        position: relative;
+        left: 2px;
+}
+</style>
+
 </head>
 
 <body>
@@ -115,7 +156,7 @@
             <a class="nav-link active text-white" aria-current="page" href="main_new_page.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="inplay.html">In-play</a>
+            <a class="nav-link text-yellow" href="inplay.html">In-play</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="teenpatti.html">Teenpatti</a>
@@ -127,9 +168,10 @@
 
         </ul>
         <div class="d-flex g-15 align-items-center" role="search">
-
+          <a href="customerSupport.html" class="text-decoration_none text-black">
           <button class="btn btn-yellow rounded-pill header-btnyellow fs-14" type="submit"><i
-              class="fa-solid fa-phone"></i> <a href="customerSupport.html" class="text-decoration_none text-black">Call</a></button>
+              class="fa-solid fa-phone"></i> Call</button>
+            </a>
 
 
           <div class="header-searchicon">
@@ -173,15 +215,20 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;">
-      <div class="w-100 d-flex justify-content-center">
-        <div class="d-flex justify-content-center">
-          <div
-            class="home-header d-flex justify-content-center align-items-center pt-4 z-3 page-header lapbackground-none"
-            style="z-index: 12345 !important">
-            <a href="main_new_page.html" class="lap-height80">
-              <img src="../img/home-x-logo.png" class="logo_xnew position-relative" />
-            </a>
-          </div>
+      <div class="d-flex justify-content-center" style="width: 483px;">
+        <div class="home-header d-flex justify-content-between align-items-center pt-4 z-3 page-header lapbackground-none" style="z-index: 12345 !important;">
+          <a href="#" class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center">
+            <img src="../img/icon/icon-money.svg" width="18" />
+            <span class="ms-2 text-white">0.00</span>
+          </a>
+          <a href="#" class="lap-height80">
+            <img src="../img/home-x-logo.png" class="logo_xnew position-relative">
+          </a>
+
+          <a href="#" class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center">
+            <img src="../img/icon/icon-star.svg" width="18" />
+            <span class="ms-2 text-white">0</span>
+          </a>
         </div>
       </div>
     </div>
@@ -192,14 +239,14 @@
     <div class=" mt-1 table-alignment overflow-x_hidden mt-5 pt-3" >
       <!-- second slider -->
 
-      <div class="row align-content-center px-4">
-        <div class="col-lg-2 mobile-tab-none d-flex justify-content-start">
+      <div class="row align-content-center px-4 pb-4">
+        <!-- <div class="col-lg-2 mobile-tab-none d-flex justify-content-start">
           <a href="withdrawal.html" class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center">
             <img src="../img/icon/icon-money.svg" width="18" />
             <span class="ms-2">0.00</span>
           </a>
-        </div>
-        <div class="col-lg-8">
+        </div> -->
+        <div class="col-lg-12">
           <div class="wrapper d-flex gap-15 justify-content-center">
          
                 <a href="inplay.html"
@@ -224,12 +271,12 @@
                
           </div>
         </div>
-        <div class="col-lg-2 mobile-tab-none d-flex justify-content-end">
+        <!-- <div class="col-lg-2 mobile-tab-none d-flex justify-content-end">
           <a href="withdrawal.html" class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center">
             <img src="../img/icon/icon-star.svg" width="18" />
             <span class="ms-2">0</span>
           </a>
-        </div>
+        </div> -->
 
 
         <div class="col-lg-12">
@@ -250,84 +297,6 @@
               <div>
                 <a href="./inplay.html" class="text-decoration_none">
                   <div class="d-flex slider_purple_btn align-items-center">
-                    <img src="../img/Laptop/buttonicon/image 9.png" alt="" srcset="" width="20">
-                    <p class=" m-0">Ezugi</p>
-                    
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a href="./inplayCricket.html" class="text-decoration_none">
-                  <div class="d-flex slider_purple_btn align-items-center">
-                    <img src="../img/Laptop/buttonicon/image 10.png" alt="" srcset="" width="20">
-                    <p class=" m-0">Evalution <br> Game</p>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a href="./inplayfootball.html" class="text-decoration_none">
-                  <div class="d-flex slider_purple_btn align-items-center">
-                    <img src="../img/Laptop/buttonicon/image 11.png" alt="" srcset="" width="20">
-                    <p class=" m-0">Royal  <br> Gaming</p>
-                  </div>
-                </a>
-              </div>
-    
-              <div>
-                <a href="./inplaytennis.html" class="text-decoration_none">
-                  <div class="d-flex slider_purple_btn align-items-center">
-                    <img src="../img/Laptop/buttonicon/fortune 1.png" alt="" srcset="" width="20">
-                    <p class=" m-0">BetGametv</p>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="d-flex slider_purple_btn align-items-center">
-                    <img src="../img/Laptop/buttonicon/image 12.png" alt="" srcset="" width="20">
-                    <p class=" m-0">Sexybcrt</p>
-                  </div>
-                </a>
-              </div>
-              <div>
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="d-flex slider_purple_btn align-items-center">
-                    <img src="../img/Laptop/buttonicon/image 13.png" alt="" srcset="" width="20">
-                    <p class=" m-0">Smartsoft  <br> Gaming</p>
-                  </div>
-                </a>
-              </div>
-    
-              <div>
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="d-flex slider_purple_btn align-items-center">
-                    <img src="../img/Laptop/buttonicon/image 69.png" alt="" srcset="" width="20">
-                    <p class=" m-0">Gamzix</p>
-                  </div>
-                </a>
-              </div>
-    
-              <div>
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="d-flex slider_purple_btn align-items-center">
-                    <img src="../img/Laptop/buttonicon/success 2.png" alt="" srcset="" width="20">
-                    <p class=" m-0">RoyalGame  <br> Virtual</p>
-                  </div>
-                </a>
-              </div>
-    
-              <div>
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="d-flex slider_purple_btn align-items-center">
-                    <img src="../img/Laptop/buttonicon/image 71.png" alt="" srcset="" width="20">
-                    <p class=" m-0">Spiribe</p>
-                  </div>
-                </a>
-              </div>
-    
-              <div>
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="d-flex slider_purple_btn align-items-center">
                     <img src="../img/Laptop/buttonicon/chronometer 1.png" alt="" srcset="" width="20">
                     <p class=" m-0">In Play</p>
                     
@@ -336,7 +305,7 @@
               </div>
               <div>
                 <a href="./inplayCricket.html" class="text-decoration_none">
-                  <div class="d-flex slider_purple_btn align-items-center">
+                  <div class="d-flex slider_purple_btn align-items-center active">
                     <img src="../img/Laptop/buttonicon/cricket-player 1.png" alt="" srcset="" width="20">
                     <p class=" m-0">Cricket</p>
                   </div>
@@ -429,7 +398,7 @@
            <div class="col-xl-2 col-lg-3 mobile-tab-none p-0">
 
 
-            <div class="br-yellow bg-purple rounded-4 my-5">
+            <div class="br-yellow bg-purple rounded-4 my-5 mb-0">
               <div class="avatar-bread my-5 position-relative px-2 mb-0 mt-0 pt-1 rounded-pill" bis_skin_checked="1">
 
                 <div class="row" bis_skin_checked="1">
@@ -559,7 +528,7 @@
                 <a href="#"
                   class="list-group-item list-group-item-action px-2 py-1 text-black text-left bg-yellow">
                   <div class="list-icon me-1">
-                    <img src="../img/icon/stumpvqev 1 (1).png" class="w-80">
+                    <img src="../img/icon/stumpvqev 1 (1).png" class="w-80" style="filter: invert(1);">
                   </div>
                   <span class="list-text fs-14">Cricket</span>
                   <!-- <span class="ms-auto">
@@ -635,33 +604,54 @@
 
 
             </div>
-            <div class="col-12 d-flex flex-column p-3" style="gap: 10px; padding-left: 5px">
+          <!-- Left Slide image Starts -->
+          <div class="col-12 d-flex flex-column p-3 custom_play_btn_hover_effect swiper-slide" style="gap: 10px; padding-left: 5px">
+            <div class="hove_lay_img">
               <img src="../img/left/1_1 1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/6_6 1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/3_3 1.png" alt="" srcset="" class="w-100" />
-              <div class="d-flex align-items-center justify-content-center">
-                <img src="../img/left/Asset 1 1.png" alt="" srcset="" class="w-75" />
-              </div>
-              <!-- <div class="d-flex justify-content-center">
-              <img
-                src="../img/live_casino/11_ 2.png"
-                alt=""
-                srcset=""
-              />
-            </div> -->
-
-              <img src="../img/left/post-13 1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/post-18 2.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 791.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 792.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-2.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 793.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-3.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 794.png" alt="" srcset="" class="w-100" />
-             
             </div>
+            <div class="hove_lay_img">
+            <img src="../img/left/6_6 1.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/3_3 1.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <div class="d-flex align-items-center justify-content-center">
+                <img src="../img/left/Asset 1 1.png" alt="" srcset="" class="w-75" />
+            </div>
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/post-13 1.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/post-18 2.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/Mask group.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/Group 791.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/Mask group-1.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/Group 792.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/Mask group-2.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/Group 793.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/Mask group-3.png" alt="" srcset="" class="w-100" />
+          </div>
+          <div class="hove_lay_img">
+            <img src="../img/left/Group 794.png" alt="" srcset="" class="w-100" />
+          </div>
+          </div>
+          <!-- Left Slide image Ends -->
           </div>
         <div class="col-xl-7 col-lg-6 col-md-12 p-0 lap-wi-79 px-1">
 
@@ -866,11 +856,7 @@
                                           </div>
     
     
-    
-    
-    
-    
-    
+  
                                           <div class="d-flex justify-content-between align-items-center my-2 px-3 mobile-none" bis_skin_checked="1">
                                             <div class="col-6" bis_skin_checked="1">
                                               <div class="d-flex flex-row" bis_skin_checked="1">
@@ -1007,7 +993,7 @@
                                           <div class="col-12 m-10 mobile-tab-none">
                                             <div class="row justify-content-center">
                                               <div class="col-6 d-flex justify-content-end p-0 px-1">
-                                                <button class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple ">
+                                                <button class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple" data-bs-dismiss="modal" aria-label="Close" id="headingOne1" onclick="toggleAccordion('collapseOne1')">
                                                   Cancel Bet
                                                 </button>
                                               </div>
@@ -1213,7 +1199,7 @@
                                         <div class="col-12 m-10 mobile-tab-none">
                                           <div class="row justify-content-center">
                                             <div class="col-6 d-flex justify-content-end p-0 px-1">
-                                              <button class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple ">
+                                              <button class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple" data-bs-dismiss="modal" aria-label="Close" id="headingTwo2" onclick="toggleAccordion('collapseOne2')">
                                                 Cancel Bet
                                               </button>
                                             </div>
@@ -1547,12 +1533,6 @@
                                         </div>
                                       </div>
 
-
-
-
-
-
-
                                       <div class="d-flex justify-content-between align-items-center my-2 px-3 mobile-none" bis_skin_checked="1">
                                         <div class="col-6" bis_skin_checked="1">
                                           <div class="d-flex flex-row" bis_skin_checked="1">
@@ -1575,9 +1555,6 @@
                                         </div>
 
                                       </div>
-
-
-
 
                                       <div class="row ptb-4 text-purple justify-content-center" bis_skin_checked="1">
                                         <div class="col-5 p-0">
@@ -1608,7 +1585,6 @@
                                          Edit Stake
                                         </button></a>
                                       </div>
-
 
                                       <div class="col-12 pt-10" bis_skin_checked="1">
                                         <div class="row justify-content-center flex-wrap px-3 py-2 pad-0" bis_skin_checked="1">
@@ -1689,8 +1665,8 @@
                                       <div class="col-12 m-10 mobile-tab-none">
                                         <div class="row justify-content-center">
                                           <div class="col-6 d-flex justify-content-end p-0 px-1">
-                                            <button class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple ">
-                                              Cancel Bet
+                                            <button class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple" data-bs-dismiss="modal" aria-label="Close" id="newheadingOne1" onclick="toggleAccordion('newcollapseOne1')" >
+                                              Cancel Bet 
                                             </button>
                                           </div>
 
@@ -1895,7 +1871,7 @@
                                         <div class="col-12 m-10 mobile-tab-none">
                                           <div class="row justify-content-center">
                                             <div class="col-6 d-flex justify-content-end p-0 px-1">
-                                              <button class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple ">
+                                              <button class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple" data-bs-dismiss="modal" aria-label="Close" id="newheadingOne2" onclick="toggleAccordion('newcollapseOne2')">
                                                 Cancel Bet
                                               </button>
                                             </div>
@@ -2634,7 +2610,7 @@
                   </div>
                   <!-- tab nav ends -->
         
-                  <div class="bet filter-btn">
+                  <div class="bet filter-btn ">
                     <!-- scrolling-btn -->
                     <!-- second slider -->
                     <div class="my-3 d-flex gap-20 overflow-x-scroll custom-scroll justify-content-center">
@@ -3019,9 +2995,9 @@
                         </div>
                         <!-- Mini Book Maker ends -->
                       </div>
-                      <div class="tab-pane fade show purple_card" id="pills-premium2" role="tabpanel"
+                      <div class="tab-pane fade show purple_card " id="pills-premium2" role="tabpanel"
                         aria-labelledby="pills-premium2-tab" tabindex="0">
-                        <div class="bet filter-btn">
+                        <div class="bet filter-btn lap-none">
                           <!-- scrolling-btn -->
                           <!-- second slider -->
                           <div class="my-3">
@@ -3444,7 +3420,7 @@
                               <div class="mr-10">
                                 <div class="avatar-header rounded-circle overflow-hidden">
                                                   <a href="./avatar.html">
-                                                  <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                                                  <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="72" class=" rounded-circle">
                                                   </a>
                                                 </div>
                               </div>
@@ -4327,6 +4303,28 @@
     }
   </script>
   <!-- table end -->
-</body>
 
+  <script>
+    // Select all elements with the class `hove_lay_img`
+    const playbutton_on_img = document.querySelectorAll('.custom_play_btn_hover_effect .hove_lay_img');
+    
+    playbutton_on_img.forEach(imgContainer => {
+        // Create the overlay div
+        const overlay = document.createElement('div');
+        overlay.className = 'custom-overlay';
+    
+        // Create the play button div
+        const playButton = document.createElement('div');
+        playButton.className = 'custom-play-button';
+        playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+    
+        // Append the play button to the overlay
+        overlay.appendChild(playButton);
+    
+        // Append the overlay to the image container
+        imgContainer.appendChild(overlay);
+    });
+    </script>
+</body>
+=
 </html>

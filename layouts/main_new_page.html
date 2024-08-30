@@ -276,6 +276,8 @@
       width: 88%;
       padding: 0px 40px;
     }
+
+
   </style>
 
   <!-- new -->
@@ -358,6 +360,53 @@
     color: rgb(0, 0, 0);
 }
 /* Latestnew play btn Ends*/
+
+
+
+  </style>
+
+  <style>
+    .custom_play_btn_hover_effect .hove_lay_img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.custom_play_btn_hover_effect .custom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #380d545b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.custom_play_btn_hover_effect .custom-play-button {
+  width: 54px !important;
+  height:54px !important;
+    background-color: #F2FF00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+          font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.custom_play_btn_hover_effect .hove_lay_img:hover .custom-overlay {
+    opacity: 1;
+}
+.custom_play_btn_hover_effect .fa-solid.fa-play{
+          position: relative;
+          left: 2px;
+        }
+
   </style>
 
   <!-- new end -->
@@ -511,7 +560,7 @@ background-size: 100% 100%;
 
           <div class="d-flex flex-grow-1 tab-viewgrownon">
             <div class="col d-flex justify-content-end col-flex0">
-              <a href="./pointpage2.html" class="card-tile">
+              <a href="#" class="card-tile">
                 <div class="mb-2">
                   <img src="../img/icon/icon-money.svg" width="21" />
                 </div>
@@ -530,7 +579,7 @@ background-size: 100% 100%;
               </a>
             </div>
             <div class="col d-flex justify-content-start col-flex0">
-              <a href="./mybetsports.html" class="card-tile">
+              <a href="#" class="card-tile">
                 <div class="mb-2">
                   <img src="../img/icon/icon-achivements.svg" width="22" />
                 </div>
@@ -1056,10 +1105,10 @@ background-size: 100% 100%;
                   </span> -->
                 </a>
 
-                <a href="#"
+                <a
                   class="list-group-item list-group-item-action px-2 py-1 text-black text-left bg-yellow">
                   <div class="list-icon me-1">
-                    <img src="../img/icon/stumpvqev 1 (1).png" class="w-80">
+                    <img src="../img/icon/stumpvqev 1 (1).png" class="w-80" style="filter: invert(1);">
                   </div>
                   <span class="list-text fs-14">Cricket</span>
                   <!-- <span class="ms-auto">
@@ -1135,44 +1184,66 @@ background-size: 100% 100%;
 
 
             </div>
-            <div class="col-12 d-flex flex-column p-3" style="gap: 10px; padding-left: 5px">
-              <img src="../img/left/1_1 1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/6_6 1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/3_3 1.png" alt="" srcset="" class="w-100" />
-              <div class="d-flex align-items-center justify-content-center">
-                <img src="../img/left/Asset 1 1.png" alt="" srcset="" class="w-75" />
-              </div>
-              <!-- <div class="d-flex justify-content-center">
-              <img
-                src="../img/live_casino/11_ 2.png"
-                alt=""
-                srcset=""
-              />
-            </div> -->
 
-              <img src="../img/left/post-13 1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/post-18 2.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 791.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-1.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 792.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-2.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 793.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Mask group-3.png" alt="" srcset="" class="w-100" />
-              <img src="../img/left/Group 794.png" alt="" srcset="" class="w-100" />
-             
+          <!-- Left Slide image Starts -->
+            <div class="col-12 d-flex flex-column p-3 custom_play_btn_hover_effect swiper-slide" style="gap: 10px; padding-left: 5px">
+              <div class="hove_lay_img">
+                <img src="../img/left/1_1 1.png" alt="" srcset="" class="w-100" />
+              </div>
+              <div class="hove_lay_img">
+              <img src="../img/left/6_6 1.png" alt="" srcset="" class="w-100" />
             </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/3_3 1.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <div class="d-flex align-items-center justify-content-center">
+                  <img src="../img/left/Asset 1 1.png" alt="" srcset="" class="w-75" />
+              </div>
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/post-13 1.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/post-18 2.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 791.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group-1.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 792.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group-2.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 793.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group-3.png" alt="" srcset="" class="w-100" />
+            </div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 794.png" alt="" srcset="" class="w-100" />
+            </div>
+            </div>
+          <!-- Left Slide image Ends -->
           </div>
           <div class="col-xl-10 col-lg-9 col-md-12 p-0 lap-wi-79">
 
 
             <!-- key tournament -->
-            <div class="wrapper h-140 pb-3 my-4 mt-5">
+            <div class="wrapper h-140 pb-3 my-4 mt-4 pt-3">
               <div class="container-full title-heads text-left">
-                <div class="px-3">
+                <!-- <div class="px-3">
                   <p class="m-0 p-0 fs-10 text-gray">Because of You</p>
                   <h3 class="text-white fs-12 fw-700 m-0 mb-2">Casino Lobby</h3>
-                </div>
+                </div> -->
 
 
                 <swiper-container class="mySwiper no-border play_btn_icon image_play_btn_hover_effect" space-between="10" slides-per-view="4"
@@ -1562,12 +1633,14 @@ background-size: 100% 100%;
                                           <div class="d-flex justify-content-between align-items-center my-2 px-3">
                                             <h5 class="text-gray fs-12 text-left m-0">Or Choose ou Stack Size </h5>
 
+                                            <a href="./editStake.html">
                                             <button
                                               class="btn-purple text-yellow br-5 w-100 fs-9 fw-700 pop-btn text-capitalize"
-                                              type="button" id="headingOneblue1"
-                                              onclick="toggleAccordion('collapseOneblue1')">
+                                              type="button">
                                               Edit Stake
                                             </button>
+                                            </a>
+
                                           </div>
 
 
@@ -1656,7 +1729,7 @@ background-size: 100% 100%;
                                             <div class="row justify-content-center">
                                               <div class="col-6 d-flex justify-content-end p-0 px-1">
                                                 <button
-                                                  class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple ">
+                                                  class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple" data-bs-dismiss="modal" aria-label="Close" id="headingOne1" onclick="toggleAccordion('collapseOne1')">
                                                   Cancel Bet
                                                 </button>
                                               </div>
@@ -1848,8 +1921,7 @@ background-size: 100% 100%;
                                           <div class="col-4 d-flex justify-content-around align-items-center"
                                             bis_skin_checked="1">
                                             <p class="text-alert fs-10 fw-700 text-decoration_none m-0" type="button"
-                                              id="headingOnered1" class="btn btn-primary"
-                                              onclick="toggleAccordion('collapseOnered1')">
+                                              >
                                               Edit Stakes
                                             </p>
                                             <button class="btn-alertbutton fs-10 fw-700" type="button"
@@ -1897,13 +1969,13 @@ background-size: 100% 100%;
                                         <div
                                           class="d-flex justify-content-between align-items-center my-2 px-3 mobile-none">
                                           <h5 class="text-gray fs-12 text-left m-0">Or Choose ou Stack Size </h5>
-
+                                          <a href="./editStake.html">
                                           <button
                                             class="btn-purple text-yellow br-5 w-100 fs-9 fw-700 pop-btn text-capitalize"
-                                            type="button" id="headingOneblue1"
-                                            onclick="toggleAccordion('collapseOneblue1')">
+                                            type="button">
                                             Edit Stake
                                           </button>
+                                        </a>
                                         </div>
 
                                         <div class="col-12 pt-10">
@@ -1978,7 +2050,7 @@ background-size: 100% 100%;
                                           <div class="row justify-content-center">
                                             <div class="col-6 d-flex justify-content-end p-0 px-1">
                                               <button
-                                                class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple ">
+                                                class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple" data-bs-dismiss="modal" aria-label="Close" id="headingOne2" onclick="toggleAccordion('collapseOne2')">
                                                 Cancel Bet
                                               </button>
                                             </div>
@@ -2252,12 +2324,13 @@ background-size: 100% 100%;
                                         <div class="d-flex justify-content-between align-items-center my-2 px-3">
                                           <h5 class="text-gray fs-12 text-left m-0">Or Choose ou Stack Size </h5>
 
+                                          <a href="./editStake.html">
                                           <button
                                             class="btn-purple text-yellow br-5 w-100 fs-9 fw-700 pop-btn text-capitalize"
-                                            type="button" id="headingOneblue2"
-                                            onclick="toggleAccordion('collapseOneblue2')">
+                                            type="button">
                                             Edit Stake
                                           </button>
+                                          </a>
                                         </div>
 
                                         <div class="col-12 pt-10" bis_skin_checked="1">
@@ -2332,7 +2405,6 @@ background-size: 100% 100%;
                                                   Place Bet
                                                 </button>
                                               </a>
-
                                             </div>
                                           </div>
                                         </div>
@@ -2341,7 +2413,7 @@ background-size: 100% 100%;
                                           <div class="row justify-content-center">
                                             <div class="col-6 d-flex justify-content-end p-0 px-1">
                                               <button
-                                                class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple ">
+                                                class="btn-purple text-yellow br-5 fs-9 fw-700 pop-btn lap-btnpurple" >
                                                 Cancel Bet
                                               </button>
                                             </div>
@@ -6524,7 +6596,7 @@ background-size: 100% 100%;
                                               <div class="mr-10">
                                                 <div class="avatar-header rounded-circle overflow-hidden">
                                                   <a href="./avatar.html">
-                                                    <img src="../img/lapimg-home/header-img.png" alt="profile" srcset="" width="52" class=" rounded-circle">
+                                                    <img src="../img/lapimg-home/header-img.png" alt="profile" srcset="" width="72" class=" rounded-circle">
                                                   </a>
                                                 </div>
                                               </div>
@@ -7232,7 +7304,6 @@ slides.forEach(slide => {
   });
 </script>
 
-
 <script>
   // Select all swiper slides
   const swiperSlide_play = document.querySelectorAll('.swiper-slide_btn swiper-slide ');
@@ -7256,6 +7327,25 @@ slides.forEach(slide => {
 </script>
 
 <script>
+// Select all elements with the class `hove_lay_img`
+const playbutton_on_img = document.querySelectorAll('.custom_play_btn_hover_effect .hove_lay_img');
+
+playbutton_on_img.forEach(imgContainer => {
+    // Create the overlay div
+    const overlay = document.createElement('div');
+    overlay.className = 'custom-overlay';
+
+    // Create the play button div
+    const playButton = document.createElement('div');
+    playButton.className = 'custom-play-button';
+    playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+
+    // Append the play button to the overlay
+    overlay.appendChild(playButton);
+
+    // Append the overlay to the image container
+    imgContainer.appendChild(overlay);
+});
 
 </script>
 

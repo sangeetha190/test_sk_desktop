@@ -18,6 +18,7 @@
   <script src="../js/jquery.min.js"></script>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="../js/sample.js"></script>
+
   <style>
     .image_play_btn_hover_effect  swiper-slide {
             position: relative;
@@ -72,9 +73,8 @@
           left: 2px;
           font-size: 20px;
         }
-    .image_play_btn_hover_effect    swiper-slide:hover .overlay {
+    .image_play_btn_hover_effect swiper-slide:hover .overlay {
             opacity: 1;
-        
         }
 
 
@@ -84,19 +84,67 @@
 }
 
 /* Latestnew play btn */
-.image_play_btn_hover_effect  .text_btn_play-button {
+.image_play_btn_hover_effect .text_btn_play-button {
     background-color: #F2FF00;
     border-radius: 10px;
-    padding: 2px 40px;
+    padding: 6px 40px !important;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 700;
     color: rgb(0, 0, 0);
 }
 /* Latestnew play btn Ends*/
-</style>
+
+
+
+  </style>
+
+  <style>
+    .custom_play_btn_hover_effect .hove_lay_img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.custom_play_btn_hover_effect .custom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #380d545b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+}
+
+.custom_play_btn_hover_effect .custom-play-button {
+  width: 54px !important;
+  height:54px !important;
+    background-color: #F2FF00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+          font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.custom_play_btn_hover_effect .hove_lay_img:hover .custom-overlay {
+    opacity: 1;
+}
+.custom_play_btn_hover_effect .fa-solid.fa-play{
+          position: relative;
+          left: 2px;
+        }
+
+  </style>
+
 </head>
 
 <body>
@@ -122,16 +170,18 @@
               <a class="nav-link text-white" href="teenpatti.html">Teenpatti</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="livecasino.html">Casino</a>
+              <a class="nav-link text-yellow" href="livecasino.html">Casino</a>
             </li>
 
 
           </ul>
           <div class="d-flex g-15 align-items-center" role="search">
-
+            <a href="customerSupport.html"
+            class="text-decoration_none text-black">
             <button class="btn btn-yellow rounded-pill header-btnyellow fs-14" type="submit"><i
-                class="fa-solid fa-phone"></i> <a href="customerSupport.html"
-                class="text-decoration_none text-black">Call</a></button>
+                class="fa-solid fa-phone"></i> Call</button>
+                </a>
+
 
 
             <div class="header-searchicon">
@@ -216,7 +266,7 @@
 
           <div class="d-flex flex-grow-1 tab-viewgrownon">
             <div class="col d-flex justify-content-end col-flex0">
-              <a href="./pointpage2.html" class="card-tile">
+              <a href="#" class="card-tile">
                 <div class="mb-2">
                   <img src="../img/icon/icon-money.svg" width="21" />
                 </div>
@@ -235,7 +285,7 @@
               </a>
             </div>
             <div class="col d-flex justify-content-start col-flex0">
-              <a href="./mybetsports.html" class="card-tile">
+              <a href="#" class="card-tile">
                 <div class="mb-2">
                   <img src="../img/icon/icon-achivements.svg" width="22" />
                 </div>
@@ -480,7 +530,7 @@
           </div>
 
           <div>
-            <a href="./inplay.html" class="text-decoration_none">
+            <a href="#" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
                 <img src="../img/Laptop/buttonicon/success 2.png" alt="" srcset="" width="20">
                 <p class=" m-0">RoyalGame  <br> Virtual</p>
@@ -489,7 +539,7 @@
           </div>
 
           <div>
-            <a href="./inplay.html" class="text-decoration_none">
+            <a href="#" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
                 <img src="../img/Laptop/buttonicon/image 71.png" alt="" srcset="" width="20">
                 <p class=" m-0">Spiribe</p>
@@ -500,8 +550,8 @@
           <div>
             <a href="./inplay.html" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
-                <img src="../img/Laptop/buttonicon/chronometer 1.png" alt="" srcset="" width="20">
-                <p class=" m-0">In Play</p>
+                <img src="../img/Laptop/buttonicon/image 9.png" alt="" srcset="" width="20">
+                <p class=" m-0">Ezugi</p>
                 
               </div>
             </a>
@@ -509,16 +559,16 @@
           <div>
             <a href="./inplayCricket.html" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
-                <img src="../img/Laptop/buttonicon/cricket-player 1.png" alt="" srcset="" width="20">
-                <p class=" m-0">Cricket</p>
+                <img src="../img/Laptop/buttonicon/image 10.png" alt="" srcset="" width="20">
+                <p class=" m-0">Evalution <br> Game</p>
               </div>
             </a>
           </div>
           <div>
             <a href="./inplayfootball.html" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
-                <img src="../img/Laptop/buttonicon/football 2.png" alt="" srcset="" width="20">
-                <p class=" m-0">Football</p>
+                <img src="../img/Laptop/buttonicon/image 11.png" alt="" srcset="" width="20">
+                <p class=" m-0">Royal  <br> Gaming</p>
               </div>
             </a>
           </div>
@@ -526,24 +576,24 @@
           <div>
             <a href="./inplaytennis.html" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
-                <img src="../img/Laptop/buttonicon/tennis 2.png" alt="" srcset="" width="20">
-                <p class=" m-0">Tennis</p>
+                <img src="../img/Laptop/buttonicon/fortune 1.png" alt="" srcset="" width="20">
+                <p class=" m-0">BetGametv</p>
               </div>
             </a>
           </div>
           <div>
             <a href="./inplay.html" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
-                <img src="../img/Laptop/buttonicon/sports 1.png" alt="" srcset="" width="20">
-                <p class=" m-0">Sports Book</p>
+                <img src="../img/Laptop/buttonicon/image 12.png" alt="" srcset="" width="20">
+                <p class=" m-0">Sexybcrt</p>
               </div>
             </a>
           </div>
           <div>
             <a href="./inplay.html" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
-                <img src="../img/Laptop/buttonicon/magic-wand 1.png" alt="" srcset="" width="20">
-                <p class=" m-0">Fantasy</p>
+                <img src="../img/Laptop/buttonicon/image 13.png" alt="" srcset="" width="20">
+                <p class=" m-0">Smartsoft  <br> Gaming</p>
               </div>
             </a>
           </div>
@@ -551,32 +601,29 @@
           <div>
             <a href="./inplay.html" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
-                <img src="../img/Laptop/buttonicon/card-game 1.png" alt="" srcset="" width="20">
-                <p class=" m-0">Teen Patti</p>
+                <img src="../img/Laptop/buttonicon/image 69.png" alt="" srcset="" width="20">
+                <p class=" m-0">Gamzix</p>
               </div>
             </a>
           </div>
 
           <div>
-            <a href="./inplay.html" class="text-decoration_none">
+            <a href="#" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
                 <img src="../img/Laptop/buttonicon/success 2.png" alt="" srcset="" width="20">
-                <p class=" m-0">contest</p>
+                <p class=" m-0">RoyalGame  <br> Virtual</p>
               </div>
             </a>
           </div>
 
           <div>
-            <a href="./inplay.html" class="text-decoration_none">
+            <a href="#" class="text-decoration_none">
               <div class="d-flex slider_purple_btn align-items-center">
                 <img src="../img/Laptop/buttonicon/image 71.png" alt="" srcset="" width="20">
-                <p class=" m-0">7Up 7Down</p>
+                <p class=" m-0">Spiribe</p>
               </div>
             </a>
           </div>
-
-
-
      
         </div>
 
@@ -684,70 +731,58 @@
 
         
            
-            <div
-            class="col-12 d-flex flex-column p-3"
-            style="gap: 10px; padding-left: 5px"
-          >
-            <img
-              src="../img/left/1_1 1.png"
-              alt=""
-              srcset=""
-              class="w-100"
-            />
-            <img
-              src="../img/left/6_6 1.png"
-              alt=""
-              srcset=""
-              class="w-100"
-            />
-            <img
-              src="../img/left/3_3 1.png"
-              alt=""
-              srcset=""
-              class="w-100"
-            />
-            <div class="d-flex align-items-center justify-content-center">
-              <img
-              src="../img/left/Asset 1 1.png"
-              alt=""
-              srcset=""
-              class="w-75"
-            />
+            <div class="col-12 d-flex flex-column p-3 custom_play_btn_hover_effect swiper-slide" style="gap: 10px; padding-left: 5px">
+              <div class="hove_lay_img">
+                <img src="../img/left/1_1 1.png" alt="" srcset="" class="w-100">
+              <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+              <div class="hove_lay_img">
+              <img src="../img/left/6_6 1.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/3_3 1.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <div class="d-flex align-items-center justify-content-center">
+                  <img src="../img/left/Asset 1 1.png" alt="" srcset="" class="w-75">
+              </div>
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/post-13 1.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/post-18 2.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 791.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group-1.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 792.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group-2.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 793.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Mask group-3.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
+            <div class="hove_lay_img">
+              <img src="../img/left/Group 794.png" alt="" srcset="" class="w-100">
+            <div class="custom-overlay"><div class="custom-play-button"><i class="fa-solid fa-play"></i></div></div></div>
             </div>
-            <!-- <div class="d-flex justify-content-center">
-              <img
-                src="../img/live_casino/11_ 2.png"
-                alt=""
-                srcset=""
-              />
-            </div> -->
-
-            <img
-              src="../img/left/post-13 1.png"
-              alt=""
-              srcset=""
-              class="w-100"
-            />
-            <img
-              src="../img/left/post-18 2.png"
-              alt=""
-              srcset=""
-              class="w-100"
-            />
-            <img
-              src="../img/left/post-17 1.png"
-              alt=""
-              srcset=""
-              class="w-100"
-            />
-            </div>
-
              <!------------->
              <div class="col-12 favorites mobile-tab-none my-2">
               <!-- <div class="left-side-img">
                 <img src="../img/Laptop/Rectangle 173.png" alt="" class="w-100">
               </div> -->
-              <div class="left-sidefav">
+              <!-- <div class="left-sidefav">
                 <div class="favorite-btn">
                   <button class="btn btn-yellow rounded text-capitalize fs-16 fw-600" type="submit"> Favorites</button>
                 </div>
@@ -755,7 +790,7 @@
                   <img src="../img/Laptop/Ellipse 20.png" alt="" class="w-10 mb-2">
                   <h5 class="text-white fs-16">Add to Favorite</h3>
                 </div>
-              </div>
+              </div> -->
              
             </div>
             <!---------->
@@ -764,7 +799,7 @@
 
 
             <!-- key tournament -->
-            <div class="slider-main wrapper h-140 pb-3 mt-4 mobile-tab-none">
+            <div class="slider-main wrapper h-140 pb-3 mt-2 mobile-tab-none">
               <swiper-container class="mySwiper live-casino mainbanner" space-between="10" slides-per-view="3" slides-per-view="auto"
               loop="true" rewind="true" space-between="10" free-mode="true">
 
@@ -852,94 +887,9 @@
             </div> -->
             <!-- key tournament end-->
 
-            <!-- key tournament -->
-            <div class="wrapper h-140 pb-3 my-2 mobile-tab-none">
-
-              <swiper-container class="mySwiper no-border image_play_btn_hover_effect" space-between="10" slides-per-view="5" slides-per-view="auto"
-                loop="true" rewind="true" space-between="10" free-mode="true">
-
-                <swiper-slide>
-                  <img src="../img/live_casino/7_ 3.png" alt="" srcset="" /></swiper-slide>
-
-                <swiper-slide>
-                  <img src="../img/live_casino/9_ 1.png" alt="" srcset="" /></swiper-slide>
-
-
-                <swiper-slide>
-                  <img src="../img/live_casino/8_ 1.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/7_ 3.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/9_ 1.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/8_ 1.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/7_ 3.png" alt="" srcset="" /></swiper-slide>
-
-
-              </swiper-container>
-
-            </div>
-            <!-- key tournament end-->
+           
             <!-- end -->
-            <!-- Virtual Gaming starts -->
-            <div class="wrapper h-140 small_slider_height mb-5 mobile-tab-none">
-              <div class="container-full title-heads text-left">
-                <h3 class="text-white fs-12 fw-700 px-2">Virtual Gaming</h3>
-                <swiper-container class="mySwiper image_play_btn_hover_effect" slides-per-view="auto" slides-per-view="auto" rewind="true"
-                loop="true">
-                <swiper-slide>
-                  <img src="../img/live_casino/s_1.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_2.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_3.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_4.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_5.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_6.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_7.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_8.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_9.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_10.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_11.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_12.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_13.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_14.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_15.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_16.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_17.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_18.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_19.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_20.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_21.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_22.png" alt="" srcset="" /></swiper-slide>
-                <swiper-slide>
-                  <img src="../img/live_casino/s_23.png" alt="" srcset="" /></swiper-slide>
-              </swiper-container>
-              </div>
-
-       
-            </div>
-            <!-- Virtual Gaming Ends -->
+         
 
             <!-- match slider starts -->
 
@@ -1665,7 +1615,7 @@
                                               <div class="mr-10">
                                                 <div class="avatar-header rounded-circle overflow-hidden">
                                                   <a href="./avatar.html">
-                                                  <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
+                                                  <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="72" class=" rounded-circle">
                                                   </a>
                                                 </div>
                                               </div>
@@ -3121,6 +3071,29 @@
       // Append the overlay to the swiper slide
       slide.appendChild(overlay);
   });
+</script>
+
+<script>
+// Select all elements with the class `hove_lay_img`
+const playbutton_on_img = document.querySelectorAll('.custom_play_btn_hover_effect .hove_lay_img');
+
+playbutton_on_img.forEach(imgContainer => {
+    // Create the overlay div
+    const overlay = document.createElement('div');
+    overlay.className = 'custom-overlay';
+
+    // Create the play button div
+    const playButton = document.createElement('div');
+    playButton.className = 'custom-play-button';
+    playButton.innerHTML = '<i class="fa-solid fa-play"></i>';
+
+    // Append the play button to the overlay
+    overlay.appendChild(playButton);
+
+    // Append the overlay to the image container
+    imgContainer.appendChild(overlay);
+});
+
 </script>
 </body>
 

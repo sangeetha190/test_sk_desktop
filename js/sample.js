@@ -8104,17 +8104,9 @@
 })();
 //# sourceMappingURL=swiper-element-bundle.min.js.map
 
-
-
-
 $(document).ready(function () {
   $(".ShowSubList").click(function () {
     console.log("fdsf");
     $(this).find(".list-group-sub").slideToggle();
   });
 });
-
-
-
-
-
