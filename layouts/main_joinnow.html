@@ -6,11 +6,15 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       referrerpolicy="no-referrer"
     />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <style>
       .bg_image_both_L_M {
         background-image: url(../img/Login.png);
@@ -158,15 +162,33 @@
               class="d-flex justify-content-center flex-column w-100"
               style="padding-top: 80px"
             >
+
+            <div class="my-4 d-flex justify-content-center">
               <img
-                src="../img/Laptop/main-joinnow/Frame 554.png"
-                class="w-100 mb-2"
-                style="margin-top: 5px"
+                  id="image1"
+                  src="../img/Laptop/main-joinnow/Frame 554.png"
+                  class="w-80 mb-2"
+                  style="margin-top: 5px"
               />
+              <img
+                  id="image2"
+                  src="../img/Laptop/main-joinnow/Frame 555.png"
+                  class="w-80 mb-2 mx-2"
+                  style="margin-top: 5px"
+              />
+              <img
+                  id="image3"
+                  src="../img/Laptop/main-joinnow/Frame 556.png"
+                  class="w-80 mb-2"
+                  style="margin-top: 5px"
+              />
+          </div>
+          
+             
 
               <div class="px-3" style="margin-top: 2px">
                 <div class="d-flex justify-content-center">
-                    <div class="login-title text-center  card p-2 " style="width: 90%;">
+                    <div class="login-title text-center  card p-1 " style="width: 60%;">
                         <div class="fs-17 text-white w-100 d-flex align-items-center fw-600 justify-content-evenly" style="background: #3E0D5E;border:1px solid #fff;outline: 1px solid #000;">
                            <img src="../img/Laptop/main-joinnow/icon/WhatsApp_icon.png" alt="" srcset="" width="30"><p class="m-0">
                             Get ID Instantly On Whatsapp
@@ -213,4 +235,32 @@
       </div>
     </div>
   </body>
+  <script>
+    $(document).ready(function() {
+        // Add click event for each image
+        $('#image1').on('click', function() {
+            $(this).fadeOut(400, function() {
+                $(this).attr('src', '../img/Laptop/main-joinnow/new-image1.png');
+                $(this).fadeIn(400);
+            });
+        });
+
+        $('#image2').on('click', function() {
+            $(this).fadeOut(400, function() {
+                $(this).attr('src', '../img/Laptop/main-joinnow/new-image2.png');
+                $(this).fadeIn(400);
+            });
+        });
+
+        $('#image3').on('click', function() {
+            $(this).fadeOut(400, function() {
+                $(this).attr('src', '../img/Laptop/main-joinnow/new-image3.png');
+                $(this).fadeIn(400);
+            });
+        });
+    });
+</script>
+
+
+
 </html>
