@@ -582,7 +582,8 @@ button#pills-home-tab.schedule.active {
   }
 
   .cash-outbtn.d-flex.align-items-center img {
-    width: 50% !important;
+    /* width: 50% !important; */
+    width: 40% !important;
   }
 
   .table-cus > tbody > tr > td {
@@ -595,8 +596,11 @@ button#pills-home-tab.schedule.active {
   }
 
   button.deposit_button.fs-14.fw-700.h-34.w-100 {
-    font-size: 17px !important;
+    /* font-size: 17px !important;
     height: 44px !important;
+    border-radius: 8px; */
+    font-size: 20px !important;
+    height: 55px !important;
     border-radius: 8px;
   }
   swiper-container.mySwiper.patti.customer-support swiper-slide {
@@ -613,8 +617,10 @@ button#pills-home-tab.schedule.active {
     margin-top: 95px !important;
   }
   a.btn.sm-btn-yellow.d-flex.align-items-center.justify-content-center.rounded-pill.px-3.dep_btn {
-    width: 170px !important;
-    height: 50px !important;
+    /* width: 170px !important;
+    height: 50px !important; */
+    width: 198px !important;
+    height: 55px !important;
     display: flex !important;
     font-style: normal !important;
     border: 2px solid #46464600 !important;

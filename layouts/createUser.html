@@ -19,6 +19,10 @@
       .create-user-bg.bg_image_both_L_M .center_image-width {
         width: 50%;
       }
+      .create-user-alignment_top {
+        padding-top: 150px;
+      }
+
       @media (min-width: 700px) {
         .create-user-bg.bg_image_both_L_M {
           background-image: url(../img/Laptop/login/Group\ 636.png);
@@ -30,6 +34,11 @@
         }
         .create-user-bg.bg_image_both_L_M .login-form-control {
           height: 55px;
+        }
+      }
+      @media (max-width: 1380px) {
+        .create-user-alignment_top {
+          padding-top: 20px;
         }
       }
     </style>
@@ -66,9 +75,7 @@
                 <a class="nav-link text-white" href="#">In-play</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="#"
-                  >Teenpatti</a
-                >
+                <a class="nav-link text-white" href="#">Teenpatti</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-white" href="#">Casino</a>
@@ -138,7 +145,7 @@
             class="d-flex flex-column justify-content-between align-content-center vh-100"
             style="padding-top: 180px"
           >
-            <div class="px-3">
+            <div class="px-3 create-user-alignment_top">
               <div class="login-title text-center mb-4">Create Username</div>
               <div class="mb-4">
                 <input
