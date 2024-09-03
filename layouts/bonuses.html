@@ -32,6 +32,87 @@
 
     }
   </style>
+   <style>
+    .image_play_btn_hover_effect  swiper-slide {
+            position: relative;
+            display: inline-block;
+        }
+
+          swiper-slide img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .image_play_btn_hover_effect .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #380d545b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .image_play_btn_hover_effect .overlay .fa-solid.fa-play{
+          position: relative;
+          left: 3px;
+        }
+        .image_play_btn_hover_effect  .play-button {
+    width: 54px;
+    height: 54px;
+    background-color: #F2FF00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+}
+
+.image_play_btn_hover_effect.play-button_small .play-button{
+  width: 40px !important;
+  height:40px !important;
+
+}
+
+.image_play_btn_hover_effect.play-button_small .overlay .fa-solid.fa-play{
+          position: relative;
+          left: 2px;
+          font-size: 20px;
+        }
+    .image_play_btn_hover_effect swiper-slide:hover .overlay {
+            opacity: 1;
+        }
+
+
+.image_play_btn_hover_effect.live_casino_play_btn .overlay{
+  height: 70% !important;
+  border-radius: 0 !important;
+}
+
+/* Latestnew play btn */
+.image_play_btn_hover_effect .text_btn_play-button {
+    background-color: #F2FF00;
+    border-radius: 10px;
+    padding: 6px 40px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+/* Latestnew play btn Ends*/
+
+
+
+  </style>
 </head>
 
 <body>
@@ -156,16 +237,11 @@
             <div class="row align-items-center" bis_skin_checked="1">
               <div class="col-7" bis_skin_checked="1">
                 <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
-
                   <div class="w-40 mr-10">
                     <a href="./avatar.html" class="text-decoration_none">
                       <img src="../img/avatar/top-bread/Mask group (7).png" alt="" srcset="" class="w-100">
                     </a>
                   </div>
-
-
-
-
                   <div class="avatar-content" bis_skin_checked="1">
                     <span class="text-yellow fs-9">Welcome</span>
 
@@ -500,120 +576,355 @@
           </div>
         </div>
 
-        <!-- second slider -->
-        <div class="wrapper h-10 mt-10 my-5 overflow-hidden">
+
+
+        <!-- running slider Starts -->
+        <div class="wrapper-scroll mt-5 mb-3 lap-bg-purple  px-2" style="margin-left: 10px">
           <!-- Slider main container -->
 
-          <!-- test Starts -->
+          <div class="w-100 d-flex g-3 overflow-x-auto pt-3" style="gap: 10px">
+            <div>
+              <a href="./inplay.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 9.png" alt="" srcset="" width="20">
+                  <p class="m-0">Ezugi</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplayCricket.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 10.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Evalution <br>
+                    Game
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplayfootball.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 11.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Royal <br>
+                    Gaming
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplaytennis.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/fortune 1.png" alt="" srcset="" width="20">
+                  <p class="m-0">BetGametv</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplay.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 12.png" alt="" srcset="" width="20">
+                  <p class="m-0">Sexybcrt</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 13.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Smartsoft <br>
+                    Gaming
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 69.png" alt="" srcset="" width="20">
+                  <p class="m-0">Gamzix</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/success 2.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    RoyalGame <br>
+                    Virtual
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 71.png" alt="" srcset="" width="20">
+                  <p class="m-0">Spiribe</p>
+                </div>
+              </a>
+            </div>
 
-          <!-- test Ends -->
-          <!-- second slider -->
-          <div class="wrapper mt-10 lap-bg-purple">
-            <!-- Slider main container -->
+            <div>
+              <a href="./inplay.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 9.png" alt="" srcset="" width="20">
+                  <p class="m-0">Ezugi</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplayCricket.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 10.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Evalution <br>
+                    Game
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplayfootball.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 11.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Royal <br>
+                    Gaming
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplaytennis.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/fortune 1.png" alt="" srcset="" width="20">
+                  <p class="m-0">BetGametv</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplay.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 12.png" alt="" srcset="" width="20">
+                  <p class="m-0">Sexybcrt</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 13.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Smartsoft <br>
+                    Gaming
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 69.png" alt="" srcset="" width="20">
+                  <p class="m-0">Gamzix</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/success 2.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    RoyalGame <br>
+                    Virtual
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 71.png" alt="" srcset="" width="20">
+                  <p class="m-0">Spiribe</p>
+                </div>
+              </a>
+            </div>
+          
+            <div>
+              <a href="./inplay.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 9.png" alt="" srcset="" width="20">
+                  <p class="m-0">Ezugi</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplayCricket.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 10.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Evalution <br>
+                    Game
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplayfootball.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 11.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Royal <br>
+                    Gaming
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplaytennis.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/fortune 1.png" alt="" srcset="" width="20">
+                  <p class="m-0">BetGametv</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplay.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 12.png" alt="" srcset="" width="20">
+                  <p class="m-0">Sexybcrt</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 13.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Smartsoft <br>
+                    Gaming
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 69.png" alt="" srcset="" width="20">
+                  <p class="m-0">Gamzix</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/success 2.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    RoyalGame <br>
+                    Virtual
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 71.png" alt="" srcset="" width="20">
+                  <p class="m-0">Spiribe</p>
+                </div>
+              </a>
+            </div>
 
-            <swiper-container class="mySwiper button-slider" loop="true" rewind="true" slides-per-view="auto"
-              free-mode="true">
-              <swiper-slide>
-
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">In Play</p>
-                  </div>
-                </a>
-              </swiper-slide>
-              <swiper-slide>
-
-                <a href="./inplayCricket.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">Cricket</p>
-                  </div>
-                </a>
-              </swiper-slide>
-              <swiper-slide>
-
-                <a href="./inplayfootball.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">Football</p>
-                  </div>
-                </a>
-              </swiper-slide>
-
-              <swiper-slide>
-
-                <a href="./inplaytennis.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">Tennis</p>
-                  </div>
-                </a>
-              </swiper-slide>
-              <swiper-slide>
-
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">Sports Book</p>
-                  </div>
-                </a>
-              </swiper-slide>
-              <swiper-slide>
-
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">Fantasy</p>
-                  </div>
-                </a>
-              </swiper-slide>
-
-              <swiper-slide>
-
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">Teen Patti</p>
-                  </div>
-                </a>
-              </swiper-slide>
-
-              <swiper-slide>
-
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">contest</p>
-                  </div>
-                </a>
-              </swiper-slide>
-
-              <swiper-slide>
-
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">7Up 7Down</p>
-                  </div>
-                </a>
-              </swiper-slide>
-              <swiper-slide>
-
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">7Up 7Down</p>
-                  </div>
-                </a>
-              </swiper-slide>
-              <swiper-slide>
-
-                <a href="./inplay.html" class="text-decoration_none">
-                  <div class="">
-                    <p class="slider_purple_btn">7Up 7Down</p>
-                  </div>
-                </a>
-              </swiper-slide>
-
-
-            </swiper-container>
-
+            <div>
+              <a href="./inplay.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 9.png" alt="" srcset="" width="20">
+                  <p class="m-0">Ezugi</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplayCricket.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 10.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Evalution <br>
+                    Game
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplayfootball.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 11.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Royal <br>
+                    Gaming
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplaytennis.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/fortune 1.png" alt="" srcset="" width="20">
+                  <p class="m-0">BetGametv</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="./inplay.html" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 12.png" alt="" srcset="" width="20">
+                  <p class="m-0">Sexybcrt</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 13.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    Smartsoft <br>
+                    Gaming
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 69.png" alt="" srcset="" width="20">
+                  <p class="m-0">Gamzix</p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/success 2.png" alt="" srcset="" width="20">
+                  <p class="m-0">
+                    RoyalGame <br>
+                    Virtual
+                  </p>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="#" class="text-decoration_none">
+                <div class="d-flex slider_purple_btn align-items-center">
+                  <img src="../img/Laptop/buttonicon/image 71.png" alt="" srcset="" width="20">
+                  <p class="m-0">Spiribe</p>
+                </div>
+              </a>
+            </div>
           </div>
-          <!-- end -->
-
         </div>
-        <!-- end -->
+        <!-- running slider Ends -->
         <!-- slider start -->
 
         <!-- <div class="w-100 d-flex justify-content-center">
@@ -644,7 +955,14 @@
               </div>
             </div> -->
 
-          <swiper-container class="mySwiper latest-game" space-between="10" slides-per-view="4">
+        </div>
+
+
+
+
+         <!-- second slider -->
+         <div class="wrapper h-170 m-15 remove_br">
+          <swiper-container class="mySwiper latest-game play_btn_icon image_play_btn_hover_effect swiper-slide_btn" space-between="10" slides-per-view="4">
             <swiper-slide><img src="../img/avatar/home/secsl (1).png" /></swiper-slide>
             <swiper-slide><img src="../img/avatar/home/secsl (4).png" /></swiper-slide>
             <swiper-slide><img src="../img/avatar/home/secsl (5).png" /></swiper-slide>
@@ -652,9 +970,6 @@
             <swiper-slide><img src="../img/avatar/home/secsl (2).png" /></swiper-slide>
           </swiper-container>
         </div>
-
-        <!-- end -->
-
         <!-- end -->
 
         <!-- social-links -->
@@ -850,73 +1165,75 @@
                         </div>
                     </a> -->
                     <div class="row" bis_skin_checked="1">
-                        <div class="top-headbread px-2" bis_skin_checked="1">
-                            <div class="card position-relative br-yellow py-2 px-2 mb-15" style="
-                background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
-                background-size: cover;
-                border-radius: 13px;border: 1px solid #f0b30db8;
-              " bis_skin_checked="1">
-                                <div class="row align-items-center" bis_skin_checked="1">
-                                    <div class="col-7" bis_skin_checked="1">
-                                        <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
-                                            <div class="mr-10">
-                                              <div class="avatar-header rounded-circle overflow-hidden">
-                                                <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="52" class=" rounded-circle">
-                                              </div>
+                      <div class="top-headbread px-2" bis_skin_checked="1">
+                          <div class="card position-relative br-yellow py-3 px-2" style="
+              background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+              background-size: cover;
+              border-radius: 13px;border: 1px solid #f0b30db8;
+            " bis_skin_checked="1">
+                              <div class="row align-items-center" bis_skin_checked="1">
+                                  <div class="col-7" bis_skin_checked="1">
+                                      <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
+                                          <div class="mr-10">
+                                           <div class="avatar-header rounded-circle overflow-hidden">
+                                              <a href="./avatar.html">
+                                              <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="72" class=" rounded-circle">
+                                              </a>
                                             </div>
+                                          </div>
 
-                                            <div class="avatar-content" bis_skin_checked="1">
-                                                <span class="text-yellow fs-9">Welcome</span>
+                                          <div class="avatar-content" bis_skin_checked="1">
+                                              <span class="text-yellow fs-9">Welcome</span>
 
-                                                <h4 class="text-white fs-18">King@x</h4>
-                                            </div>
-                                        </div>
-                                    </div>
+                                              <h4 class="text-white fs-18">King@x</h4>
+                                          </div>
+                                      </div>
+                                  </div>
 
-                                    <!-- test starts -->
-                                    <div class="col-5 d-flex justify-content-end">
-                                        <div class="btn-group dropdown-wrapper lang_drop_down_container">
-                                            <button class="btn dropdown-toggle text-white fs-10 br-yellow mbet" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Choose Language
-                                            </button>
-                                            <ul class="dropdown-menu bg-gr p-0 bg-transparent text-center" aria-labelledby="dropdownMenuLink">
-                                                <li class="lang_drop_down fs-12 fw-600">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">English</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Marathi</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Hindi</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Gujarati</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Tamil</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Bangali</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Telugu</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Kannada</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Malayalam</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Bhojpuri</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                  <!-- test starts -->
+                                  <div class="col-5 d-flex justify-content-end">
+                                      <div class="btn-group dropdown-wrapper lang_drop_down_container">
+                                          <button class="btn dropdown-toggle text-white fs-10 br-yellow mbet" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Choose Language
+                                          </button>
+                                          <ul class="dropdown-menu bg-gr p-0 bg-transparent text-center" aria-labelledby="dropdownMenuLink">
+                                              <li class="lang_drop_down fs-12 fw-600">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">English</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Marathi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Hindi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Gujarati</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Tamil</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bangali</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Telugu</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Kannada</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Malayalam</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bhojpuri</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+</div>
                 </div>
                 <!-- <div class="menu-header-bg-area"></div> -->
                 <div class="app-main px-3">
@@ -1092,73 +1409,75 @@
                         </div>
                     </a> -->
                     <div class="row" bis_skin_checked="1">
-                        <div class="top-headbread px-2" bis_skin_checked="1">
-                            <div class="card position-relative br-yellow py-2 px-2 mb-15" style="
-                background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
-                background-size: cover;
-                border-radius: 13px;border: 1px solid #f0b30db8;
-              " bis_skin_checked="1">
-                                <div class="row align-items-center" bis_skin_checked="1">
-                                    <div class="col-7" bis_skin_checked="1">
-                                        <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
-                                            <div class="mr-10">
-                                              <div class="avatar-header rounded-circle overflow-hidden">
-                                                <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="72" class=" rounded-circle">
-                                              </div>
+                      <div class="top-headbread px-2" bis_skin_checked="1">
+                          <div class="card position-relative br-yellow py-3 px-2" style="
+              background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+              background-size: cover;
+              border-radius: 13px;border: 1px solid #f0b30db8;
+            " bis_skin_checked="1">
+                              <div class="row align-items-center" bis_skin_checked="1">
+                                  <div class="col-7" bis_skin_checked="1">
+                                      <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
+                                          <div class="mr-10">
+                                           <div class="avatar-header rounded-circle overflow-hidden">
+                                              <a href="./avatar.html">
+                                              <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="72" class=" rounded-circle">
+                                              </a>
                                             </div>
+                                          </div>
 
-                                            <div class="avatar-content" bis_skin_checked="1">
-                                                <span class="text-yellow fs-9">Welcome</span>
+                                          <div class="avatar-content" bis_skin_checked="1">
+                                              <span class="text-yellow fs-9">Welcome</span>
 
-                                                <h4 class="text-white fs-18">King@x</h4>
-                                            </div>
-                                        </div>
-                                    </div>
+                                              <h4 class="text-white fs-18">King@x</h4>
+                                          </div>
+                                      </div>
+                                  </div>
 
-                                    <!-- test starts -->
-                                    <div class="col-5 d-flex justify-content-end">
-                                        <div class="btn-group dropdown-wrapper lang_drop_down_container">
-                                            <button class="btn dropdown-toggle text-white fs-10 br-yellow mbet" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                Choose Language
-                                            </button>
-                                            <ul class="dropdown-menu bg-gr p-0 bg-transparent text-center" aria-labelledby="dropdownMenuLink">
-                                                <li class="lang_drop_down fs-12 fw-600">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">English</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Marathi</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Hindi</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Gujarati</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Tamil</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Bangali</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Telugu</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Kannada</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Malayalam</a>
-                                                </li>
-                                                <li class="lang_drop_down fs-12">
-                                                    <a class="dropdown-item py-0 text-purple" href="#">Bhojpuri</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                  <!-- test starts -->
+                                  <div class="col-5 d-flex justify-content-end">
+                                      <div class="btn-group dropdown-wrapper lang_drop_down_container">
+                                          <button class="btn dropdown-toggle text-white fs-10 br-yellow mbet" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Choose Language
+                                          </button>
+                                          <ul class="dropdown-menu bg-gr p-0 bg-transparent text-center" aria-labelledby="dropdownMenuLink">
+                                              <li class="lang_drop_down fs-12 fw-600">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">English</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Marathi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Hindi</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Gujarati</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Tamil</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bangali</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Telugu</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Kannada</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Malayalam</a>
+                                              </li>
+                                              <li class="lang_drop_down fs-12">
+                                                  <a class="dropdown-item py-0 text-purple" href="#">Bhojpuri</a>
+                                              </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+</div>
                 </div>
                 <!-- <div class="menu-header-bg-area"></div> -->
                 <div class="list-group list-group-flush list-group-cus px-3 mt-3 menu-custom-hight">
@@ -1755,8 +2074,28 @@
   </div>
   <!-- bet stake Ends -->
  <!-- setting-popp end-->
-   
+ <script src="../js/swiper.js"></script>
+ <script>
+  // Select all swiper slides
+  const swiperSlide_play = document.querySelectorAll('.swiper-slide_btn swiper-slide ');
 
+  swiperSlide_play.forEach(slide => {
+      // Create the overlay div
+      const overlay = document.createElement('div');
+      overlay.className = 'overlay';
+
+      // Create the play button div
+      const playButton = document.createElement('div');
+      playButton.className = 'text_btn_play-button';
+      playButton.innerHTML = 'Play';
+
+      // Append the play button to the overlay
+      overlay.appendChild(playButton);
+
+      // Append the overlay to the swiper slide
+      slide.appendChild(overlay);
+  });
+</script>
 
 </body>
 
