@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/home.css" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+   
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -17,7 +17,9 @@
 
     <style>
       .bg_image_both_L_M {
-        background-image: url(../img/Login.png);
+        background-image: url(../img/Laptop/main-joinnow/Group\ 803.png);
+        background-size: cover;
+        background-position: center;
       }
       .bg_image_both_L_M .center_image-width {
         width: 35%;
@@ -44,10 +46,23 @@
         } */
       }
     </style>
+
+   <style>
+    .fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+   </style>
+
   </head>
   <body>
     <div class="container container-xs vh-100 create-user-bg bg_image_both_L_M">
-      <nav class="navbar navbar-expand-lg bg-purple br-yellow fixed-top">
+      <nav class="navbar navbar-expand-lg bg-purple br-yellow fixed-top mobile-tab-none">
         <div class="container col-md-12">
           <img src="../img/play-X-logonew.png" alt="logo" class="w-11" />
           <button
@@ -159,38 +174,31 @@
             style="padding-bottom: 5px"
           >
             <div
-              class="d-flex justify-content-center flex-column w-100"
+              class="d-flex justify-content-center flex-column w-100 h-100"
               style="padding-top: 80px"
             >
 
-            <div class="my-4 d-flex justify-content-center">
-              <img
-                  id="image1"
-                  src="../img/Laptop/main-joinnow/Frame 554.png"
-                  class="w-80 mb-2"
-                  style="margin-top: 5px"
-              />
-              <img
-                  id="image2"
-                  src="../img/Laptop/main-joinnow/Frame 555.png"
-                  class="w-80 mb-2 mx-2"
-                  style="margin-top: 5px"
-              />
-              <img
-                  id="image3"
-                  src="../img/Laptop/main-joinnow/Frame 556.png"
-                  class="w-80 mb-2"
-                  style="margin-top: 5px"
-              />
-          </div>
-          
+            <div class="my-4 h-100 d-flex flex-column justify-content-between position-relative">
              
+              
+             <div class=" w-100">
 
-              <div class="px-3" style="margin-top: 2px">
-                <div class="d-flex justify-content-center">
-                    <div class="login-title text-center  card p-1 " style="width: 60%;">
-                        <div class="fs-17 text-white w-100 d-flex align-items-center fw-600 justify-content-evenly" style="background: #3E0D5E;border:1px solid #fff;outline: 1px solid #000;">
-                           <img src="../img/Laptop/main-joinnow/icon/WhatsApp_icon.png" alt="" srcset="" width="30"><p class="m-0">
+              <div class="slide d-flex justify-content-center">
+                <img id="image1" src="../img/Laptop/main-joinnow/Property 1=Default.png" class="w-80 mb-2 fade-in" style="margin-top: 5px; display: block;" /> 
+                <img id="image2" src="../img/Laptop/main-joinnow/Property 1=Variant2.png" class="w-80 mb-2 fade-in" style="margin-top: 5px; display: none;" /> 
+                <img id="image3" src="../img/Laptop/main-joinnow/Property 1=Variant3.png" class="w-80 mb-2 fade-in" style="margin-top: 5px; display: none;" /> 
+                <img id="image4" src="../img/Laptop/main-joinnow/Property 1=Variant4.png" class="w-80 mb-2 fade-in" style="margin-top: 5px; display: none;" /> 
+                <img id="image5" src="../img/Laptop/main-joinnow/Property 1=Variant5.png" class="w-80 mb-2 fade-in" style="margin-top: 5px; display: none;" /> 
+                <img id="image6" src="../img/Laptop/main-joinnow/Property 1=Variant5.png" class="w-80 mb-2 fade-in" style="margin-top: 5px; display: none;" /> 
+              </div>
+              
+
+
+              <div class="px-3 mt-2">
+                <div class="d-flex justify-content-center w-100" >
+                    <div class="login-title text-center  card p-1 w-75" >
+                        <div class="fs-17 text-white w-100 d-flex align-items-center px-2 justify-content-center" style="background: #3E0D5E;border:1px solid #fff;outline: 1px solid #000;">
+                           <img src="../img/Laptop/main-joinnow/icon/WhatsApp_icon.png" alt="" srcset="" width="30" class="me-2"><p class="m-0 fs-15 fs-md-12">
                             Get ID Instantly On Whatsapp
                            </p> 
                         </div>
@@ -199,28 +207,42 @@
                     </div>
                 </div>
             
-             <div class="w-100 d-flex justify-content-center">
-                <img src="../img/play-X-logo.png" alt="" srcset=""  class="w-75">
-             </div>
              
            
+             </div>
+
+             </div>
+
+            
+
+            
+            <div class="w-100 d-flex justify-content-center position-relative " style="top:-30px">
+              <img src="../img/play-X-logo.png" alt="" srcset=""  class="w-75">
+           </div>
+
+            <div
+            class="d-flex flex-column align-items-center justify-content-center W-100 px-3 mb-0 mt-md-0 mt-sm-0"
+            style="gap: 2px !important"
+          >
+          
+            <div>
+              <a
+                href="register.html"
+                class="btn btn-login mb-1"
+               
+                >Join Now</a
+              >
             </div>
+          </div>
+          
+          </div>
+          
+             
+
+             
             </div>
            
-            <div
-              class="d-flex flex-column align-items-center justify-content-center W-100 px-3 mb-0 mt-md-0 mt-sm-0"
-              style="gap: 2px !important"
-            >
-            
-              <div>
-                <a
-                  href="register.html"
-                  class="btn btn-login mb-1"
-                 
-                  >Join Now</a
-                >
-              </div>
-            </div>
+         
 <!-- bn -->
             <div class="d-flex flex-column justify-content-center align-items-center position-fixed gap-2" style="bottom:10%;right: 20px;">
                 <img src="../img/Laptop/main-joinnow/icon/WhatsApp_icon.png" alt="" srcset="" width="30">
@@ -235,32 +257,55 @@
       </div>
     </div>
   </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+
   <script>
-    $(document).ready(function() {
-        // Add click event for each image
-        $('#image1').on('click', function() {
-            $(this).fadeOut(400, function() {
-                $(this).attr('src', '../img/Laptop/main-joinnow/new-image1.png');
-                $(this).fadeIn(400);
-            });
-        });
+const images = document.querySelectorAll('.slide img');
+let currentIndex = 0;
+let intervalId;
 
-        $('#image2').on('click', function() {
-            $(this).fadeOut(400, function() {
-                $(this).attr('src', '../img/Laptop/main-joinnow/new-image2.png');
-                $(this).fadeIn(400);
-            });
-        });
+function showNextImage() {
+  // Hide the current image
+  images[currentIndex].classList.remove('show');
+  images[currentIndex].style.display = 'none';
 
-        $('#image3').on('click', function() {
-            $(this).fadeOut(400, function() {
-                $(this).attr('src', '../img/Laptop/main-joinnow/new-image3.png');
-                $(this).fadeIn(400);
-            });
-        });
-    });
-</script>
+  // Move to the next image
+  currentIndex = (currentIndex + 1) % images.length;
+
+  // Show the next image
+  images[currentIndex].style.display = 'block';
+  setTimeout(() => {
+    images[currentIndex].classList.add('show');
+  }, 10); // Slight delay for the transition to work
+}
+
+function startSlider() {
+  intervalId = setInterval(showNextImage, 5000);
+}
+
+function stopSlider() {
+  clearInterval(intervalId);
+}
+
+// Add click event to each image
+images.forEach((image, index) => {
+  image.addEventListener('click', () => {
+    stopSlider(); // Stop the automatic slider
+    showNextImage(); // Manually show the next image
+    startSlider(); // Restart the automatic slider
+  });
+});
+
+// Start the slider
+images[currentIndex].style.display = 'block';
+images[currentIndex].classList.add('show');
+startSlider();
 
 
+  </script>
 
+</body>
 </html>
