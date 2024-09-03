@@ -1091,6 +1091,9 @@ span.text-purple.fs-11.fw-650 {
 .wrapper.h-210.mb-4.mt-4.lap-none{
   margin-left: 0;
 }
+.fs-md-12{
+font-size: 12px !important;
+}
 }
 
 @media (max-width: 540px) {
