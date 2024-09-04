@@ -45,6 +45,12 @@
           z-index: 2;
         } */
       }
+
+      @media(max-width:992px){
+        .d-flex.justify-content-center.flex-column.w-100.h-100.mb-top-20{
+          padding-top: 20px !important;
+        }
+      }
     </style>
 
    <style>
@@ -167,14 +173,14 @@
         </div>
       </nav>
       
-      <div class="row justify-content-center">
+      <div class="row justify-content-center h-100">
         <div class="col-sm-9 col-md-5 col-lg-5 col-xl-4 px-0">
           <div
-            class="d-flex flex-column justify-content-between vh-100"
+            class="d-flex flex-column justify-content-between h-100"
             style="padding-bottom: 5px"
           >
             <div
-              class="d-flex justify-content-center flex-column w-100 h-100"
+              class="d-flex justify-content-center flex-column w-100 h-100 mb-top-20"
               style="padding-top: 80px"
             >
 
@@ -233,7 +239,24 @@
                 >Join Now</a
               >
             </div>
+
+           
           </div>
+          
+          </div>
+
+          <div class="row flex-row justify-content-center lap-none my-2">
+            <div class="col-4">
+              <button class="rounded-pill  border-white bg-transparent text-white w-100 py-1 fs-13" >
+                Login
+              </button>
+            </div>
+            <div class="col-4">
+              <button class="rounded-pill  border-white bg-transparent text-white w-100 py-1 fs-13">
+                Demo Login
+              </button>
+            </div>
+           
           
           </div>
           

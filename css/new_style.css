@@ -462,6 +462,10 @@ button#pills-home-tab.schedule.active {
     width: 170px !important;
   }
 
+  swiper-container.mySwiper.latest-game.image_play_btn_hover_effect.swiper-slide_btn.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-backface-hidden swiper-slide {
+    width: 25% !important;
+}
+
   .left-sidefav {
     /* background-image: url(../img/Laptop/Rectangle_173.png); */
     width: 100%;
@@ -470,7 +474,7 @@ button#pills-home-tab.schedule.active {
     border-radius: 10px;
     border: 1px solid #f2ff00 !important;
   }
-
+  
   .favorite-btn button {
     border-radius: 10px 10px 10px 10px !important;
   }
@@ -536,6 +540,9 @@ button#pills-home-tab.schedule.active {
 
   button.bg-purple.text-yellow.br-none.px-4.br-10.fw-600 {
     height: 30px !important;
+  }
+  swiper-container.mySwiper.no-border.key_tournament.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-backface-hidden swiper-slide {
+    width: 10% !important;
   }
 
   /* .br-bottom-yellow{
@@ -681,6 +688,7 @@ button#pills-home-tab.schedule.active {
     width: 75px !important;
     height: 75px !important;
   }
+  
 }
 
 /* deposite */
@@ -764,6 +772,9 @@ a.btn.sm-btn-yellow.d-flex.align-items-center.justify-content-center.rounded-pil
   nav.navbar.navbar-expand-lg.bg-purple.br-yellow {
     display: none;
   }
+  swiper-container.mySwiper.latest-game.image_play_btn_hover_effect.swiper-slide_btn.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-backface-hidden swiper-slide {
+    width: 75% !important;
+}
 }
 
 @media (min-width: 1200px) {
@@ -772,12 +783,19 @@ a.btn.sm-btn-yellow.d-flex.align-items-center.justify-content-center.rounded-pil
     width: 49% !important;
     margin-right: 10px !important;
   }
+  swiper-container.mySwiper.no-border.key_tournament.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-backface-hidden swiper-slide {
+    width: 7% !important;
+}
 }
 @media (min-width: 1800px) {
   swiper-container.mySwiper.table-slidepop.inplaydesk swiper-slide {
     width: 36% !important;
     margin-right: 10px !important;
   }
+
+  swiper-container.mySwiper.no-border.key_tournament.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-backface-hidden swiper-slide {
+    width: 7% !important;
+}
 }
 
 .offcanvas.offcanvas-end.bg-purple.top-74.z-9999.br-yellow {
@@ -836,6 +854,15 @@ a.btn.sm-btn-yellow.d-flex.align-items-center.justify-content-center.rounded-pil
     bottom: -10px !important;
     z-index: 99999999999;
   }
+
+  swiper-container.mySwiper.no-border.play_btn_icon.image_play_btn_hover_effect.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-backface-hidden swiper-slide {
+    width: 30% !important;
+}
+
+swiper-container.mySwiper.no-border.key_tournament.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-backface-hidden swiper-slide {
+  width: 8% !important;
+}
+
 }
 
 @media (min-width: 1300px) {
@@ -884,6 +911,9 @@ a.btn.sm-btn-yellow.d-flex.align-items-center.justify-content-center.rounded-pil
     position: relative;
     left: -45px;
   }
+  swiper-container.mySwiper.latest-game.image_play_btn_hover_effect.swiper-slide_btn.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-backface-hidden swiper-slide {
+    width: 45% !important;
+}
 }
 
 .alfa_font_family,
@@ -981,3 +1011,9 @@ a.card-tile.justify-content-center.withdraw {
   left: 2px;
 }
 /* custom_play_btn_hover_effect Ends */
+
+@media(min-width:1000px){
+  swiper-container.mySwiper.latest-game.image_play_btn_hover_effect.swiper-slide_btn.swiper-initialized.swiper-horizontal.swiper-free-mode.swiper-backface-hidden swiper-slide {
+    width: 30% !important;
+}
+}
