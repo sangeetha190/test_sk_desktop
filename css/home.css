@@ -1222,6 +1222,10 @@ font-size: 12px !important;
     position: static;
   }
 
+  .button-deposite  .flex-fill.d-flex.justify-content-center{
+    width: 33%;
+  }
+
   .lapmaxw-50 {
     width: 50%;
   }
