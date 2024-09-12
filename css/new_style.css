@@ -995,7 +995,7 @@ a.card-tile.justify-content-center.withdraw {
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
   border-radius: 10px;
 }
 .custom_play_btn_hover_effect .custom-play-button {
@@ -1045,3 +1045,32 @@ a.card-tile.justify-content-center.withdraw {
   z-index: -1; /* Ensure it stays behind the content */
 }
 /* menu background ends */
+
+
+
+ /*--------------------
+ Back to Top Button
+---------------------*/
+.scrollToTopBtn {
+  background-color: #ffff00;
+    border: none;
+    border-radius: 50%;
+    color: #000000;
+    cursor: pointer;
+    font-size: 25px;
+    line-height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease;
+}
+    
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
