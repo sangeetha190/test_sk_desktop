@@ -880,7 +880,8 @@ span.text-purple.fs-11.fw-650 {
   width: 42%;
 }
 .fw-700.fs-12.text-white.mb-1.fs-12 {
-  font-size: 12px !important;
+  /* font-size: 12px !important; */
+  font-size: 15px !important;
   font-weight: 600 !important;
 }
 .br_bt_lightgrey {
@@ -1083,17 +1084,17 @@ span.text-purple.fs-11.fw-650 {
 @media (max-width: 992px) {
   .wrapper {
     margin-left: 12px;
-}
+  }
 
-.wrapper.mt-10.lap-bg-purple{
-  margin-left: 0px;
-}
-.wrapper.h-210.mb-4.mt-4.lap-none{
-  margin-left: 0;
-}
-.fs-md-12{
-font-size: 12px !important;
-}
+  .wrapper.mt-10.lap-bg-purple {
+    margin-left: 0px;
+  }
+  .wrapper.h-210.mb-4.mt-4.lap-none {
+    margin-left: 0;
+  }
+  .fs-md-12 {
+    font-size: 12px !important;
+  }
 }
 
 @media (max-width: 540px) {
@@ -1196,17 +1197,17 @@ font-size: 12px !important;
   swiper-container.mySwiper.table-slidepop swiper-slide {
     width: 49% !important;
     margin-right: 10px !important;
-}
+  }
 }
 
-@media(max-width:992px){
+@media (max-width: 992px) {
   .card.casino.my-5.mb-5 {
     margin: 15px 15px 0 15px !important;
-}
+  }
 
-.mobile-tab-pad4{
-  padding: 0 30px;
-}
+  .mobile-tab-pad4 {
+    padding: 0 30px;
+  }
 }
 
 .mobile-90 {
@@ -1222,7 +1223,7 @@ font-size: 12px !important;
     position: static;
   }
 
-  .button-deposite  .flex-fill.d-flex.justify-content-center{
+  .button-deposite .flex-fill.d-flex.justify-content-center {
     width: 33%;
   }
 
@@ -1387,10 +1388,6 @@ font-size: 12px !important;
     .col-4.d-flex.justify-content-center {
     padding: 0 !important;
   }
-
-    
-    
-
 }
 
 @media (min-width: 1300px) {
@@ -1462,7 +1459,6 @@ font-size: 12px !important;
     width: 8.7% !important;
     margin-right: 0px !important;
   }
-
 
   swiper-container.mySwiper.table-slidepop swiper-slide {
     width: 33% !important;
@@ -1542,7 +1538,6 @@ nav.navbar.navbar-expand-lg.bg-purple.br-yellow {
 
 .search__input:focus {
   outline: none;
-
 }
 
 .search__input::-webkit-input-placeholder {
@@ -1613,34 +1608,31 @@ a.list-group-item.list-group-item-action.px-2.py-1.text-left.border-bottomlightg
 .bg-yellow {
   background: #f2ff00 !important;
 }
-.bg-sidemenu{
-  background:rgb(23 0 38) !important;
+.bg-sidemenu {
+  background: rgb(23 0 38) !important;
 }
-.w-10{
+.w-10 {
   width: 10%;
 }
 .g-15 {
   gap: 15px;
-
 }
 
-
-
-@media(min-width:1000px) and (max-width:1100px){
+@media (min-width: 1000px) and (max-width: 1100px) {
   .logo_xnew {
     width: 80px !important;
     height: 80px !important;
+  }
+
+  img.logo_xnew.position-relative {
+    top: -0px;
+  }
 }
 
-img.logo_xnew.position-relative {
-  top: -0px;
-}
-
-}
-
-@media(min-width:1100px)  and (max-width:1200px){
-  nav.navbar.navbar-expand-lg.bg-purple.br-yellow.fixed-top .container.col-md-12 {
+@media (min-width: 1100px) and (max-width: 1200px) {
+  nav.navbar.navbar-expand-lg.bg-purple.br-yellow.fixed-top
+    .container.col-md-12 {
     max-width: 100% !important;
     margin: 0;
-}
+  }
 }
