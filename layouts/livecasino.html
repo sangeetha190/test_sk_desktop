@@ -942,7 +942,7 @@
 
               <!-- modal canva start -->
         <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasetting" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
-          <div class="offcanvas-body p-0">
+          <div class="offcanvas-body p-0 menu-background">
               <div class="container container-xs vh-100 py-1">
                   <div class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3" bis_skin_checked="1">
                       <!-- <a href="main_new_page.html">
@@ -1593,7 +1593,7 @@
 
         <!-- modal canva start -->
         <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
-          <div class="offcanvas-body p-0">
+          <div class="offcanvas-body p-0 menu-background">
               <div class="container container-xs vh-100 py-1">
                   <div class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3" bis_skin_checked="1">
                       <!-- <a href="main_new_page.html">
@@ -1833,9 +1833,9 @@
       
                   <a href="./indexlogout.html" class="list-group-item list-group-item-action">
                           <div class="list-icon">
-                              <img src="../img/icon/icon-edit.png">
+                              <img src="../img/icon/icon-logout.png">
                           </div>
-                          <span class="list-text" an="">Logout</span>
+                          <span class="list-text">Logout</span>
                           <span class="ms-auto">
                               <img src="../img/icon/icon-arrow-right.png">
                           </span>
@@ -2082,7 +2082,7 @@
 
               <div class="row">
 
-                <swiper-container class="mySwiper no-border card_livecasino image_play_btn_hover_effect live_casino_play_btn" space-between="10" slides-per-view="6"
+                <swiper-container class="mySwiper no-border card_livecasino image_play_btn_hover_effect live_casino_play_btn play_btn_icon image_play_btn_hover_effect live_casino_play_btn" space-between="10" slides-per-view="6"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
@@ -2276,7 +2276,7 @@
                   </swiper-slide>
 
                 </swiper-container>
-                <swiper-container class="mySwiper no-border card_livecasino image_play_btn_hover_effect live_casino_play_btn" space-between="10" slides-per-view="6"
+                <swiper-container class="mySwiper no-border card_livecasino play_btn_icon image_play_btn_hover_effect live_casino_play_btn" space-between="10" slides-per-view="6"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
@@ -2459,7 +2459,7 @@
 
               <div class="row">
 
-                <swiper-container class="mySwiper no-border card_livecasino image_play_btn_hover_effect live_casino_play_btn" space-between="10" slides-per-view="6"
+                <swiper-container class="mySwiper no-border card_livecasino play_btn_icon image_play_btn_hover_effect live_casino_play_btn" space-between="10" slides-per-view="6"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
@@ -2626,7 +2626,7 @@
                   </swiper-slide>
 
                 </swiper-container>
-                <swiper-container class="mySwiper no-border card_livecasino image_play_btn_hover_effect live_casino_play_btn" space-between="10" slides-per-view="6"
+                <swiper-container class="mySwiper no-border card_livecasino play_btn_icon image_play_btn_hover_effect live_casino_play_btn" space-between="10" slides-per-view="6"
                   slides-per-view="auto" loop="true" rewind="true" space-between="10" free-mode="true">
 
                   <swiper-slide>
@@ -2965,6 +2965,14 @@
       </div>
     </div>
   </div>
+
+
+    <!-- scroll button -->
+<div class="d-flex justify-content-end">
+  <!-- <button><i class="fa-solid fa-angle-up"></i></button> -->
+  <button class="scrollToTopBtn"><i class="fa-solid fa-angle-up"></i></button>
+</div>
+<!-- scroll button end-->
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
   <script src="../js/swiper.js"></script>
 
@@ -3027,10 +3035,10 @@
     });
   </script>
 
-
 <script>
+  // play_tn_icon _overlay
   // Select all swiper slides
-  const swiperSlides = document.querySelectorAll('swiper-slide');
+  const swiperSlides = document.querySelectorAll('.play_btn_icon swiper-slide');
 
   swiperSlides.forEach(slide => {
       // Create the overlay div
@@ -3049,7 +3057,6 @@
       slide.appendChild(overlay);
   });
 </script>
-
 
 <script>
   // Select all swiper slides
@@ -3095,6 +3102,10 @@ playbutton_on_img.forEach(imgContainer => {
 });
 
 </script>
+
+
+
+
 </body>
 
 </html>

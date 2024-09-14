@@ -544,6 +544,16 @@
     </div>
   </div>
   </div>
+
+<!-- scroll button -->
+<div class="d-flex justify-content-end">
+  <!-- <button><i class="fa-solid fa-angle-up"></i></button> -->
+  <button class="scrollToTopBtn"><i class="fa-solid fa-angle-up"></i></button>
+</div>
+<!-- scroll button end-->
+
+
+
   <div class="modal fade" id="payment" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-sm justify-content-center">
       <div class="modal-content" style="width: 200px">
@@ -562,7 +572,7 @@
 <!--Setting Model  Menu Header Fixing Starts-->
     <!-- modal canva start -->
     <div class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow" tabindex="-1" id="offcanvasetting" aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
-      <div class="offcanvas-body p-0">
+      <div class="offcanvas-body p-0 menu-background">
           <div class="container container-xs vh-100 py-1">
               <div class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3" bis_skin_checked="1">
                   <!-- <a href="main_new_page.html">
@@ -1228,7 +1238,7 @@ aria-hidden="true"
      aria-modal="true"
      role="dialog"
    >
-     <div class="offcanvas-body p-0">
+     <div class="offcanvas-body p-0 menu-background">
        <div class="container container-xs vh-100 py-1">
          <div
            class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3"
@@ -1523,10 +1533,11 @@ aria-hidden="true"
              href="./index.html"
              class="list-group-item list-group-item-action"
            >
-             <div class="list-icon">
-               <img src="../img/icon/icon-edit.png" />
-             </div>
-             <span class="list-text" an="">Logout</span>
+           <div class="list-icon">
+            <img src="../img/icon/icon-logout.png" />
+           </div>
+          <span class="list-text">Logout</span>
+          
              <span class="ms-auto">
                <img src="../img/icon/icon-arrow-right.png" />
              </span>
@@ -1556,6 +1567,34 @@ aria-hidden="true"
      </div>
    </div>
    <!-- modal canva end -->
+
+   <script>
+    // test for small
+    var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+    var rootElement = document.documentElement;
+  
+    function handleScroll() {
+      // Show button if scrolled more than 100 pixels
+      if (rootElement.scrollTop > 10) {
+        // Show button
+        scrollToTopBtn.classList.add("showBtn");
+      } else {
+        // Hide button
+        scrollToTopBtn.classList.remove("showBtn");
+      }
+    }
+  
+    function scrollToTop() {
+      // Scroll to top logic
+      rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  
+    scrollToTopBtn.addEventListener("click", scrollToTop);
+    document.addEventListener("scroll", handleScroll);
+  </script>
 </body>
 
 </html>
