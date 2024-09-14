@@ -713,16 +713,27 @@
       <!-------end-->
     </div>
 
+    <!-- scroll button -->
+    <div class="d-flex justify-content-end">
+      <!-- <button><i class="fa-solid fa-angle-up"></i></button> -->
+      <button class="scrollToTopBtn">
+        <i class="fa-solid fa-angle-up"></i>
+      </button>
+    </div>
+    <!-- scroll button end-->
+
+    <!-- setting end -->
+
     <!-- modal canva start -->
     <div
       class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow"
       tabindex="-1"
-      id="offcanvasetting"
+      id="offcanvasRight"
       aria-labelledby="offcanvasRightLabel"
       aria-modal="true"
       role="dialog"
     >
-      <div class="offcanvas-body p-0">
+      <div class="offcanvas-body p-0 menu-background">
         <div class="container container-xs vh-100 py-1">
           <div
             class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3"
@@ -738,6 +749,427 @@
               <div class="top-headbread px-2" bis_skin_checked="1">
                 <div
                   class="card position-relative br-yellow py-3 px-2"
+                  style="
+                    background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
+                    background-size: cover;
+                    border-radius: 13px;
+                    border: 1px solid #f0b30db8;
+                  "
+                  bis_skin_checked="1"
+                >
+                  <div class="row align-items-center" bis_skin_checked="1">
+                    <div class="col-7" bis_skin_checked="1">
+                      <div
+                        class="d-flex align-items-center justify-content-start"
+                        bis_skin_checked="1"
+                      >
+                        <div class="mr-10">
+                          <div
+                            class="avatar-header rounded-circle overflow-hidden"
+                          >
+                            <a href="./avatar.html">
+                              <img
+                                src="../img/lapimg-home/header-img.png"
+                                alt=""
+                                srcset=""
+                                width="72"
+                                class="rounded-circle"
+                              />
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="avatar-content" bis_skin_checked="1">
+                          <span class="text-yellow fs-9">Welcome</span>
+
+                          <h4 class="text-white fs-18">King@x</h4>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- test starts -->
+                    <div class="col-5 d-flex justify-content-end">
+                      <div
+                        class="btn-group dropdown-wrapper lang_drop_down_container"
+                      >
+                        <button
+                          class="btn dropdown-toggle text-white fs-10 br-yellow mbet"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          Choose Language
+                        </button>
+                        <ul
+                          class="dropdown-menu bg-gr p-0 bg-transparent text-center"
+                          aria-labelledby="dropdownMenuLink"
+                        >
+                          <li class="lang_drop_down fs-12 fw-600">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >English</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Marathi</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Hindi</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Gujarati</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Tamil</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Bangali</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Telugu</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Kannada</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Malayalam</a
+                            >
+                          </li>
+                          <li class="lang_drop_down fs-12">
+                            <a class="dropdown-item py-0 text-purple" href="#"
+                              >Bhojpuri</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="menu-header-bg-area"></div> -->
+          <div
+            class="list-group list-group-flush list-group-cus px-3 mt-3 menu-custom-hight"
+          >
+            <div
+              class="list-group-item list-group-item-action flex-column ShowSubList"
+            >
+              <div class="d-flex align-items-center w-100">
+                <div class="list-icon">
+                  <img src="../img/icon/icon-profile.png" />
+                </div>
+                <span class="list-text">Account details</span>
+                <span class="ms-auto">
+                  <img src="../img/icon/icon-plus-circle.png" alt="plus" />
+                </span>
+              </div>
+              <div class="list-group-sub" style="display: none">
+                <a
+                  href="./myaccount.html"
+                  class="text-decoration_none text-white"
+                >
+                  <div class="list-group-sub-item">
+                    <span>My Account</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </a>
+
+                <div
+                  class="text-decoration_none text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <a
+                    href="./undermaintence_page.html"
+                    class="text-decoration_none text-white"
+                  >
+                    <div class="list-group-sub-item">
+                      <span>My Commission</span>
+                      <span class="ms-auto">
+                        <img src="../img/icon/icon-arrow-right.png" />
+                      </span>
+                    </div>
+                  </a>
+                </div>
+                <div
+                  class="text-decoration_none text-white"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModal"
+                >
+                  <a
+                    href="./undermaintence_page.html"
+                    class="text-decoration_none text-white"
+                  >
+                    <div class="list-group-sub-item">
+                      <span>My Id's</span>
+                      <span class="ms-auto">
+                        <img src="../img/icon/icon-arrow-right.png" />
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="bonuses.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-bonus-offer.png" />
+              </div>
+              <span class="list-text">Bonus &amp; Offers</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <div
+              class="list-group-item list-group-item-action flex-column ShowSubList"
+            >
+              <div class="d-flex align-items-center w-100">
+                <div class="list-icon">
+                  <img src="../img/icon/icon-view-list.png" />
+                </div>
+                <span class="list-text">View Transcations</span>
+                <span class="ms-auto">
+                  <img src="../img/icon/icon-plus-circle.png" alt="plus" />
+                </span>
+              </div>
+              <div class="list-group-sub" style="display: none">
+                <a href="./Mybet.html" class="text-decoration_none text-white">
+                  <div class="list-group-sub-item">
+                    <span>My Bets</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </a>
+                <a
+                  href="./mybetprofitloss.html"
+                  class="text-decoration_none text-white"
+                >
+                  <div class="list-group-sub-item">
+                    <span>Profit &amp; Loss</span>
+                    <span class="ms-auto">
+                      <img src="../img/icon/icon-arrow-right.png" />
+                    </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <a
+              href="./refer&amp;earn.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-refer.png" />
+              </div>
+              <span class="list-text">Refer and Earn</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="./myrefferal.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-forward.png" />
+              </div>
+              <span class="list-text">My Referal</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="./undermaintence_page.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-prediction.png" />
+              </div>
+              <span class="list-text">Prediction (Get Tips)</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="./customerSupport.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-customer-support.png" />
+              </div>
+              <span class="list-text">Customer Support</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="#"
+              class="list-group-item list-group-item-action"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasetting"
+              aria-controls="offcanvasetting"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-x-shadow.png" />
+              </div>
+              <span class="list-text">Setting</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="./undermaintence_page.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-how-play.png" />
+              </div>
+              <span class="list-text">How to Play</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="./undermaintence_page.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-edit.png" />
+              </div>
+              <span class="list-text">Rules &amp; Regulations</span>
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+
+            <a
+              href="./joinnow.html"
+              class="list-group-item list-group-item-action"
+            >
+              <div class="list-icon">
+                <img src="../img/icon/icon-logout.png" />
+              </div>
+              <span class="list-text">Logout</span>
+
+              <span class="ms-auto">
+                <img src="../img/icon/icon-arrow-right.png" />
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- modal -->
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent">
+              <div class="modal-body px-4 py-0">
+                <div class="position-relative">
+                  <img src="../img/pop-up/pop-up-bg.png" alt="" class="w-100" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal canva end -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade Search_box_container"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div
+          class="modal-content"
+          style="background: none !important; border: none"
+        >
+          <div class="modal-body px-0">
+            <div class="input-group mb-3 mt-5 pt-5">
+              <input
+                type="text"
+                class="form-control bg-purple text-white Search_textbox"
+                placeholder="Search Games"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+                aria-placeholder="Search Games"
+              />
+              <span class="input-group-text bg-yellow" id="basic-addon2"
+                ><img
+                  src="../img/icon/Group 332.png"
+                  alt="phone call"
+                  width="15"
+              /></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Setting Starts -->
+    <!-- modal canva start -->
+    <div
+      class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow"
+      tabindex="-1"
+      id="offcanvasetting"
+      aria-labelledby="offcanvasRightLabel"
+      aria-modal="true"
+      role="dialog"
+    >
+      <div class="offcanvas-body p-0 menu-background">
+        <div class="container container-xs vh-100 py-1">
+          <div
+            class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3"
+            bis_skin_checked="1"
+          >
+            <!-- <a href="main_new_page.html">
+                  <div class="logo position-absolute d-flex justify-content-center w-100"
+                      style="bottom: 90px; z-index: 9999; left: 0" bis_skin_checked="1">
+                      <img src="../img/home-x-logo.png" alt="" srcset="" class="w-25" />
+                  </div>
+              </a> -->
+            <div class="row" bis_skin_checked="1">
+              <div class="top-headbread px-2" bis_skin_checked="1">
+                <div
+                  class="card position-relative br-yellow py-3 px-3 mb-15"
                   style="
                     background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
                     background-size: cover;
@@ -979,11 +1411,11 @@
                   </div>
                 </div>
                 <!-- <div class="setting-list-item fst-normal">
-                    <div class="setting-list-itme__title">Block Account</div>
-                    <div class="setting-list-itme__action">
-                      <span class="text-grey ps-1">></span>
-                    </div>
-                  </div> -->
+                  <div class="setting-list-itme__title">Block Account</div>
+                  <div class="setting-list-itme__action">
+                    <span class="text-grey ps-1">></span>
+                  </div>
+                </div> -->
                 <div class="setting-list-item fst-normal">
                   <div class="setting-list-itme__title">Customer Support</div>
                   <div class="setting-list-itme__action">
@@ -1019,801 +1451,465 @@
 
             <div class="footer-bg-area"></div>
           </div>
-        </div>
 
-        <!-- modal -->
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bg-transparent">
-              <div class="modal-body px-4 py-0">
-                <div class="position-relative">
-                  <img src="../img/pop-up/pop-up-bg.png" alt="" class="w-100" />
+          <!-- setting-popp -->
+          <!-- Modal -->
+          <!-- Modal -->
+          <div class="modal fade" id="account" tabindex="-1" aria-hidden="true">
+            <div
+              class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
+            >
+              <div class="modal-content" style="width: 190px">
+                <div class="modal-body p-0">
+                  <div class="list-group setting-list">
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action setting-list__title"
+                    >
+                      Account
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action"
+                    >
+                      Public
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action"
+                    >
+                      Private
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- modal canva end -->
 
-    <!-- setting end -->
-
-    <!-- modal canva start -->
-    <div
-      class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow"
-      tabindex="-1"
-      id="offcanvasRight"
-      aria-labelledby="offcanvasRightLabel"
-      aria-modal="true"
-      role="dialog"
-    >
-      <div class="offcanvas-body p-0">
-        <div class="container container-xs vh-100 py-1">
           <div
-            class="avatar-bread my-5 position-relative mb-25 px-2 mb-0 mt-0 pt-3"
-            bis_skin_checked="1"
-          >
-            <!-- <a href="main_new_page.html">
-                    <div class="logo position-absolute d-flex justify-content-center w-100"
-                        style="bottom: 90px; z-index: 9999; left: 0" bis_skin_checked="1">
-                        <img src="../img/home-x-logo.png" alt="" srcset="" class="w-25" />
-                    </div>
-                </a> -->
-                <div class="row" bis_skin_checked="1">
-                  <div class="top-headbread px-2" bis_skin_checked="1">
-                      <div class="card position-relative br-yellow py-3 px-2" style="
-          background-image: url(../img/avatar/top-bread/sffbs\ 1.png);
-          background-size: cover;
-          border-radius: 13px;border: 1px solid #f0b30db8;
-        " bis_skin_checked="1">
-                          <div class="row align-items-center" bis_skin_checked="1">
-                              <div class="col-7" bis_skin_checked="1">
-                                  <div class="d-flex align-items-center justify-content-start" bis_skin_checked="1">
-                                      <div class="mr-10">
-                                       <div class="avatar-header rounded-circle overflow-hidden">
-                                          <a href="./avatar.html">
-                                          <img src="../img/lapimg-home/header-img.png" alt="" srcset="" width="72" class=" rounded-circle">
-                                          </a>
-                                        </div>
-                                      </div>
-
-                                      <div class="avatar-content" bis_skin_checked="1">
-                                          <span class="text-yellow fs-9">Welcome</span>
-
-                                          <h4 class="text-white fs-18">King@x</h4>
-                                      </div>
-                                  </div>
-                              </div>
-
-                              <!-- test starts -->
-                              <div class="col-5 d-flex justify-content-end">
-                                  <div class="btn-group dropdown-wrapper lang_drop_down_container">
-                                      <button class="btn dropdown-toggle text-white fs-10 br-yellow mbet" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                          Choose Language
-                                      </button>
-                                      <ul class="dropdown-menu bg-gr p-0 bg-transparent text-center" aria-labelledby="dropdownMenuLink">
-                                          <li class="lang_drop_down fs-12 fw-600">
-                                              <a class="dropdown-item py-0 text-purple" href="#">English</a>
-                                          </li>
-                                          <li class="lang_drop_down fs-12">
-                                              <a class="dropdown-item py-0 text-purple" href="#">Marathi</a>
-                                          </li>
-                                          <li class="lang_drop_down fs-12">
-                                              <a class="dropdown-item py-0 text-purple" href="#">Hindi</a>
-                                          </li>
-                                          <li class="lang_drop_down fs-12">
-                                              <a class="dropdown-item py-0 text-purple" href="#">Gujarati</a>
-                                          </li>
-                                          <li class="lang_drop_down fs-12">
-                                              <a class="dropdown-item py-0 text-purple" href="#">Tamil</a>
-                                          </li>
-                                          <li class="lang_drop_down fs-12">
-                                              <a class="dropdown-item py-0 text-purple" href="#">Bangali</a>
-                                          </li>
-                                          <li class="lang_drop_down fs-12">
-                                              <a class="dropdown-item py-0 text-purple" href="#">Telugu</a>
-                                          </li>
-                                          <li class="lang_drop_down fs-12">
-                                              <a class="dropdown-item py-0 text-purple" href="#">Kannada</a>
-                                          </li>
-                                          <li class="lang_drop_down fs-12">
-                                              <a class="dropdown-item py-0 text-purple" href="#">Malayalam</a>
-                                          </li>
-                                          <li class="lang_drop_down fs-12">
-                                              <a class="dropdown-item py-0 text-purple" href="#">Bhojpuri</a>
-                                          </li>
-                                      </ul>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-</div>
-          </div>
-          <!-- <div class="menu-header-bg-area"></div> -->
-          <div
-            class="list-group list-group-flush list-group-cus px-3 mt-3 menu-custom-hight"
+            class="modal fade"
+            id="language"
+            tabindex="-1"
+            aria-hidden="true"
           >
             <div
-              class="list-group-item list-group-item-action flex-column ShowSubList"
+              class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
             >
-              <div class="d-flex align-items-center w-100">
-                <div class="list-icon">
-                  <img src="../img/icon/icon-profile.png" />
-                </div>
-                <span class="list-text">Account details</span>
-                <span class="ms-auto">
-                  <img src="../img/icon/icon-plus-circle.png" alt="plus" />
-                </span>
-              </div>
-              <div class="list-group-sub" style="display: none">
-                <a
-                  href="./myaccount.html"
-                  class="text-decoration_none text-white"
-                >
-                  <div class="list-group-sub-item">
-                    <span>My Account</span>
-                    <span class="ms-auto">
-                      <img src="../img/icon/icon-arrow-right.png" />
-                    </span>
+              <div class="modal-content" style="width: 190px">
+                <div class="modal-body p-0">
+                  <div class="list-group setting-list">
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action setting-list__title"
+                    >
+                      Language
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action"
+                    >
+                      English
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Marathi
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Hindi
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Gujarati
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Tamil
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Telugu
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Kannada
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Malayalam
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Bhojpuri
+                    </button>
                   </div>
-                </a>
-
-                <div
-                  class="text-decoration_none text-white"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  <a
-                    href="./undermaintence_page.html"
-                    class="text-decoration_none text-white"
-                  >
-                    <div class="list-group-sub-item">
-                      <span>My Commission</span>
-                      <span class="ms-auto">
-                        <img src="../img/icon/icon-arrow-right.png" />
-                      </span>
-                    </div>
-                  </a>
-                </div>
-                <div
-                  class="text-decoration_none text-white"
-                  data-bs-toggle="modal"
-                  data-bs-target="#exampleModal"
-                >
-                  <a
-                    href="./undermaintence_page.html"
-                    class="text-decoration_none text-white"
-                  >
-                    <div class="list-group-sub-item">
-                      <span>My Id's</span>
-                      <span class="ms-auto">
-                        <img src="../img/icon/icon-arrow-right.png" />
-                      </span>
-                    </div>
-                  </a>
                 </div>
               </div>
             </div>
+          </div>
 
-            <a
-              href="bonuses.html"
-              class="list-group-item list-group-item-action"
-            >
-              <div class="list-icon">
-                <img src="../img/icon/icon-bonus-offer.png" />
-              </div>
-              <span class="list-text">Bonus &amp; Offers</span>
-              <span class="ms-auto">
-                <img src="../img/icon/icon-arrow-right.png" />
-              </span>
-            </a>
-
+          <div
+            class="modal fade"
+            id="graphics"
+            tabindex="-1"
+            aria-hidden="true"
+          >
             <div
-              class="list-group-item list-group-item-action flex-column ShowSubList"
+              class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
             >
-              <div class="d-flex align-items-center w-100">
-                <div class="list-icon">
-                  <img src="../img/icon/icon-view-list.png" />
-                </div>
-                <span class="list-text">View Transcations</span>
-                <span class="ms-auto">
-                  <img src="../img/icon/icon-plus-circle.png" alt="plus" />
-                </span>
-              </div>
-              <div class="list-group-sub" style="display: none">
-                <a href="./Mybet.html" class="text-decoration_none text-white">
-                  <div class="list-group-sub-item">
-                    <span>My Bets</span>
-                    <span class="ms-auto">
-                      <img src="../img/icon/icon-arrow-right.png" />
-                    </span>
+              <div class="modal-content" style="width: 190px">
+                <div class="modal-body p-0">
+                  <div class="list-group setting-list">
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action setting-list__title"
+                    >
+                      Graphics
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      High
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Medium
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Low
+                    </button>
                   </div>
-                </a>
-                <a
-                  href="./mybetprofitloss.html"
-                  class="text-decoration_none text-white"
-                >
-                  <div class="list-group-sub-item">
-                    <span>Profit &amp; Loss</span>
-                    <span class="ms-auto">
-                      <img src="../img/icon/icon-arrow-right.png" />
-                    </span>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <a
-              href="./refer&amp;earn.html"
-              class="list-group-item list-group-item-action"
-            >
-              <div class="list-icon">
-                <img src="../img/icon/icon-refer.png" />
-              </div>
-              <span class="list-text">Refer and Earn</span>
-              <span class="ms-auto">
-                <img src="../img/icon/icon-arrow-right.png" />
-              </span>
-            </a>
-
-            <a
-              href="./myrefferal.html"
-              class="list-group-item list-group-item-action"
-            >
-              <div class="list-icon">
-                <img src="../img/icon/icon-forward.png" />
-              </div>
-              <span class="list-text">My Referal</span>
-              <span class="ms-auto">
-                <img src="../img/icon/icon-arrow-right.png" />
-              </span>
-            </a>
-
-            <a
-              href="./undermaintence_page.html"
-              class="list-group-item list-group-item-action"
-            >
-              <div class="list-icon">
-                <img src="../img/icon/icon-prediction.png" />
-              </div>
-              <span class="list-text">Prediction (Get Tips)</span>
-              <span class="ms-auto">
-                <img src="../img/icon/icon-arrow-right.png" />
-              </span>
-            </a>
-
-            <a
-              href="./customerSupport.html"
-              class="list-group-item list-group-item-action"
-            >
-              <div class="list-icon">
-                <img src="../img/icon/icon-customer-support.png" />
-              </div>
-              <span class="list-text">Customer Support</span>
-              <span class="ms-auto">
-                <img src="../img/icon/icon-arrow-right.png" />
-              </span>
-            </a>
-
-            <a
-              href="#"
-              class="list-group-item list-group-item-action"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasetting"
-              aria-controls="offcanvasetting"
-            >
-              <div class="list-icon">
-                <img src="../img/icon/icon-x-shadow.png" />
-              </div>
-              <span class="list-text">Setting</span>
-              <span class="ms-auto">
-                <img src="../img/icon/icon-arrow-right.png" />
-              </span>
-            </a>
-
-            <a
-              href="./undermaintence_page.html"
-              class="list-group-item list-group-item-action"
-            >
-              <div class="list-icon">
-                <img src="../img/icon/icon-how-play.png" />
-              </div>
-              <span class="list-text">How to Play</span>
-              <span class="ms-auto">
-                <img src="../img/icon/icon-arrow-right.png" />
-              </span>
-            </a>
-
-            <a
-              href="./undermaintence_page.html"
-              class="list-group-item list-group-item-action"
-            >
-              <div class="list-icon">
-                <img src="../img/icon/icon-edit.png" />
-              </div>
-              <span class="list-text">Rules &amp; Regulations</span>
-              <span class="ms-auto">
-                <img src="../img/icon/icon-arrow-right.png" />
-              </span>
-            </a>
-
-            <a
-              href="./joinnow.html"
-              class="list-group-item list-group-item-action"
-            >
-              <div class="list-icon">
-                <img src="../img/icon/icon-edit.png" />
-              </div>
-              <span class="list-text" an="">Logout</span>
-              <span class="ms-auto">
-                <img src="../img/icon/icon-arrow-right.png" />
-              </span>
-            </a>
-          </div>
-        </div>
-
-        <!-- modal -->
-        <!-- Modal -->
-        <div
-          class="modal fade"
-          id="exampleModal"
-          tabindex="-1"
-          aria-labelledby="exampleModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content bg-transparent">
-              <div class="modal-body px-4 py-0">
-                <div class="position-relative">
-                  <img src="../img/pop-up/pop-up-bg.png" alt="" class="w-100" />
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- modal canva end -->
 
-    <!-- Modal -->
-    <div
-      class="modal fade Search_box_container"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div
-          class="modal-content"
-          style="background: none !important; border: none"
-        >
-          <div class="modal-body px-0">
-            <div class="input-group mb-3 mt-5 pt-5">
-              <input
-                type="text"
-                class="form-control bg-purple text-white Search_textbox"
-                placeholder="Search Games"
-                aria-label="Recipient's username"
-                aria-describedby="basic-addon2"
-                aria-placeholder="Search Games"
-              />
-              <span class="input-group-text bg-yellow" id="basic-addon2"
-                ><img
-                  src="../img/icon/Group 332.png"
-                  alt="phone call"
-                  width="15"
-              /></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- setting-popp -->
-    <!-- Modal -->
-    <!-- Modal -->
-    <div class="modal fade" id="account" tabindex="-1" aria-hidden="true">
-      <div
-        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
-      >
-        <div class="modal-content" style="width: 190px">
-          <div class="modal-body p-0">
-            <div class="list-group setting-list">
-              <button
-                type="button"
-                class="list-group-item list-group-item-action setting-list__title"
-              >
-                Account
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action"
-              >
-                Public
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action"
-              >
-                Private
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="language" tabindex="-1" aria-hidden="true">
-      <div
-        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
-      >
-        <div class="modal-content" style="width: 190px">
-          <div class="modal-body p-0">
-            <div class="list-group setting-list">
-              <button
-                type="button"
-                class="list-group-item list-group-item-action setting-list__title"
-              >
-                Language
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action"
-              >
-                English
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Marathi
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Hindi
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Gujarati
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Tamil
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Telugu
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Kannada
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Malayalam
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Bhojpuri
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="graphics" tabindex="-1" aria-hidden="true">
-      <div
-        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
-      >
-        <div class="modal-content" style="width: 190px">
-          <div class="modal-body p-0">
-            <div class="list-group setting-list">
-              <button
-                type="button"
-                class="list-group-item list-group-item-action setting-list__title"
-              >
-                Graphics
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                High
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Medium
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Low
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="resolution" tabindex="-1" aria-hidden="true">
-      <div
-        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
-      >
-        <div class="modal-content" style="width: 190px">
-          <div class="modal-body p-0">
-            <div class="list-group setting-list">
-              <button
-                type="button"
-                class="list-group-item list-group-item-action setting-list__title"
-              >
-                Resolution
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action"
-              >
-                Low
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Medium
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                High
-              </button>
-              <button
-                type="button"
-                class="list-group-item list-group-item-action text-purple"
-              >
-                Ultra
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="mediaQuality" tabindex="-1" aria-hidden="true">
-      <div
-        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
-      >
-        <div class="modal-content" style="width: 300px">
-          <div class="modal-header modal-header-cus">
-            <h5 class="modal-title">Media Quality</h5>
-          </div>
-          <div class="modal-body">
-            <div class="d-flex align-items-center justify-content-between mb-2">
-              <div class="d-flex flex-column pe-4">
-                <span class="fs-10 fw-600 text-capitalize text-dark"
-                  >Use Less Mobile Data</span
-                >
-                <span class="fs-6 fw-400 text-capitalize text-dard-grey"
-                  >Using Less Mobile data may affect your experience on
-                  Instagram. For example, photos and videos may take longer to
-                  load.</span
-                >
-              </div>
-              <div>
-                <label class="switch">
-                  <input type="checkbox" checked />
-                  <span class="slider"></span>
-                </label>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center justify-content-between mb-2">
-              <div class="d-flex flex-column pe-4">
-                <span class="fs-10 fw-600 text-capitalize text-dark"
-                  >Upload at highest quality</span
-                >
-                <span class="fs-6 fw-400 text-capitalize text-dard-grey"
-                  >Always upload the highest-quality photos and videos, even if
-                  uploading takes longer. When this is off, we'll automatically
-                  adjust upload quality to fit network conditions.</span
-                >
-              </div>
-              <div>
-                <label class="switch">
-                  <input type="checkbox" checked />
-                  <span class="slider"></span>
-                </label>
-              </div>
-            </div>
-
-            <div class="d-flex align-items-center justify-content-between">
-              <div class="d-flex flex-column pe-4">
-                <span class="fs-10 fw-600 text-capitalize text-dark"
-                  >Disable HDR video playback</span
-                >
-                <span class="fs-6 fw-400 text-capitalize text-dard-grey"
-                  >HDR (high dynamic range) video offers greater quality in
-                  areas of extreme brightness or darkness. As a result, HDR
-                  content will appear brighter than standard content.</span
-                >
-              </div>
-              <div>
-                <label class="switch">
-                  <input type="checkbox" checked />
-                  <span class="slider"></span>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal fade" id="deleteAccount" tabindex="-1" aria-hidden="true">
-      <div
-        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
-      >
-        <div class="modal-content" style="width: 300px">
-          <div class="modal-header modal-header-cus">
-            <h5 class="modal-title text-dark">Account Deletion</h5>
-          </div>
-          <div class="modal-body px-2">
-            <div class="fs-10 fw-500 text-capitalize mb-4">
-              If you confirm the account deletion, your account and all of your
-              personal information will be permanently deleted. If you click
-              Yes, we will erase all your account's data, including: access, all
-              purchased and earned items, reffers, progression, subscription,
-              and link to social media pages. Please note that we may retain
-              some of your personal information to comply with applicable laws,
-              as stated in our Privacy Policy, and all purchases will be lost
-              without any compensation or reimbursement.
-            </div>
-            <div class="text-center mb-2">
-              <button
-                class="btn btn-sm btn-success bg-green px-3 py-1 border-0"
-              >
-                Cancel
-              </button>
-              <button class="btn btn-sm btn-danger bg-red px-4 py-1 border-0">
-                Yes
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- bet stake Starts -->
-    <!-- bet stake -->
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="bet_stake"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content bg-transparent">
-          <div class="modal-body">
+          <div
+            class="modal fade"
+            id="resolution"
+            tabindex="-1"
+            aria-hidden="true"
+          >
             <div
-              class="card mb-10 bs-b px-0 b-0"
-              bis_skin_checked="1"
-              style="z-index: 2"
+              class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
             >
-              <div class="card-body pt-5px p-0" bis_skin_checked="1">
-                <div class="table-headbet" bis_skin_checked="1">
+              <div class="modal-content" style="width: 190px">
+                <div class="modal-body p-0">
+                  <div class="list-group setting-list">
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action setting-list__title"
+                    >
+                      Resolution
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action"
+                    >
+                      Low
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Medium
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      High
+                    </button>
+                    <button
+                      type="button"
+                      class="list-group-item list-group-item-action text-purple"
+                    >
+                      Ultra
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="mediaQuality"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
+            >
+              <div class="modal-content" style="width: 300px">
+                <div class="modal-header modal-header-cus">
+                  <h5 class="modal-title">Media Quality</h5>
+                </div>
+                <div class="modal-body">
                   <div
-                    class="row ptb-4 align-items-center stack_padding"
-                    bis_skin_checked="1"
+                    class="d-flex align-items-center justify-content-between mb-2"
                   >
-                    <div class="col-6" bis_skin_checked="1">
-                      <div class="d-flex flex-row" bis_skin_checked="1">
-                        <span class="text-alert fs-11 fw-650 pt-2"
-                          >Stack Settings</span
-                        >
-                      </div>
-                    </div>
-
-                    <div
-                      class="col-6 d-flex justify-content-end align-items-center"
-                      bis_skin_checked="1"
-                    >
-                      <button
-                        class="btn-alertbutton fs-10 fw-700"
-                        type="button"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                        id="headingOneblue1"
-                        onclick="toggleAccordion('collapseOneblue1')"
+                    <div class="d-flex flex-column pe-4">
+                      <span class="fs-10 fw-600 text-capitalize text-dark"
+                        >Use Less Mobile Data</span
                       >
-                        X
-                      </button>
+                      <span class="fs-6 fw-400 text-capitalize text-dard-grey"
+                        >Using Less Mobile data may affect your experience on
+                        Instagram. For example, photos and videos may take
+                        longer to load.</span
+                      >
+                    </div>
+                    <div>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                      </label>
                     </div>
                   </div>
-                  <div class="col-12 pt-10 py-2 px-2 br_tp_grey my-2">
-                    <div class="row stake_btn_size">
-                      <div class="col-3 mb-2">
-                        <button class="bg-blue br-5 w-100 fs-12 fw-700">
-                          500
-                        </button>
-                      </div>
-                      <div class="col-3">
-                        <button class="bg-blue br-5 w-100 fs-12 fw-700">
-                          1000
-                        </button>
-                      </div>
-                      <div class="col-3">
-                        <button class="bg-blue br-5 w-100 fs-12 fw-700">
-                          3000
-                        </button>
-                      </div>
-                      <div class="col-3">
-                        <button class="bg-blue br-5 w-100 fs-12 fw-700">
-                          5000
-                        </button>
-                      </div>
-                      <div class="col-3">
-                        <button class="bg-blue br-5 w-100 fs-12 fw-700">
-                          2500
-                        </button>
-                      </div>
-                      <div class="col-3">
-                        <button class="bg-blue br-5 w-100 fs-12 fw-700">
-                          50000
-                        </button>
-                      </div>
-                      <div class="col-3">
-                        <button class="bg-blue br-5 w-100 fs-12 fw-700">
-                          100000
-                        </button>
-                      </div>
-                      <div class="col-3">
-                        <button class="bg-blue br-5 w-100 fs-12 fw-700">
-                          All in
-                        </button>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-2"
+                  >
+                    <div class="d-flex flex-column pe-4">
+                      <span class="fs-10 fw-600 text-capitalize text-dark"
+                        >Upload at highest quality</span
+                      >
+                      <span class="fs-6 fw-400 text-capitalize text-dard-grey"
+                        >Always upload the highest-quality photos and videos,
+                        even if uploading takes longer. When this is off, we'll
+                        automatically adjust upload quality to fit network
+                        conditions.</span
+                      >
+                    </div>
+                    <div>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <div class="d-flex flex-column pe-4">
+                      <span class="fs-10 fw-600 text-capitalize text-dark"
+                        >Disable HDR video playback</span
+                      >
+                      <span class="fs-6 fw-400 text-capitalize text-dard-grey"
+                        >HDR (high dynamic range) video offers greater quality
+                        in areas of extreme brightness or darkness. As a result,
+                        HDR content will appear brighter than standard
+                        content.</span
+                      >
+                    </div>
+                    <div>
+                      <label class="switch">
+                        <input type="checkbox" checked />
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="deleteAccount"
+            tabindex="-1"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
+            >
+              <div class="modal-content" style="width: 300px">
+                <div class="modal-header modal-header-cus">
+                  <h5 class="modal-title text-dark">Account Deletion</h5>
+                </div>
+                <div class="modal-body px-2">
+                  <div class="fs-10 fw-500 text-capitalize mb-4">
+                    If you confirm the account deletion, your account and all of
+                    your personal information will be permanently deleted. If
+                    you click Yes, we will erase all your account's data,
+                    including: access, all purchased and earned items, reffers,
+                    progression, subscription, and link to social media pages.
+                    Please note that we may retain some of your personal
+                    information to comply with applicable laws, as stated in our
+                    Privacy Policy, and all purchases will be lost without any
+                    compensation or reimbursement.
+                  </div>
+                  <div class="text-center mb-2">
+                    <button
+                      class="btn btn-sm btn-success bg-green px-3 py-1 border-0"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      class="btn btn-sm btn-danger bg-red px-4 py-1 border-0"
+                    >
+                      Yes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- bet stake Starts -->
+          <!-- bet stake -->
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="bet_stake"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content bg-transparent">
+                <div class="modal-body">
+                  <div
+                    class="card mb-10 bs-b px-0 b-0"
+                    bis_skin_checked="1"
+                    style="z-index: 2"
+                  >
+                    <div class="card-body pt-5px p-0" bis_skin_checked="1">
+                      <div class="table-headbet" bis_skin_checked="1">
+                        <div
+                          class="row ptb-4 align-items-center stack_padding"
+                          bis_skin_checked="1"
+                        >
+                          <div class="col-6" bis_skin_checked="1">
+                            <div class="d-flex flex-row" bis_skin_checked="1">
+                              <span class="text-alert fs-11 fw-650 pt-2"
+                                >Stack Settings</span
+                              >
+                            </div>
+                          </div>
+
+                          <div
+                            class="col-6 d-flex justify-content-end align-items-center"
+                            bis_skin_checked="1"
+                          >
+                            <button
+                              class="btn-alertbutton fs-10 fw-700"
+                              type="button"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                              id="headingOneblue1"
+                              onclick="toggleAccordion('collapseOneblue1')"
+                            >
+                              X
+                            </button>
+                          </div>
+                        </div>
+                        <div class="col-12 pt-10 py-2 px-2 br_tp_grey my-2">
+                          <div class="row stake_btn_size">
+                            <div class="col-3 mb-2">
+                              <button class="bg-blue br-5 w-100 fs-12 fw-700">
+                                500
+                              </button>
+                            </div>
+                            <div class="col-3">
+                              <button class="bg-blue br-5 w-100 fs-12 fw-700">
+                                1000
+                              </button>
+                            </div>
+                            <div class="col-3">
+                              <button class="bg-blue br-5 w-100 fs-12 fw-700">
+                                3000
+                              </button>
+                            </div>
+                            <div class="col-3">
+                              <button class="bg-blue br-5 w-100 fs-12 fw-700">
+                                5000
+                              </button>
+                            </div>
+                            <div class="col-3">
+                              <button class="bg-blue br-5 w-100 fs-12 fw-700">
+                                2500
+                              </button>
+                            </div>
+                            <div class="col-3">
+                              <button class="bg-blue br-5 w-100 fs-12 fw-700">
+                                50000
+                              </button>
+                            </div>
+                            <div class="col-3">
+                              <button class="bg-blue br-5 w-100 fs-12 fw-700">
+                                100000
+                              </button>
+                            </div>
+                            <div class="col-3">
+                              <button class="bg-blue br-5 w-100 fs-12 fw-700">
+                                All in
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center mb-3 py-2 pt-0"
+                        >
+                          <button
+                            class="btn-purple text-yellow br-5 w-95 h-27 fs-10 fw-700 mr-10 text-uppercase"
+                          >
+                            Edit
+                          </button>
+                          <button
+                            class="btn-yellow br-5 w-95 h-27 fs-10 fw-700 br-dark text-uppercase"
+                          >
+                            Save
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="d-flex justify-content-center mb-3 py-2 pt-0">
-                    <button
-                      class="btn-purple text-yellow br-5 w-95 h-27 fs-10 fw-700 mr-10 text-uppercase"
-                    >
-                      Edit
-                    </button>
-                    <button
-                      class="btn-yellow br-5 w-95 h-27 fs-10 fw-700 br-dark text-uppercase"
-                    >
-                      Save
-                    </button>
-                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- bet stake Ends -->
+          <!-- setting-popp end-->
+        </div>
+
+        <!-- modal -->
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-transparent">
+              <div class="modal-body px-4 py-0">
+                <div class="position-relative">
+                  <img src="../img/pop-up/pop-up-bg.png" alt="" class="w-100" />
                 </div>
               </div>
             </div>
@@ -1821,8 +1917,8 @@
         </div>
       </div>
     </div>
-    <!-- bet stake Ends -->
-    <!-- setting-popp end-->
+    <!-- modal canva end -->
+    <!-- Setting Starts -->
 
     <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
     <script src="../js/swiper.js"></script>
@@ -2132,5 +2228,33 @@
     </script>
 
     <!-- table end -->
+
+    <script>
+      // test for small
+      var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+      var rootElement = document.documentElement;
+
+      function handleScroll() {
+        // Show button if scrolled more than 100 pixels
+        if (rootElement.scrollTop > 10) {
+          // Show button
+          scrollToTopBtn.classList.add("showBtn");
+        } else {
+          // Hide button
+          scrollToTopBtn.classList.remove("showBtn");
+        }
+      }
+
+      function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+      document.addEventListener("scroll", handleScroll);
+    </script>
   </body>
 </html>
