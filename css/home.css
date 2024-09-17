@@ -881,7 +881,8 @@ span.text-purple.fs-11.fw-650 {
 }
 .fw-700.fs-12.text-white.mb-1.fs-12 {
   /* font-size: 12px !important; */
-  font-size: 15px !important;
+  /* font-size: 15px !important; */
+  font-size: 19px !important;
   font-weight: 600 !important;
 }
 .br_bt_lightgrey {
@@ -1308,7 +1309,8 @@ span.text-purple.fs-11.fw-650 {
 
   .card-tile {
     width: 124px !important;
-    height: 71px !important;
+    /* height: 71px !important; */
+    height: 77px !important;
   }
 
   .logo_xnew {
