@@ -1072,3 +1072,11 @@ a.card-tile.justify-content-center.withdraw {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* menu style Starts */
+@media (max-width: 500px) {
+  .fw-700.fs-12.text-white.mb-1.fs-12 {
+    font-size: 12px !important;
+  }
+}
+/* menu style Ends */
