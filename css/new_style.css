@@ -1078,5 +1078,8 @@ a.card-tile.justify-content-center.withdraw {
   .fw-700.fs-12.text-white.mb-1.fs-12 {
     font-size: 12px !important;
   }
+  .d-flex.flex-grow-1.tab-viewgrownon {
+    gap: 6px;
+  }
 }
 /* menu style Ends */
