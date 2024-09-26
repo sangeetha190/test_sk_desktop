@@ -82,18 +82,18 @@
 <style>
   /* Targeting IE 10 and IE 11 */
 _:-ms-input-placeholder, .overflowscrolly {
-  overflow-y: scroll;
+  overflow-y: scroll !important;
 }
 
 /* Targeting only IE 11 */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   .overflowscrolly {
-    overflow-y: scroll;
+    overflow-y: scroll !important;
   }
 }
 
 .overflowscrolly {
-  overflow-y: scroll\9; /* Targets IE 8-11 */
+  overflow-y: scroll\9 !important; /* Targets IE 8-11 */
 }
 </style>
 
