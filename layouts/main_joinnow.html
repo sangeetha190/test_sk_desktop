@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Sikander PlayX</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/home.css" />
-   
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -75,30 +76,17 @@
   }
 }
 
-
-   </style>
-
-
-<style>
-  /* Targeting IE 10 and IE 11 */
-_:-ms-input-placeholder, .overflowscrolly {
-  overflow-y: scroll !important;
-}
-
-/* Targeting only IE 11 */
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .overflowscrolly {
-    overflow-y: scroll !important;
-  }
-}
-
-.overflowscrolly {
-  overflow-y: scroll\9 !important; /* Targets IE 8-11 */
-}
 </style>
-
+   
+<style>
+  /* Edge-specific styles */
+  body.edge {
+      overflow-y: scroll  !important;
+  
+    }
+</style>
   </head>
-  <body class="overflowscrolly" >
+  <body style="overflow-y: hidden;">
   <!-- <body> -->
     <div class="container container-xs vh-100 create-user-bg bg_image_both_L_M">
       <!-- <div class="container container-xs vh-100  new_bg"> -->
@@ -408,6 +396,20 @@ startSlider();
 
 
   </script>
+
+<script>
+  // Detect if the browser is Chrome
+  var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+  
+  // Detect if the browser is Edge (Chromium-based)
+  var isEdge = navigator.userAgent.indexOf("Edg") != -1;
+
+  if (isChrome && !isEdge) {
+    document.body.classList.add('chrome'); // Apply Chrome class
+  } else if (isEdge) {
+    document.body.classList.add('edge'); // Apply Edge class
+  }
+</script>
 
 </body>
 </html>
