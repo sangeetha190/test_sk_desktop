@@ -1030,6 +1030,7 @@ a.card-tile.justify-content-center.withdraw {
   position: relative;
   background-size: cover;
   height: 100vh; /* Adjust this as per your requirement */
+  overflow-y: auto;
 }
 
 .menu-background::before {
@@ -1046,31 +1047,39 @@ a.card-tile.justify-content-center.withdraw {
 }
 /* menu background ends */
 
-
-
- /*--------------------
+/*--------------------
  Back to Top Button
 ---------------------*/
 .scrollToTopBtn {
   background-color: #ffff00;
-    border: none;
-    border-radius: 50%;
-    color: #000000;
-    cursor: pointer;
-    font-size: 25px;
-    line-height: 40px;
-    width: 40px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 100;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: all .5s ease;
-}
-    
-.showBtn {
-  opacity: 1;
-  transform: translateY(0)
+  border: none;
+  border-radius: 50%;
+  color: #000000;
+  cursor: pointer;
+  font-size: 25px;
+  line-height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease;
 }
 
+.showBtn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* menu style Starts */
+@media (max-width: 500px) {
+  .fw-700.fs-12.text-white.mb-1.fs-12 {
+    font-size: 12px !important;
+  }
+  .d-flex.flex-grow-1.tab-viewgrownon {
+    gap: 6px;
+  }
+}
+/* menu style Ends */

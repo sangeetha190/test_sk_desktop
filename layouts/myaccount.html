@@ -661,6 +661,15 @@
       </div>
     </div>
 
+
+<!-- scroll button -->
+<div class="d-flex justify-content-end">
+  <!-- <button><i class="fa-solid fa-angle-up"></i></button> -->
+  <button class="scrollToTopBtn"><i class="fa-solid fa-angle-up"></i></button>
+</div>
+<!-- scroll button end-->
+
+
     <!-- modal canva start -->
     <div
     class="offcanvas offcanvas-end bg-purple top-74 z-9999 br-yellow"
@@ -1012,10 +1021,10 @@
             href="./indexlogout.html"
             class="list-group-item list-group-item-action"
           >
-            <div class="list-icon">
-              <img src="../img/icon/icon-edit.png" />
-            </div>
-            <span class="list-text" an="">Logout</span>
+          <div class="list-icon">
+            <img src="../img/icon/icon-logout.png" />
+           </div>
+          <span class="list-text">Logout</span>
             <span class="ms-auto">
               <img src="../img/icon/icon-arrow-right.png" />
             </span>
@@ -2101,6 +2110,36 @@ role="dialog"
       </div>
     </div>
     <!-- modal canva end -->
+
+
+
+    <script>
+      // test for small
+      var scrollToTopBtn = document.querySelector(".scrollToTopBtn");
+      var rootElement = document.documentElement;
+    
+      function handleScroll() {
+        // Show button if scrolled more than 100 pixels
+        if (rootElement.scrollTop > 10) {
+          // Show button
+          scrollToTopBtn.classList.add("showBtn");
+        } else {
+          // Hide button
+          scrollToTopBtn.classList.remove("showBtn");
+        }
+      }
+    
+      function scrollToTop() {
+        // Scroll to top logic
+        rootElement.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+    
+      scrollToTopBtn.addEventListener("click", scrollToTop);
+      document.addEventListener("scroll", handleScroll);
+    </script>
 
   </body>
 </html>
